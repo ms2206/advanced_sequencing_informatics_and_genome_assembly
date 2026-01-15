@@ -65,6 +65,9 @@ zcat ${input_file} | \
 
 ls ${falcon_dir}/${fasta_name} > inputFof
 
+# Change to FALCON directory before running
+cd ${falcon_dir}
+
 # Run job in singularity container (this is an example, change it if needed!)
 singularity exec ${working_folder}/gamod.simg \
     bash -c "source /Falcon-integrate/fc_env/bin/activate && fc_run ${falcon_dir}/falcon_config"
