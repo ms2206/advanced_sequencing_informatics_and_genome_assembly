@@ -60,7 +60,7 @@ cd ${DBG2OLC_dir}
 singularity exec ${working_folder}/gamod.simg \
     bash -c "source /pitchfork/setup-env.sh && \
     cat ${input_contigs} > ${DBG2OLC_dir}/ctg_pb.fasta && \
-    ${DBG2OLC_dir}/my_split_nrun_sparch.sh \
+    ${DBG2OLC_dir}/my_split_nrun_sparc.sh \
     ${DBG2OLC_dir}/backbone_raw.fasta \
     ${DBG2OLC_dir}/DBG2OLC_Consensus_info.txt \
     ${DBG2OLC_dir}/ctg_pb.fasta \
