@@ -16,6 +16,7 @@
 #PBS -m abe
 #PBS -M Matthew.Spriggs.452@cranfield.ac.uk
 #PBS -o logs/
+#PBS -j oe
 
 #===============
 #PBS -j oe
