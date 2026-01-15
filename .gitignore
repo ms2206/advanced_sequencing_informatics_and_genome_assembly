@@ -1,0 +1,6 @@
+*.fasta
+*.fastq
+*.fq.gz
+*.bam
+*.wig
+*.ale
