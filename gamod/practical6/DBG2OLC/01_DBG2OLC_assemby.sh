@@ -9,7 +9,7 @@
 # PBS directives
 #---------------
 
-#PBS -N 2DBG2OLC
+#PBS -N 01_DBG2OLC_assemby
 #PBS -l nodes=1:ncpus=4
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
