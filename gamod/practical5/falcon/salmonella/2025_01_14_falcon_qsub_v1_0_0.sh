@@ -15,6 +15,7 @@
 #PBS -q half_hour
 #PBS -m abe
 #PBS -M Matthew.Spriggs.452@cranfield.ac.uk
+#PBS -o logs/
 
 #===============
 #PBS -j oe
