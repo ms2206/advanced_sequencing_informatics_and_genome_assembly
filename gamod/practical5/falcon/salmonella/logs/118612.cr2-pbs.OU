@@ -1,0 +1,752 @@
+Started script
+Thu Jan 15 12:08:46 GMT 2026
+
+apptainer version 1.1.3-1.el8
+[918489]$(u'lfs setstripe -c 12 /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod')
+sh: 1: lfs: not found
+[918489]WARNING: Call u'lfs setstripe -c 12 /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod' returned 32512.
+[INFO]Setup logging from file "None".
+[INFO]fc_run started with configuration /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod//practical5/falcon/salmonella//falcon_config
+/Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/falcon_kit/run_support.py:200: UserWarning: Deprecated setting in config: 'pa_concurrent_jobs' -- Prefer da_concurrent_jobs and la_concurrent_jobs separately
+  "Deprecated setting in config: 'pa_concurrent_jobs' -- Prefer da_concurrent_jobs and la_concurrent_jobs separately")
+/Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/falcon_kit/run_support.py:205: UserWarning: Deprecated setting in config: 'ovlp_concurrent_jobs' -- Prefer pda_concurrent_jobs and pla_concurrent_jobs separately
+  "Deprecated setting in config: 'ovlp_concurrent_jobs' -- Prefer pda_concurrent_jobs and pla_concurrent_jobs separately")
+[WARNING]HPC.daligner option "-dal" has changed to "-B". Correcting this for you.
+[WARNING]HPC.daligner option "-dal" has changed to "-B". Correcting this for you.
+[INFO] No target specified, assuming "assembly" as target 
+/Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/falcon_kit/run_support.py:462: UserWarning: Unexpected keys in input config: set(['pa_concurrent_jobs', 'ovlp_concurrent_jobs'])
+  warnings.warn("Unexpected keys in input config: %s" % repr(unused))
+[WARNING]In simple_pwatcher_bridge, pwatcher_impl=<module 'pwatcher.blocking' from '/Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/blocking.pyc'>
+[INFO]In simple_pwatcher_bridge, pwatcher_impl=<module 'pwatcher.blocking' from '/Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/blocking.pyc'>
+[INFO]job_type='string', job_queue='bash -C ${CMD} >| ${STDOUT_FILE} 2>| ${STDERR_FILE}', sge_option='-pe smp 4 -q bigmem', use_tmpdir=False, squash=False, job_name_style=0
+[INFO]u'Serializing 52 records'
+[INFO]u"  Opened for write: u'./config.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[INFO]u"Deserializing from u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/config.json'"
+[INFO]u"  Opened for read: u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/config.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 52 records'
+[INFO]gen_task(python -m falcon_kit.mains.build_rdb --input-fofn-fn={input.raw_reads_fofn} --config-fn={input.config} --run-jobs-fn={output.run_jobs} --length-cutoff-fn={output.length_cutoff} --job-done-fn={output.db_build_done}
+touch {output.db_build_done}
+
+	inputs={u'raw_reads_fofn': 'practical5/falcon/salmonella/inputFof', u'config': u'config.json'},
+	outputs={u'raw_reads_db': u'0-rawreads/raw_reads.db', u'run_jobs': u'0-rawreads/run_jobs.sh', u'length_cutoff': u'0-rawreads/length_cutoff', u'db_build_done': u'0-rawreads/rdb_build_done'})
+[INFO]gen_task(python -m falcon_kit.mains.daligner_split --wildcards={params.wildcards} --db-prefix={params.db_prefix} --skip-checks={params.skip_checks} --pread-aln={params.pread_aln} --run-jobs-fn={input.run_jobs} --db-fn={input.db} --split-fn={output.split} --bash-template-fn={output.bash_template}
+
+	inputs={u'run_jobs': u'0-rawreads/run_jobs.sh', u'db': u'0-rawreads/raw_reads.db'},
+	outputs={u'split': u'0-rawreads/daligner-split/all-units-of-work.json', u'bash_template': u'0-rawreads/daligner-split/daligner_bash_template.sh'})
+[INFO]Num unsatisfied: 2, graph: 2
+[INFO]About to submit: Node(0-rawreads)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/run-P864d19bb0d586e.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/run-P864d19bb0d586e.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/run-P864d19bb0d586e.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]recently_satisfied: set([Node(0-rawreads)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(0-rawreads/daligner-split)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-split"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-split/run-P02966c021b884b.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-split/run-P02966c021b884b.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-split/run-P02966c021b884b.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-split)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+[INFO]u"Deserializing from u'0-rawreads/daligner-split/all-units-of-work.json'"
+[INFO]u"  Opened for read: u'0-rawreads/daligner-split/all-units-of-work.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 2 records'
+[WARNING]PARALLEL OUTPUTS:{u'results': u'0-rawreads/daligner-runs/{dal0_id}/some-done-files.json'}
+[WARNING] wildcards={u'dal0_id': u'j_0000'}
+[WARNING]  k=results, v=u'0-rawreads/daligner-runs/{dal0_id}/some-done-files.json'
+[WARNING] wildcards={u'dal0_id': u'j_0000'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/daligner-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000/some-units-of-work.json', u'bash_template': u'0-rawreads/daligner-split/daligner_bash_template.sh'},
+	outputs={u'results': u'0-rawreads/daligner-runs/j_0000/some-done-files.json'})
+[WARNING] wildcards={u'dal0_id': u'j_0001'}
+[WARNING]  k=results, v=u'0-rawreads/daligner-runs/{dal0_id}/some-done-files.json'
+[WARNING] wildcards={u'dal0_id': u'j_0001'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/daligner-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001/some-units-of-work.json', u'bash_template': u'0-rawreads/daligner-split/daligner_bash_template.sh'},
+	outputs={u'results': u'0-rawreads/daligner-runs/j_0001/some-done-files.json'})
+[INFO]u'Serializing 2 records'
+[INFO]mkdir -p "0-rawreads/daligner-gathered"
+[INFO]u"  Opened for write: u'0-rawreads/daligner-gathered/result-fn-list.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[WARNING]gather_inputs:{u'jobj_0001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001/some-done-files.json', u'jobj_0000': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000/some-done-files.json'}
+[INFO]gen_task(
+python -m falcon_kit.mains.generic_unsplit --result-fn-list-fn={output.result_fn_list} --gathered-fn={output.gathered}
+
+	inputs={u'jobj_0001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001/some-done-files.json', u'jobj_0000': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000/some-done-files.json'},
+	outputs={u'gathered': u'0-rawreads/daligner-gathered/gathered-done-files.json', u'result_fn_list': u'0-rawreads/daligner-gathered/result-fn-list.json'})
+[INFO]gen_task(python -m falcon_kit.mains.daligner_gather_las_list --gathered-fn={input.gathered} --las-paths-fn={output.las_paths}
+
+	inputs={u'gathered': u'0-rawreads/daligner-gathered/gathered-done-files.json'},
+	outputs={u'las_paths': u'0-rawreads/daligner-intermediate-gathered-las/gathered-las.json'})
+[INFO]gen_task(python -m falcon_kit.mains.las_merge_split --wildcards={params.wildcards} --db-prefix={params.db_prefix} --run-jobs-fn={input.run_jobs} --gathered-las-fn={input.gathered_las} --split-fn={output.split} --bash-template-fn={output.bash_template}
+
+	inputs={u'run_jobs': u'0-rawreads/run_jobs.sh', u'gathered_las': u'0-rawreads/daligner-intermediate-gathered-las/gathered-las.json'},
+	outputs={u'split': u'0-rawreads/las-merge-split/all-units-of-work.json', u'bash_template': u'0-rawreads/las-merge-split/las-merge-bash-template.sh'})
+[INFO]Num unsatisfied: 7, graph: 9
+[INFO]About to submit: Node(0-rawreads/daligner-chunks/j_0001)
+[INFO]About to submit: Node(0-rawreads/daligner-chunks/j_0000)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001/run-P5b3b9060b2416f.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001/run-P5b3b9060b2416f.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0001/run-P5b3b9060b2416f.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000/run-Pa8e11b027bfd59.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000/run-Pa8e11b027bfd59.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-chunks/j_0000/run-Pa8e11b027bfd59.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-chunks/j_0001), Node(0-rawreads/daligner-chunks/j_0000)])
+[INFO]Num satisfied in this iteration: 2
+[INFO]Num still unsatisfied: 5
+[INFO]About to submit: Node(0-rawreads/daligner-runs/j_0001)
+[INFO]About to submit: Node(0-rawreads/daligner-runs/j_0000)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000/run-P60fd11577c246d.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000/run-P60fd11577c246d.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0000/run-P60fd11577c246d.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001/run-Pdf97aa873e81f0.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001/run-Pdf97aa873e81f0.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-runs/j_0001/run-Pdf97aa873e81f0.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]sleep 1.4s
+[INFO]sleep 1.5s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-runs/j_0001)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 4
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]sleep 1.4s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-runs/j_0000)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 3
+[INFO]About to submit: Node(0-rawreads/daligner-gathered)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-gathered/run-P8daea6b84e7b98.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-gathered/run-P8daea6b84e7b98.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-gathered/run-P8daea6b84e7b98.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-gathered)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 2
+[INFO]About to submit: Node(0-rawreads/daligner-intermediate-gathered-las)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-intermediate-gathered-las"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-intermediate-gathered-las/run-P30bde283fa50f7.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-intermediate-gathered-las/run-P30bde283fa50f7.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/daligner-intermediate-gathered-las/run-P30bde283fa50f7.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/daligner-intermediate-gathered-las)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(0-rawreads/las-merge-split)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-split"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-split/run-P3342a9287572e7.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-split/run-P3342a9287572e7.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-split/run-P3342a9287572e7.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-merge-split)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+[INFO]u"Deserializing from u'0-rawreads/las-merge-split/all-units-of-work.json'"
+[INFO]u"  Opened for read: u'0-rawreads/las-merge-split/all-units-of-work.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 2 records'
+[WARNING]PARALLEL OUTPUTS:{u'results': u'0-rawreads/las-merge-runs/{mer0_id}/some-las-paths.json'}
+[WARNING] wildcards={u'mer0_id': u'm_00001'}
+[WARNING]  k=results, v=u'0-rawreads/las-merge-runs/{mer0_id}/some-las-paths.json'
+[WARNING] wildcards={u'mer0_id': u'm_00001'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/las-merge-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001/some-units-of-work.json', u'bash_template': u'0-rawreads/las-merge-split/las-merge-bash-template.sh'},
+	outputs={u'results': u'0-rawreads/las-merge-runs/m_00001/some-las-paths.json'})
+[WARNING] wildcards={u'mer0_id': u'm_00002'}
+[WARNING]  k=results, v=u'0-rawreads/las-merge-runs/{mer0_id}/some-las-paths.json'
+[WARNING] wildcards={u'mer0_id': u'm_00002'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/las-merge-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002/some-units-of-work.json', u'bash_template': u'0-rawreads/las-merge-split/las-merge-bash-template.sh'},
+	outputs={u'results': u'0-rawreads/las-merge-runs/m_00002/some-las-paths.json'})
+[INFO]u'Serializing 2 records'
+[INFO]mkdir -p "0-rawreads/las-merge-gathered"
+[INFO]u"  Opened for write: u'0-rawreads/las-merge-gathered/result-fn-list.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[WARNING]gather_inputs:{u'jobm_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001/some-las-paths.json', u'jobm_00002': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002/some-las-paths.json'}
+[INFO]gen_task(
+python -m falcon_kit.mains.generic_unsplit --result-fn-list-fn={output.result_fn_list} --gathered-fn={output.gathered}
+
+	inputs={u'jobm_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001/some-las-paths.json', u'jobm_00002': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002/some-las-paths.json'},
+	outputs={u'gathered': u'0-rawreads/las-merge-gathered/gathered.json', u'result_fn_list': u'0-rawreads/las-merge-gathered/result-fn-list.json'})
+[INFO]gen_task(python -m falcon_kit.mains.las_merge_gather --gathered-fn={input.gathered} --p-id2las-fn={output.p_id2las} --las-fn={output.las}
+
+	inputs={u'gathered': u'0-rawreads/las-merge-gathered/gathered.json'},
+	outputs={u'p_id2las': u'0-rawreads/las-gather/p_id2las.json', u'las': u'0-rawreads/las-gather/las_fofn.json'})
+[INFO]gen_task(python -m falcon_kit.mains.consensus_split --wildcards={params.wildcards} --p-id2las-fn={input.p_id2las} --db-fn={input.raw_reads_db} --length-cutoff-fn={input.length_cutoff} --config-fn={input.config} --split-fn={output.split} --bash-template-fn={output.bash_template}
+
+	inputs={u'raw_reads_db': u'0-rawreads/raw_reads.db', u'config': u'config.json', u'p_id2las': u'0-rawreads/las-gather/p_id2las.json', u'length_cutoff': u'0-rawreads/length_cutoff'},
+	outputs={u'split': u'0-rawreads/cns-split/split.json', u'bash_template': u'0-rawreads/cns-split/consensus-bash-template.sh'})
+[INFO]Num unsatisfied: 7, graph: 16
+[INFO]About to submit: Node(0-rawreads/las-merge-chunks/m_00001)
+[INFO]About to submit: Node(0-rawreads/las-merge-chunks/m_00002)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002/run-P5ac49053c7a98f.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002/run-P5ac49053c7a98f.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00002/run-P5ac49053c7a98f.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001/run-P4cb9f1c936579b.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001/run-P4cb9f1c936579b.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-chunks/m_00001/run-P4cb9f1c936579b.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-merge-chunks/m_00001), Node(0-rawreads/las-merge-chunks/m_00002)])
+[INFO]Num satisfied in this iteration: 2
+[INFO]Num still unsatisfied: 5
+[INFO]About to submit: Node(0-rawreads/las-merge-runs/m_00001)
+[INFO]About to submit: Node(0-rawreads/las-merge-runs/m_00002)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001/run-P5ea99528c1466f.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001/run-P5ea99528c1466f.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00001/run-P5ea99528c1466f.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002/run-P641a6615571eec.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002/run-P641a6615571eec.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-runs/m_00002/run-P641a6615571eec.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-merge-runs/m_00002)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 4
+[INFO]sleep 0.1s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-merge-runs/m_00001)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 3
+[INFO]About to submit: Node(0-rawreads/las-merge-gathered)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-gathered/run-Pa3b92046f6e166.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-gathered/run-Pa3b92046f6e166.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-merge-gathered/run-Pa3b92046f6e166.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-merge-gathered)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 2
+[INFO]About to submit: Node(0-rawreads/las-gather)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-gather"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-gather/run-Pa4a66fde3d61cf.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-gather/run-Pa4a66fde3d61cf.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/las-gather/run-Pa4a66fde3d61cf.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/las-gather)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(0-rawreads/cns-split)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-split"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-split/run-P8f9032af90f541.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-split/run-P8f9032af90f541.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-split/run-P8f9032af90f541.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(0-rawreads/cns-split)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+[INFO]u"Deserializing from u'0-rawreads/cns-split/split.json'"
+[INFO]u"  Opened for read: u'0-rawreads/cns-split/split.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 2 records'
+[WARNING]PARALLEL OUTPUTS:{u'results': u'0-rawreads/cns-runs/{cns0_id}/some-done-files.json'}
+[WARNING] wildcards={u'cns0_id2': u'cns_00001', u'cns0_id': u'cns_00001'}
+[WARNING]  k=results, v=u'0-rawreads/cns-runs/{cns0_id}/some-done-files.json'
+[WARNING] wildcards={u'cns0_id2': u'cns_00001', u'cns0_id': u'cns_00001'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/cns-split/split.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001/some-units-of-work.json', u'bash_template': u'0-rawreads/cns-split/consensus-bash-template.sh'},
+	outputs={u'results': u'0-rawreads/cns-runs/cns_00001/some-done-files.json'})
+[WARNING] wildcards={u'cns0_id2': u'cns_00002', u'cns0_id': u'cns_00002'}
+[WARNING]  k=results, v=u'0-rawreads/cns-runs/{cns0_id}/some-done-files.json'
+[WARNING] wildcards={u'cns0_id2': u'cns_00002', u'cns0_id': u'cns_00002'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'0-rawreads/cns-split/split.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002/some-units-of-work.json', u'bash_template': u'0-rawreads/cns-split/consensus-bash-template.sh'},
+	outputs={u'results': u'0-rawreads/cns-runs/cns_00002/some-done-files.json'})
+[INFO]u'Serializing 2 records'
+[INFO]mkdir -p "0-rawreads/cns-gather"
+[INFO]u"  Opened for write: u'0-rawreads/cns-gather/result-fn-list.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[WARNING]gather_inputs:{u'jobcns_00001_cns_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001/some-done-files.json', u'jobcns_00002_cns_00002': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002/some-done-files.json'}
+[INFO]gen_task(
+python -m falcon_kit.mains.generic_unsplit --result-fn-list-fn={output.result_fn_list} --gathered-fn={output.gathered}
+
+	inputs={u'jobcns_00001_cns_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001/some-done-files.json', u'jobcns_00002_cns_00002': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002/some-done-files.json'},
+	outputs={u'gathered': u'0-rawreads/cns-gather/gathered.json', u'result_fn_list': u'0-rawreads/cns-gather/result-fn-list.json'})
+[INFO]gen_task(python -m falcon_kit.mains.consensus_gather_fasta_fofn --gathered-fn={input.gathered} --preads-fofn-fn={output.preads_fofn}
+
+	inputs={u'gathered': u'0-rawreads/cns-gather/gathered.json'},
+	outputs={u'preads_fofn': u'0-rawreads/preads/input_preads.fofn'})
+[INFO]gen_task(python -m falcon_kit.mains.task_report_pre_assembly --config-fn={input.config} --length-cutoff-fn={input.length_cutoff} --raw-reads-db-fn={input.raw_reads_db} --preads-fofn-fn={input.preads_fofn} --pre-assembly-report-fn={output.pre_assembly_report}
+
+	inputs={u'length_cutoff': u'0-rawreads/length_cutoff', u'preads_fofn': u'0-rawreads/preads/input_preads.fofn', u'config': u'config.json', u'raw_reads_db': u'0-rawreads/raw_reads.db'},
+	outputs={u'pre_assembly_report': u'0-rawreads/report/pre_assembly_stats.json'})
+[INFO]gen_task(python -m falcon_kit.mains.build_pdb --input-fofn-fn={input.preads_fofn} --config-fn={input.config} --run-jobs-fn={output.run_jobs} --job-done-fn={output.db_build_done}
+# TODO: Verify that input.preads_db exists.
+touch {output.db_build_done}
+
+	inputs={u'config': u'config.json', u'preads_fofn': u'0-rawreads/preads/input_preads.fofn'},
+	outputs={u'run_jobs': u'1-preads_ovl/run_jobs.sh', u'preads_db': u'1-preads_ovl/preads.db', u'db_build_done': u'1-preads_ovl/pdb_build_done'})
+[INFO]gen_task(python -m falcon_kit.mains.daligner_split --wildcards={params.wildcards} --db-prefix={params.db_prefix} --skip-checks={params.skip_checks} --pread-aln={params.pread_aln} --run-jobs-fn={input.run_jobs} --db-fn={input.db} --split-fn={output.split} --bash-template-fn={output.bash_template}
+
+	inputs={u'run_jobs': u'1-preads_ovl/run_jobs.sh', u'db': u'1-preads_ovl/preads.db'},
+	outputs={u'split': u'1-preads_ovl/daligner-split/all-units-of-work.json', u'bash_template': u'1-preads_ovl/daligner-split/daligner_bash_template.sh'})
+[INFO]Num unsatisfied: 9, graph: 25
+[INFO]About to submit: Node(0-rawreads/cns-chunks/cns_00001)
+[INFO]About to submit: Node(0-rawreads/cns-chunks/cns_00002)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001/run-Pdbbf961ad113ba.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001/run-Pdbbf961ad113ba.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00001/run-Pdbbf961ad113ba.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002/run-Pba9a6cf64f771c.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002/run-Pba9a6cf64f771c.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-chunks/cns_00002/run-Pba9a6cf64f771c.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/cns-chunks/cns_00001), Node(0-rawreads/cns-chunks/cns_00002)])
+[INFO]Num satisfied in this iteration: 2
+[INFO]Num still unsatisfied: 7
+[INFO]About to submit: Node(0-rawreads/cns-runs/cns_00002)
+[INFO]About to submit: Node(0-rawreads/cns-runs/cns_00001)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002"
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002/run-P23bdc4a06e0f84.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002/run-P23bdc4a06e0f84.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00002/run-P23bdc4a06e0f84.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001/run-P7a646b94049de9.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001/run-P7a646b94049de9.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-runs/cns_00001/run-P7a646b94049de9.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]recently_satisfied: set([Node(0-rawreads/cns-runs/cns_00002)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 6
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]sleep 1.4s
+[INFO]sleep 1.5s
+[INFO]sleep 1.6s
+[INFO]sleep 1.7s
+[INFO]sleep 1.8s
+[INFO]sleep 1.9s
+[INFO]sleep 2.0s
+[INFO]sleep 2.1s
+[INFO]sleep 2.2s
+[INFO]sleep 2.3s
+[INFO]sleep 2.4s
+[INFO]sleep 2.5s
+[INFO]sleep 2.6s
+[INFO]sleep 2.7s
+[INFO]sleep 2.8s
+[INFO]sleep 2.9s
+[INFO]sleep 3.0s
+[INFO]sleep 3.1s
+[INFO]sleep 3.2s
+[INFO]sleep 3.3s
+[INFO]sleep 3.4s
+[INFO]sleep 3.5s
+[INFO]sleep 3.6s
+[INFO]sleep 3.7s
+[INFO]sleep 3.8s
+[INFO]sleep 3.9s
+[INFO]sleep 4.0s
+[INFO]sleep 4.1s
+[INFO]sleep 4.2s
+[INFO]sleep 4.3s
+[INFO]sleep 4.4s
+[INFO]sleep 4.5s
+[INFO]sleep 4.6s
+[INFO]sleep 4.7s
+[INFO]sleep 4.8s
+[INFO]sleep 4.9s
+[INFO]sleep 5.0s
+[INFO]sleep 5.1s
+[INFO]sleep 5.2s
+[INFO]sleep 5.3s
+[INFO]sleep 5.4s
+[INFO]sleep 5.5s
+[INFO]sleep 5.6s
+[INFO]sleep 5.7s
+[INFO]sleep 5.8s
+[INFO]sleep 5.9s
+[INFO]sleep 6.0s
+[INFO]recently_satisfied: set([Node(0-rawreads/cns-runs/cns_00001)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 5
+[INFO]About to submit: Node(0-rawreads/cns-gather)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-gather/run-Pf0c0df4a6226ee.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-gather/run-Pf0c0df4a6226ee.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/cns-gather/run-Pf0c0df4a6226ee.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/cns-gather)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 4
+[INFO]About to submit: Node(0-rawreads/preads)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/preads"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/preads/run-P11bb009da64d90.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/preads/run-P11bb009da64d90.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/preads/run-P11bb009da64d90.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(0-rawreads/preads)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 3
+[INFO]About to submit: Node(1-preads_ovl)
+[INFO]About to submit: Node(0-rawreads/report)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/report"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/run-P8726284b12045b.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/run-P8726284b12045b.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/run-P8726284b12045b.bash.stderr'
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/report/run-P65d4c9c20272ab.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/report/run-P65d4c9c20272ab.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/0-rawreads/report/run-P65d4c9c20272ab.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]recently_satisfied: set([Node(0-rawreads/report)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 2
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]recently_satisfied: set([Node(1-preads_ovl)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(1-preads_ovl/daligner-split)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-split"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-split/run-P04b5b4a57e2d03.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-split/run-P04b5b4a57e2d03.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-split/run-P04b5b4a57e2d03.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/daligner-split)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+[INFO]u"Deserializing from u'1-preads_ovl/daligner-split/all-units-of-work.json'"
+[INFO]u"  Opened for read: u'1-preads_ovl/daligner-split/all-units-of-work.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 1 records'
+[WARNING]PARALLEL OUTPUTS:{u'results': u'1-preads_ovl/daligner-runs/{dal1_id}/some-done-files.json'}
+[WARNING] wildcards={u'dal1_id': u'j_0000'}
+[WARNING]  k=results, v=u'1-preads_ovl/daligner-runs/{dal1_id}/some-done-files.json'
+[WARNING] wildcards={u'dal1_id': u'j_0000'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'1-preads_ovl/daligner-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000/some-units-of-work.json', u'bash_template': u'1-preads_ovl/daligner-split/daligner_bash_template.sh'},
+	outputs={u'results': u'1-preads_ovl/daligner-runs/j_0000/some-done-files.json'})
+[INFO]u'Serializing 1 records'
+[INFO]mkdir -p "1-preads_ovl/daligner-gathered"
+[INFO]u"  Opened for write: u'1-preads_ovl/daligner-gathered/result-fn-list.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[WARNING]gather_inputs:{u'jobj_0000': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000/some-done-files.json'}
+[INFO]gen_task(
+python -m falcon_kit.mains.generic_unsplit --result-fn-list-fn={output.result_fn_list} --gathered-fn={output.gathered}
+
+	inputs={u'jobj_0000': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000/some-done-files.json'},
+	outputs={u'gathered': u'1-preads_ovl/daligner-gathered/gathered-done-files.json', u'result_fn_list': u'1-preads_ovl/daligner-gathered/result-fn-list.json'})
+[INFO]gen_task(python -m falcon_kit.mains.daligner_gather_las_list --gathered-fn={input.gathered} --las-paths-fn={output.las_paths}
+
+	inputs={u'gathered': u'1-preads_ovl/daligner-gathered/gathered-done-files.json'},
+	outputs={u'las_paths': u'1-preads_ovl/daligner-intermediate-gathered-las/gathered-las.json'})
+[INFO]gen_task(python -m falcon_kit.mains.las_merge_split --wildcards={params.wildcards} --db-prefix={params.db_prefix} --run-jobs-fn={input.run_jobs} --gathered-las-fn={input.gathered_las} --split-fn={output.split} --bash-template-fn={output.bash_template}
+
+	inputs={u'run_jobs': u'1-preads_ovl/run_jobs.sh', u'gathered_las': u'1-preads_ovl/daligner-intermediate-gathered-las/gathered-las.json'},
+	outputs={u'split': u'1-preads_ovl/las-merge-split/all-units-of-work.json', u'bash_template': u'1-preads_ovl/las-merge-split/las-merge-bash-template.sh'})
+[INFO]Num unsatisfied: 5, graph: 30
+[INFO]About to submit: Node(1-preads_ovl/daligner-chunks/j_0000)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000/run-P3ddfd79410f573.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000/run-P3ddfd79410f573.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-chunks/j_0000/run-P3ddfd79410f573.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/daligner-chunks/j_0000)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 4
+[INFO]About to submit: Node(1-preads_ovl/daligner-runs/j_0000)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000/run-P83c115a13cc77a.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000/run-P83c115a13cc77a.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-runs/j_0000/run-P83c115a13cc77a.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]sleep 1.4s
+[INFO]sleep 1.5s
+[INFO]sleep 1.6s
+[INFO]sleep 1.7s
+[INFO]sleep 1.8s
+[INFO]sleep 1.9s
+[INFO]sleep 2.0s
+[INFO]sleep 2.1s
+[INFO]sleep 2.2s
+[INFO]sleep 2.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/daligner-runs/j_0000)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 3
+[INFO]About to submit: Node(1-preads_ovl/daligner-gathered)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-gathered/run-P0d67ab80437b38.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-gathered/run-P0d67ab80437b38.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-gathered/run-P0d67ab80437b38.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/daligner-gathered)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 2
+[INFO]About to submit: Node(1-preads_ovl/daligner-intermediate-gathered-las)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-intermediate-gathered-las"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-intermediate-gathered-las/run-P6414ea74a7001e.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-intermediate-gathered-las/run-P6414ea74a7001e.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/daligner-intermediate-gathered-las/run-P6414ea74a7001e.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/daligner-intermediate-gathered-las)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(1-preads_ovl/las-merge-split)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-split"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-split/run-P5e073420622ede.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-split/run-P5e073420622ede.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-split/run-P5e073420622ede.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/las-merge-split)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+[INFO]u"Deserializing from u'1-preads_ovl/las-merge-split/all-units-of-work.json'"
+[INFO]u"  Opened for read: u'1-preads_ovl/las-merge-split/all-units-of-work.json'"
+[INFO]u'  Read 0.0MB as json'
+[INFO]u'  Deserialized 1 records'
+[WARNING]PARALLEL OUTPUTS:{u'results': u'1-preads_ovl/las-merge-runs/{mer1_id}/some-las-paths.json'}
+[WARNING] wildcards={u'mer1_id': u'm_00001'}
+[WARNING]  k=results, v=u'1-preads_ovl/las-merge-runs/{mer1_id}/some-las-paths.json'
+[WARNING] wildcards={u'mer1_id': u'm_00001'}
+[INFO]gen_task(python -m falcon_kit.mains.generic_scatter_one_uow --all-uow-list-fn={input.all} --one-uow-list-fn={output.one} --split-idx={params.split_idx}
+
+	inputs={u'all': u'1-preads_ovl/las-merge-split/all-units-of-work.json'},
+	outputs={u'one': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001/some-units-of-work.json'})
+[INFO]gen_task(python -m falcon_kit.mains.generic_run_units_of_work --units-of-work-fn={input.units_of_work} --bash-template-fn={input.bash_template} --results-fn={output.results}
+
+	inputs={u'units_of_work': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001/some-units-of-work.json', u'bash_template': u'1-preads_ovl/las-merge-split/las-merge-bash-template.sh'},
+	outputs={u'results': u'1-preads_ovl/las-merge-runs/m_00001/some-las-paths.json'})
+[INFO]u'Serializing 1 records'
+[INFO]mkdir -p "1-preads_ovl/las-merge-gathered"
+[INFO]u"  Opened for write: u'1-preads_ovl/las-merge-gathered/result-fn-list.json'"
+[INFO]u'  Serialized to 0.0MB as json'
+[WARNING]gather_inputs:{u'jobm_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001/some-las-paths.json'}
+[INFO]gen_task(
+python -m falcon_kit.mains.generic_unsplit --result-fn-list-fn={output.result_fn_list} --gathered-fn={output.gathered}
+
+	inputs={u'jobm_00001': u'/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001/some-las-paths.json'},
+	outputs={u'gathered': u'1-preads_ovl/las-merge-gathered/gathered.json', u'result_fn_list': u'1-preads_ovl/las-merge-gathered/result-fn-list.json'})
+[INFO]gen_task(python -m falcon_kit.mains.las_merge_gather --gathered-fn={input.gathered} --p-id2las-fn={output.p_id2las} --las-fn={output.las}
+
+	inputs={u'gathered': u'1-preads_ovl/las-merge-gathered/gathered.json'},
+	outputs={u'p_id2las': u'1-preads_ovl/las-gather/p_id2las.json', u'las': u'1-preads_ovl/las-gather/las_fofn.json'})
+[INFO]gen_task(# Given preads.db,
+# write preads4falcon.fasta (implicitly) in CWD.
+time DB2Falcon -U {input.preads_db}
+[ -f {output.preads4falcon} ] || exit 1
+touch {output.job_done}
+
+	inputs={u'preads_db': u'1-preads_ovl/preads.db', u'p_id2las': u'1-preads_ovl/las-gather/p_id2las.json'},
+	outputs={u'job_done': u'1-preads_ovl/db2falcon/db2falcon_done', u'preads4falcon': u'1-preads_ovl/db2falcon/preads4falcon.fasta'})
+[INFO]gen_task(# Given, las_fofn.json,
+# write preads.ovl:
+
+# mobs uses binwrappers, so it does not see our "entry-points".
+# So, after dropping "src/py_scripts/*.py", we can call these via python -m:
+
+time python -m falcon_kit.mains.ovlp_filter --db {input.db_file} --las-fofn {input.las_fofn} {params.overlap_filtering_setting} --min_len {params.length_cutoff_pr} --out-fn preads.ovl
+
+ln -sf {input.preads4falcon_fasta} ./preads4falcon.fasta
+
+# Given preads.ovl,
+# write sg_edges_list, c_path, utg_data, ctg_paths.
+time python -m falcon_kit.mains.ovlp_to_graph {params.fc_ovlp_to_graph_option} --overlap-file preads.ovl >| fc_ovlp_to_graph.log
+
+# Given sg_edges_list, utg_data, ctg_paths, preads4falcon.fasta,
+# write p_ctg.fa and a_ctg_all.fa,
+# plus a_ctg_base.fa, p_ctg_tiling_path, a_ctg_tiling_path, a_ctg_base_tiling_path:
+time python -m falcon_kit.mains.graph_to_contig
+
+# Given a_ctg_all.fa, write a_ctg.fa:
+time python -m falcon_kit.mains.dedup_a_tigs
+
+# Generate a GFA of all assembly graph edges. This GFA can contain
+# edges and nodes which are not part of primary and associate contigs.
+time python -m falcon_kit.mains.gen_gfa_v1 >| asm.gfa
+
+# Generate a GFA of all assembly graph edges. This GFA can contain
+# edges and nodes which are not part of primary and associate contigs.
+time python -m falcon_kit.mains.gen_gfa_v1 --add-string-graph >| sg.gfa
+
+#rm -f ./preads4falcon.fasta
+
+touch {output.falcon_asm_done}
+
+	inputs={u'config': u'config.json', u'db2falcon_done': u'1-preads_ovl/db2falcon/db2falcon_done', u'db_file': u'1-preads_ovl/preads.db', u'las_fofn': u'1-preads_ovl/las-gather/las_fofn.json', u'preads4falcon_fasta': u'1-preads_ovl/db2falcon/preads4falcon.fasta'},
+	outputs={u'falcon_asm_done': u'2-asm-falcon/falcon_asm_done'})
+[INFO]Num unsatisfied: 6, graph: 36
+[INFO]About to submit: Node(1-preads_ovl/las-merge-chunks/m_00001)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001/run-P6666da2a3017c9.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001/run-P6666da2a3017c9.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-chunks/m_00001/run-P6666da2a3017c9.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/las-merge-chunks/m_00001)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 5
+[INFO]About to submit: Node(1-preads_ovl/las-merge-runs/m_00001)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001/run-P9c7fc6c3459c97.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001/run-P9c7fc6c3459c97.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-runs/m_00001/run-P9c7fc6c3459c97.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/las-merge-runs/m_00001)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 4
+[INFO]About to submit: Node(1-preads_ovl/las-merge-gathered)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-gathered/run-Pc02137911b3d08.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-gathered/run-Pc02137911b3d08.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-merge-gathered/run-Pc02137911b3d08.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/las-merge-gathered)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 3
+[INFO]About to submit: Node(1-preads_ovl/las-gather)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-gather"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-gather/run-P7cc66bc80302bd.bash
+[INFO]Popen: '/bin/bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-gather/run-P7cc66bc80302bd.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/las-gather/run-P7cc66bc80302bd.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/las-gather)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 2
+[INFO]About to submit: Node(1-preads_ovl/db2falcon)
+[INFO]mkdir -p "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/db2falcon"
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/db2falcon/run-P331e37ac88d3fe.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/db2falcon/run-P331e37ac88d3fe.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/1-preads_ovl/db2falcon/run-P331e37ac88d3fe.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]recently_satisfied: set([Node(1-preads_ovl/db2falcon)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 1
+[INFO]About to submit: Node(2-asm-falcon)
+[INFO]!chmod +x /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/2-asm-falcon/run-P9cae01458ef946.bash
+[INFO]Popen: 'bash -C /Falcon-integrate/fc_env_181022/local/lib/python2.7/site-packages/pwatcher/mains/job_start.sh >| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/2-asm-falcon/run-P9cae01458ef946.bash.stdout 2>| /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/2-asm-falcon/run-P9cae01458ef946.bash.stderr'
+[INFO]sleep 0.1s
+[INFO]sleep 0.2s
+[INFO]sleep 0.3s
+[INFO]sleep 0.4s
+[INFO]sleep 0.5s
+[INFO]sleep 0.6s
+[INFO]sleep 0.7s
+[INFO]sleep 0.8s
+[INFO]sleep 0.9s
+[INFO]sleep 1.0s
+[INFO]sleep 1.1s
+[INFO]sleep 1.2s
+[INFO]sleep 1.3s
+[INFO]sleep 1.4s
+[INFO]sleep 1.5s
+[INFO]recently_satisfied: set([Node(2-asm-falcon)])
+[INFO]Num satisfied in this iteration: 1
+[INFO]Num still unsatisfied: 0
+Done
+Thu Jan 15 12:13:25 GMT 2026
