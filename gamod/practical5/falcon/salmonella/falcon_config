@@ -25,7 +25,7 @@ job_queue = bash -C ${CMD} >| ${STDOUT_FILE} 2>| ${STDERR_FILE}
 
 # The length cutoff used for seed reads used for initial mapping
 length_cutoff = 1000
-genome_size = 5000000
+genome_size = 500000
 #seed_coverage = 60
 
 # The length cutoff used for seed reads usef for pre-assembly
