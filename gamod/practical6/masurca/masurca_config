@@ -12,7 +12,7 @@
 # http://wgs-assembler.sourceforge.com)
 DATA
 PE= pe 300 50  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/data/ecoli/ERR2683112_1_18.fastq
-JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq
+#JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq
 #pacbio reads must be in a single fasta file! make sure you provide absolute path
 PACBIO=/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/gamod/data/ecoli/NormalTwoDirectionReads.fasta
 #JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq
