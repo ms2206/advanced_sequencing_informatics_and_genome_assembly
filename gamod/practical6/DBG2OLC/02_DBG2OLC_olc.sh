@@ -59,7 +59,7 @@ cd ${DBG2OLC_dir}
 
 # Run job in singularity container (this is an example, change it if needed!)
 singularity exec ${working_folder}/gamod.simg \
-    /DBG2OLC/compiled/DBG2OLC k17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs ${input_contigs} f $input_fasta
+    /DBG2OLC/compiled/DBG2OLC k17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs ${input_contigs} f ${input_fasta}
     
 
 # Completion message
