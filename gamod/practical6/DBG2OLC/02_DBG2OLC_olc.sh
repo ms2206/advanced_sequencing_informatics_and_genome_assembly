@@ -51,7 +51,7 @@ DBG2OLC_dir="${working_folder}/practical6/DBG2OLC"
 
 # File names (this is an example, change it if needed!)
 input_fasta="${working_folder}/data/ecoli/NormalTwoDirectionReads.fasta"
-input_contigs="${DBG2OLC_dir}/Contig.txt"
+input_contigs="${DBG2OLC_dir}/Contigs.txt"
 
 # DBG2OLC build de-bruijn assembly
 cd ${DBG2OLC_dir}
