@@ -8,3 +8,4 @@ gamod/
 .github_password
 .github/copilot-instructions.md
 assignment/gamod.simg
+*fastq.gz
