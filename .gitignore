@@ -6,3 +6,4 @@
 *.ale
 gamod/
 .github_password
+.github/copilot-instructions.md
