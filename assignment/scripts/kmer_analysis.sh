@@ -53,6 +53,10 @@ echo ""
 module load Singularity/3.11.0-1-system
 singularity --version
 
+# Working folder (this is an example, change it if needed!)
+WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/"
+cd "${WORKING_FOLDER}"
+
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
