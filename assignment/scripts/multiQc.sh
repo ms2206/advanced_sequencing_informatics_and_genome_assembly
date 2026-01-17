@@ -61,6 +61,7 @@ cd "${WORKING_FOLDER}"
 
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
+source "${WORKING_FOLDER}/scripts/utils.sh"
 
 # Any additional variables or paths can be added here
 #<-- your variables ...>
@@ -84,6 +85,16 @@ fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
 multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
 echo ""
+
+# Calculate number of reads in the fasta file
+echo "Counting number of reads in the fastq files:"
+for fastq in $fastq_files; do
+    num_reads=$(count_fastq_reads $fastq)
+    echo "File: $fastq - Number of reads: $num_reads"
+done
+echo ""
+
+
 # Completion message
 echo "Done"
 date
