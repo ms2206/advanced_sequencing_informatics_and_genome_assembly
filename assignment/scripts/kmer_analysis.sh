@@ -6,7 +6,7 @@
 # Crescent2 script
 # Note: this script should be run on a compute node
 # Note: output and error logs will be stored in the logs folder, this folder must exist
-# Note: this script requires one argument: kmer size as required input
+# Note: this script requires one argument: input_kmer_size, as required input
 # qsub script.sh
 
 # PBS directives
@@ -58,7 +58,7 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # Any additional variables or paths can be added here
 # kmer size: user input
-kmer=${1} 
+kmer=${input_kmer_size} 
    
 # Main code 
 # ========================
