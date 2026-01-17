@@ -73,6 +73,9 @@ echo ""
 # List of fastq files in data folder
 fastq_files="${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2}"
 
+echo "Fastq files to be processed:"
+echo $fastq_files
+
 # Run FastQC for all fastq files
 cd "${FASTQC_OUTPUT_DIR}"
 fastqc $fastq_files
