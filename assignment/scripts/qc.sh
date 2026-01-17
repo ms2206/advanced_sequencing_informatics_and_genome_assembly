@@ -78,16 +78,21 @@ fastq_files="${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2}"
 echo "Fastq files to be processed:"
 echo $fastq_files
 
+# # ========================
 # Run FastQC for all fastq files
 fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
+# # ========================
 
+# # ========================
 # Run MultiQC in the current folder
 mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
 multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
 echo ""
+# # ========================
 
-# Calculate number of reads in the fasta file
-echo "Descriptive statistics for fastq files:"
+# # ========================
+# Calculate number of reads in the fasta file for Illumina data
+echo "Descriptive statistics for Illumina fastq files:"
 for fastq in $fastq_files; do
     num_reads=$(count_fastq_reads $fastq)
     echo "File: $fastq - Number of reads: $num_reads"
@@ -97,6 +102,18 @@ for fastq in $fastq_files; do
     
 done
 echo ""
+# # ========================
+
+# # ========================
+# Descriptive statistics PacBio data
+echo "Descriptive statistics for PacBio fasta file:"
+num_reads_pb=$(count_fasta_reads ${PACBIO_FASTA})
+echo "File: ${PACBIO_FASTA} - Number of reads: $num_reads_pb"
+num_bases_pb=$(count_fasta_bases ${PACBIO_FASTA})
+echo "File: ${PACBIO_FASTA} - Number of bases: $num_bases_pb"
+echo ""
+
+
 
 
 # Completion message
