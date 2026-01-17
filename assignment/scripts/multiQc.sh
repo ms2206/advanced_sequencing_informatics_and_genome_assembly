@@ -74,11 +74,9 @@ echo ""
 cd "${RAW_DATA_DIR}"
 fastq_files=$(ls *HS7_R?*.fastq.gz)
 
-echo $fastq_files
-
-
 # Run FastQC for all fastq files
-# fastqc $fastq_files
+cd "${FASTQC_OUTPUT_DIR}"
+fastqc $fastq_files
 
 # Run MultiQC in the current folder
 # multiqc .
