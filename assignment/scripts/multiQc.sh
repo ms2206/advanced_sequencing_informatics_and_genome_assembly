@@ -80,10 +80,9 @@ echo $fastq_files
 fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 
 # Run MultiQC in the current folder
-# multiqc .
-
-
-
+mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
+multiqc ${FASTQC_OUTPUT_DIR} *_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
+echo ""
 # Completion message
 echo "Done"
 date
