@@ -4,4 +4,5 @@
 *.bam
 *.wig
 *.ale
-.github/copilot-instructions.md
+gamod/
+.github_password
