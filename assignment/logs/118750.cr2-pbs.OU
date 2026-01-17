@@ -1,0 +1,70 @@
+Started script
+Sat Jan 17 12:47:00 GMT 2026
+
+apptainer version 1.1.3-1.el8
+FastQC & MultiQC
+Sat Jan 17 12:47:01 GMT 2026
+
+Fastq files to be processed:
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz
+application/gzip
+application/gzipStarted analysis of HS7_R1.fastq.gz
+
+Approx 5% complete for HS7_R1.fastq.gz
+Approx 10% complete for HS7_R1.fastq.gz
+Approx 15% complete for HS7_R1.fastq.gz
+Approx 20% complete for HS7_R1.fastq.gz
+Approx 25% complete for HS7_R1.fastq.gz
+Approx 30% complete for HS7_R1.fastq.gz
+Approx 35% complete for HS7_R1.fastq.gz
+Approx 40% complete for HS7_R1.fastq.gz
+Approx 45% complete for HS7_R1.fastq.gz
+Approx 50% complete for HS7_R1.fastq.gz
+Approx 55% complete for HS7_R1.fastq.gz
+Approx 60% complete for HS7_R1.fastq.gz
+Approx 65% complete for HS7_R1.fastq.gz
+Approx 70% complete for HS7_R1.fastq.gz
+Approx 75% complete for HS7_R1.fastq.gz
+Approx 80% complete for HS7_R1.fastq.gz
+Approx 85% complete for HS7_R1.fastq.gz
+Approx 90% complete for HS7_R1.fastq.gz
+Approx 95% complete for HS7_R1.fastq.gz
+Approx 100% complete for HS7_R1.fastq.gz
+Analysis complete for HS7_R1.fastq.gz
+Started analysis of HS7_R2.fastq.gz
+Approx 5% complete for HS7_R2.fastq.gz
+Approx 10% complete for HS7_R2.fastq.gz
+Approx 15% complete for HS7_R2.fastq.gz
+Approx 20% complete for HS7_R2.fastq.gz
+Approx 25% complete for HS7_R2.fastq.gz
+Approx 30% complete for HS7_R2.fastq.gz
+Approx 35% complete for HS7_R2.fastq.gz
+Approx 40% complete for HS7_R2.fastq.gz
+Approx 45% complete for HS7_R2.fastq.gz
+Approx 50% complete for HS7_R2.fastq.gz
+Approx 55% complete for HS7_R2.fastq.gz
+Approx 60% complete for HS7_R2.fastq.gz
+Approx 65% complete for HS7_R2.fastq.gz
+Approx 70% complete for HS7_R2.fastq.gz
+Approx 75% complete for HS7_R2.fastq.gz
+Approx 80% complete for HS7_R2.fastq.gz
+Approx 85% complete for HS7_R2.fastq.gz
+Approx 90% complete for HS7_R2.fastq.gz
+Approx 95% complete for HS7_R2.fastq.gz
+Approx 100% complete for HS7_R2.fastq.gz
+Analysis complete for HS7_R2.fastq.gz
+
+  /// MultiQC 🔍 | v1.14
+
+|           multiqc | MultiQC Version v1.33 now available!
+|           multiqc | Search path : /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/qc/HS7_R1_fastqc.zip
+|           multiqc | Search path : /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/qc/HS7_R2_fastqc.zip
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 2/2  
+|            fastqc | Found 2 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : qc/multiqc_report/multiqc_report.html
+|           multiqc | Data        : qc/multiqc_report/multiqc_data
+|           multiqc | MultiQC complete
+
+Done
+Sat Jan 17 12:47:40 GMT 2026
