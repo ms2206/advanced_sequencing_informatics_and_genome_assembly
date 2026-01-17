@@ -77,8 +77,7 @@ echo "Fastq files to be processed:"
 echo $fastq_files
 
 # Run FastQC for all fastq files
-cd "${FASTQC_OUTPUT_DIR}"
-fastqc $fastq_files
+fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 
 # Run MultiQC in the current folder
 # multiqc .
