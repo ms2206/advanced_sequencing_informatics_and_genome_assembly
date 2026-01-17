@@ -1,3 +1,4 @@
+RAW_DATA_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/"
 ILLUMINA_SR_READ_1="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz"
 ILLUMINA_SR_READ_2="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz"
 PACBIO_READS="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_pacbioData.fastq.gz"

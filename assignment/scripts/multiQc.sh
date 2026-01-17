@@ -11,7 +11,7 @@
 # PBS directives
 #---------------
 
-#PBS -N <NAME_YOUR_JOB>
+#PBS -N multiqc_job
 #PBS -l nodes=1:ncpus=4
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
@@ -37,7 +37,7 @@ module use /apps/modules/all
 module purge all
 
 ## Load FastQC module
-# module load <YOUR_REQUIRED_MODULES>
+module load FastQC
 ## =============
 
 # --- Your code starts here --- #
@@ -66,7 +66,23 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
     
 # Main code 
 # ========================
-# <-- your code ...>
+echo "FastQC & MultiQC"
+date
+echo ""
+
+# List of fastq files in data folder
+cd "${RAW_DATA_DIR}"
+fastq_files=$(ls *HS7_R?*.fastq.gz)
+
+echo $fastq_files
+
+
+# Run FastQC for all fastq files
+# fastqc $fastq_files
+
+# Run MultiQC in the current folder
+# multiqc .
+
 
 
 # Completion message
