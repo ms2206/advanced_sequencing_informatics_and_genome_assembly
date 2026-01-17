@@ -107,10 +107,10 @@ echo ""
 # # ========================
 # Descriptive statistics PacBio data
 echo "Descriptive statistics for PacBio fasta file:"
-num_reads_pb=$(count_fasta_reads ${PACBIO_FASTA})
-echo "File: ${PACBIO_FASTA} - Number of reads: $num_reads_pb"
-num_bases_pb=$(count_fasta_bases ${PACBIO_FASTA})
-echo "File: ${PACBIO_FASTA} - Number of bases: $num_bases_pb"
+num_reads_pb=$(count_fasta_reads ${PACBIO_READS})
+echo "File: ${PACBIO_READS} - Number of reads: $num_reads_pb"
+num_bases_pb=$(count_fasta_bases ${PACBIO_READS})
+echo "File: ${PACBIO_READS} - Number of bases: $num_bases_pb"
 echo ""
 
 
