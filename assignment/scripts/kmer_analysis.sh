@@ -72,10 +72,10 @@ kmer=${input_kmer_size}
 mkdir -p "${KMER_OUTPUT_DIR}/kmer_${kmer}"
 cd "${KMER_OUTPUT_DIR}/kmer_${kmer}"
 
-${SINGULARITY} exec \
+singularity exec ${SINGULARITY} \
     ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G -o ${kmer}_out <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
 
-${SINGULARITY} exec \
+singularity exec ${SINGULARITY} \
     ${JELLYFISH} histo -o ${kmer}_histo.histo ${kmer}_out
 
 
