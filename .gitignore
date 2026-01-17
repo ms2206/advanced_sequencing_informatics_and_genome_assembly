@@ -9,3 +9,4 @@ gamod/
 .github/copilot-instructions.md
 assignment/gamod.simg
 *fastq.gz
+*.DS_Store
