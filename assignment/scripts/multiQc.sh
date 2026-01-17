@@ -87,10 +87,14 @@ mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
 echo ""
 
 # Calculate number of reads in the fasta file
-echo "Counting number of reads in the fastq files:"
+echo "Descriptive statistics for fastq files:"
 for fastq in $fastq_files; do
     num_reads=$(count_fastq_reads $fastq)
     echo "File: $fastq - Number of reads: $num_reads"
+
+    num_bases=$(count_fastq_bases $fastq)
+    echo "File: $fastq - Number of bases: $num_bases"
+    
 done
 echo ""
 
