@@ -38,6 +38,7 @@ module purge all
 
 ## Load FastQC module
 module load FastQC
+module load MultiQC
 ## =============
 
 # --- Your code starts here --- #
