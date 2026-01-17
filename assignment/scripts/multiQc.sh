@@ -79,11 +79,11 @@ echo "Fastq files to be processed:"
 echo $fastq_files
 
 # Run FastQC for all fastq files
-fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
+# fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 
 # Run MultiQC in the current folder
 mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
-multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
+# multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
 echo ""
 
 # Calculate number of reads in the fasta file
