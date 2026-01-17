@@ -71,8 +71,7 @@ date
 echo ""
 
 # List of fastq files in data folder
-cd "${RAW_DATA_DIR}"
-fastq_files=$(ls *HS7_R?*.fastq.gz)
+fastq_files="${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2}"
 
 # Run FastQC for all fastq files
 cd "${FASTQC_OUTPUT_DIR}"
