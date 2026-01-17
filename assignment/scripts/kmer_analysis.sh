@@ -6,6 +6,7 @@
 # Crescent2 script
 # Note: this script should be run on a compute node
 # Note: output and error logs will be stored in the logs folder, this folder must exist
+# Note: this script requires one argument: kmer size as required input
 # qsub script.sh
 
 # PBS directives
@@ -35,8 +36,6 @@ module use /apps/modules/all
 ##  Load the default application environment
 ## Purge existing apps
 module purge all
-
-## Load FastQC module
 # module load <YOUR_REQUIRED_MODULES>
 ## =============
 
@@ -54,20 +53,26 @@ echo ""
 module load Singularity/3.11.0-1-system
 singularity --version
 
-# Working folder (this is an example, change it if needed!)
-WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/"
-cd "${WORKING_FOLDER}"
-
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # Any additional variables or paths can be added here
-${SINGULARITY} exec \
-    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G -o 
-    
+# kmer size: user input
+kmer=${1} 
+   
 # Main code 
 # ========================
-# <-- your code ...>
+# Working folder 
+
+# mkdir for kmer analysis output
+mkdir -p "${KMER_OUTPUT_DIR}/kmer_${kmer}"
+cd "${KMER_OUTPUT_DIR}/kmer_${kmer}"
+
+${SINGULARITY} exec \
+    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G -o ${kmer}_out <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
+
+${SINGULARITY} exec \
+    ${JELLYFISH} histo -o ${kmer}_histo.histo ${kmer}_out
 
 
 # Completion message

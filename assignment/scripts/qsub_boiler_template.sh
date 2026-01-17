@@ -35,8 +35,6 @@ module use /apps/modules/all
 ##  Load the default application environment
 ## Purge existing apps
 module purge all
-
-## Load FastQC module
 # module load <YOUR_REQUIRED_MODULES>
 ## =============
 
