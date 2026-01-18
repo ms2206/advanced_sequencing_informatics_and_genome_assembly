@@ -1,0 +1,9 @@
+
+==========*.cor.stat:==========
+FileName	RawReads	RawBases	ResultReads	ResultBases	TrimmedReads	TrimmedBases	DeletedReads	BasesFilterRatio	EstimatedErrorRatio
+HS7_R1.fastq.gz	2475000	249975000	2371841	218130600	935090	21425341	103159	0.12739	0.011365
+HS7_R2.fastq.gz	2475000	249975000	2371088	218035454	934858	21444434	103912	0.127771	0.0113708
+
+==========*.pair.single.stat:==========
+LaneName	PairReads	PairBases	SingleReads	SingleBases
+HS7_R1.fastq.gz&HS7_R2.fastq.gz	4544618	417927997	198311	18238057
