@@ -61,7 +61,7 @@ cd "${WORKING_FOLDER}"
 
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
-source "${WORKING_FOLDER}/scripts/utils.sh"
+source "${WORKING_FOLDER}/scripts/utils/utils.sh"
 
 # Any additional variables or paths can be added here
 #<-- your variables ...>
