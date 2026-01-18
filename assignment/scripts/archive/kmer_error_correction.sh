@@ -79,7 +79,7 @@ echo "${ILLUMINA_SR_READ_1}" > frag_reads
 echo "${ILLUMINA_SR_READ_2}" >> frag_reads
 
 singularity exec ${SINGULARITY} \
-    KmerFreq_HA -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads 
+    KmerFreq_AR -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads 
 
 # Completion message
 echo "Done"
