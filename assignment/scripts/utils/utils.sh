@@ -10,3 +10,9 @@ function count_fastq_bases {
     zcat $fastq_file | grep -v "^@\|+" | awk '{if(NR%2==1) {print}}' | awk '{total += length($1)} END {print "Sum: "total}'
 }
  
+# calculate read length from fastq file
+function calculate_read_length {
+    fastq_file=$1
+    read_len=$(zcat $fastq_file | awk 'NR % 4 == 2' | head -n1 | awk '{print length}')
+    echo $read_len
+}   
