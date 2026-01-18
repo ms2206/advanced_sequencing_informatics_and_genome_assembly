@@ -81,11 +81,11 @@ echo "${ILLUMINA_SR_READ_2}" >> frag_reads
 singularity exec ${SINGULARITY} \
     KmerFreq_AR -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads 
 
-# singularity exec ${SINGULARITY} \
-#     Corrector_HA -k ${kmer} -l 2 -Q 33 -t 2 \
-#     "frag_corr_k_${kmer}.freq.cz" \
-#     "frag_corr_k_${kmer}.freq.cz.len" \
-#     frag_reads
+singularity exec ${SINGULARITY} \
+    Corrector_AR -k ${kmer} -l 2 -Q 33 -t 2 \
+    "frag_corr_k_${kmer}.freq.cz" \
+    "frag_corr_k_${kmer}.freq.cz.len" \
+    frag_reads
 
 # Completion message
 echo "Done"
