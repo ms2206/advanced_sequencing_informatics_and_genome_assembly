@@ -1,0 +1,20 @@
+Started script
+Sun Jan 18 14:33:01 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Performing k-mer based error correction
+Results will be stored in: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_65
+Program start..
+Program:	KmerFreq_AR
+Version:	v2.0
+Author:		BGI-ShenZhen
+CompileDate:	Dec 17 2012 time: 10:56:25
+Current time:	Sun Jan 18 14:33:02 2026
+Command line:	/usr/local/bin/KmerFreq_AR -k 65 -t 4 -q 33 -p frag_corr_k_65 frag_reads
+
+Begin to construct Kmer frequency table...
+Kmer frequency table initialization completed
+Run time: 0s.
+Start to parse read file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz ...
+4 threads were created!
+/var/spool/pbs/mom_priv/jobs/118846.cr2-pbs.SC: line 82: 1236524 Segmentation fault      (core dumped) singularity exec ${SINGULARITY} KmerFreq_AR -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads
