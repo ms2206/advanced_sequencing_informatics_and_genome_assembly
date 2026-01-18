@@ -1,0 +1,32 @@
+Lowfreq cutoff is: 24
+Number of lowfreq Kmers species caused by sequencing errors: 61689969
+Ratio in all kmer species: 0.932267
+Number of lowfreq Kmers individuals caused by sequencing errors: 104423084
+Ratio in all kmer individuals: 0.242478
+
+Total kmer species (lowfreq excluded): 4482032
+Total kmer individuals(lowfreq excluded): 326226916
+modified_num_kmers: 327768916
+
+The peaks of P(x):
+	64	0.0448781
+	65	0.0446599
+
+The peaks of F(x):
+	65	0.0396952
+	66	0.0395864
+
+The kmer coverage depth estimated:
+	by P(x): 64.684
+	by F(x): 64.8219
+	by P(x) and F(x): 64.7529
+
+The genome size estimated:
+	by P(x): 5067236
+	by F(x): 5056453
+	by P(x) and F(x): 5061839
+
+**********Summary Table**********
+kmer	kmer_num	kmer_depth	genome_size	base_num	read_num	base_depth(X)	average_read_len	unique_kmer_number
+15	430650000	64.7529	5061839	499950000	4950000	98.7685	101	66172001
+
