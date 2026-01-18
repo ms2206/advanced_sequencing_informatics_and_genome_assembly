@@ -73,7 +73,7 @@ mkdir -p "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
 cd "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
 
 echo "K-mer analysis with k=${kmer}"
-echo "Results will be stored in: ${KMER_OUTPUT_DIR}/kmer_${kmer}"
+echo "Results will be stored in: ${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
 
 singularity exec ${SINGULARITY} \
     ${JELLYFISH} bc -m ${kmer} -s 1G -t 2 -o ${kmer}_out.bc <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
