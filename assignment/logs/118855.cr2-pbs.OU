@@ -1,0 +1,49 @@
+Started script
+Sun Jan 18 15:27:03 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Performing k-mer based error correction
+Results will be stored in: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17
+/usr/local/bin/KmerFreq_HA: invalid option -- q
+
+Program:	KmerFreq_HA
+Version:	v2.0
+Author:		BGI-ShenZhen
+CompileDate:	Dec 17 2012 time: 10:58:37
+
+Usage:	KmerFreq_HA_v2.0 [OPTION]
+
+	-k <int>  Set kmer size(13~27), default=17.
+	-l <str>  Set input read file list.
+	-p <str>  Set the output prefix, default=output.
+	-i <int>  Set initial size of hash table, default=50000000.
+	-t <int>  Set thread number, default=4.
+	-L <int>  Set maximum read length, default=100.
+	-h        Show detailed help
+
+Example: 
+KmerFreq_HA_v2.0 -k 23 -i 450000000 -l read.lst -p Human -t 5 -L 100 >kmerfreq.cout 2>kmerfreq.cerr;
+**********************************************************************************
+Note: Not all options are shown here.  Try './KmerFreq_HA_v2.0 -h' for the full help.
+**********************************************************************************
+
+Program start..
+Program:	KmerFreq_HA
+Version:	v2.0
+Author:		BGI-ShenZhen
+CompileDate:	Dec 17 2012 time: 10:58:37
+Current time:	Sun Jan 18 15:27:03 2026
+Command line:	/usr/local/bin/KmerFreq_HA -k 17 -t 4 -q -p frag_corr_k_17 33 frag_reads
+Start to construct kmer-freq table...
+4 threads created!
+fail to open input file: 
+Load All files done!
+Waiting for threads to exit...
+All threads finished!
+Used time: 0.0166667 minutes.
+Finish kmer-freq table construction!
+Used time: 0.0166667mins.
+
+Start to analysis the result...
+The peek position is true
+/var/spool/pbs/mom_priv/jobs/118855.cr2-pbs.SC: line 83: 1239244 Floating point exception(core dumped) singularity exec ${SINGULARITY} KmerFreq_HA -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads
