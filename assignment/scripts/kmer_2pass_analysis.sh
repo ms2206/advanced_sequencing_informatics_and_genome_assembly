@@ -82,7 +82,7 @@ singularity exec ${SINGULARITY} \
     ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G --bc ${kmer}_out.bc <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
 
 singularity exec ${SINGULARITY} \
-    ${JELLYFISH} histo -o ${kmer}_histo.histo ${kmer}_out.bc
+    ${JELLYFISH} histo -o ${kmer}_histo.histo mer_counts.jf
 
 
 # Completion message
