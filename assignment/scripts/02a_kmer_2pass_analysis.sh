@@ -69,8 +69,10 @@ kmer=${input_kmer_size}
 # Working folder 
 
 # mkdir for kmer analysis output
-mkdir -p "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
-cd "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
+sample=$(basename "${ILLUMINA_SR_READ_1}" .fastq.gz)
+
+mkdir -p "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}/${sample}"
+cd "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}/${sample}"
 
 echo "K-mer analysis with k=${kmer}"
 echo "Results will be stored in: ${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}"
