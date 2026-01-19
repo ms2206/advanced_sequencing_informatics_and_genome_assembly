@@ -81,6 +81,13 @@ singularity exec ${SINGULARITY} \
     -p 4 \
     -o "${sample}_pregraph"
 
+singularity exec ${SINGULARITY} \
+    SOAPdenovo-63mer contig \
+    -g "${sample}_pregraph" \
+    -s "${WORKING_FOLDER}/scripts/soapPE.conf" \
+    -p 4 \
+    -o "${sample}_contig"
+
 # Completion message
 echo "Done"
 date
