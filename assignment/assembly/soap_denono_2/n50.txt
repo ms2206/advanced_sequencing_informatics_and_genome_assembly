@@ -1,0 +1,120 @@
+Results for ./kmer_68/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          3336
+Total length of sequences:          5197267 bp
+Shortest sequence length :          68 bp
+Longest sequence length  :          62828 bp
+Total number of Ns in sequences:    0
+N50:	8653	(159 sequences)	(2606421 bp combined)
+
+Results for ./kmer_25/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          134417
+Total length of sequences:          9468567 bp
+Shortest sequence length :          26 bp
+Longest sequence length  :          6426 bp
+Total number of Ns in sequences:    0
+N50:	67	(12121 sequences)	(4734335 bp combined)
+
+Results for ./kmer_64/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          2767
+Total length of sequences:          5139508 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          84958 bp
+Total number of Ns in sequences:    0
+N50:	16151	(95 sequences)	(2580572 bp combined)
+
+Results for ./kmer_76/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          5106
+Total length of sequences:          5086243 bp
+Shortest sequence length :          76 bp
+Longest sequence length  :          8557 bp
+Total number of Ns in sequences:    0
+N50:	1611	(949 sequences)	(2544378 bp combined)
+
+Results for ./kmer_35/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          40236
+Total length of sequences:          6765131 bp
+Shortest sequence length :          36 bp
+Longest sequence length  :          13804 bp
+Total number of Ns in sequences:    0
+N50:	1559	(1057 sequences)	(3383000 bp combined)
+
+Results for ./kmer_78/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          6825
+Total length of sequences:          4952396 bp
+Shortest sequence length :          79 bp
+Longest sequence length  :          5417 bp
+Total number of Ns in sequences:    0
+N50:	946	(1654 sequences)	(2476355 bp combined)
+
+Results for ./kmer_66/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          2979
+Total length of sequences:          5165186 bp
+Shortest sequence length :          66 bp
+Longest sequence length  :          60976 bp
+Total number of Ns in sequences:    0
+N50:	12179	(117 sequences)	(2592702 bp combined)
+
+Results for ./kmer_50/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          5398
+Total length of sequences:          5230265 bp
+Shortest sequence length :          50 bp
+Longest sequence length  :          65446 bp
+Total number of Ns in sequences:    0
+N50:	9965	(149 sequences)	(2619130 bp combined)
+
+Results for ./kmer_55/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          3567
+Total length of sequences:          5155507 bp
+Shortest sequence length :          56 bp
+Longest sequence length  :          77631 bp
+Total number of Ns in sequences:    0
+N50:	15018	(101 sequences)	(2587348 bp combined)
+
+Results for ./kmer_60/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          2937
+Total length of sequences:          5135216 bp
+Shortest sequence length :          60 bp
+Longest sequence length  :          82527 bp
+Total number of Ns in sequences:    0
+N50:	17822	(89 sequences)	(2576650 bp combined)
+
+Results for ./kmer_74/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          4493
+Total length of sequences:          5187630 bp
+Shortest sequence length :          74 bp
+Longest sequence length  :          19534 bp
+Total number of Ns in sequences:    0
+N50:	2632	(585 sequences)	(2595151 bp combined)
+
+Results for ./kmer_40/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          21671
+Total length of sequences:          5988743 bp
+Shortest sequence length :          40 bp
+Longest sequence length  :          21782 bp
+Total number of Ns in sequences:    0
+N50:	3338	(482 sequences)	(2994921 bp combined)
+
+Results for ./kmer_45/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          8559
+Total length of sequences:          5380078 bp
+Shortest sequence length :          46 bp
+Longest sequence length  :          41591 bp
+Total number of Ns in sequences:    0
+N50:	7561	(204 sequences)	(2692037 bp combined)
+
+Results for ./kmer_70/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          3653
+Total length of sequences:          5221765 bp
+Shortest sequence length :          70 bp
+Longest sequence length  :          42996 bp
+Total number of Ns in sequences:    0
+N50:	6459	(228 sequences)	(2614932 bp combined)
+
+Results for ./kmer_72/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          4012
+Total length of sequences:          5229659 bp
+Shortest sequence length :          72 bp
+Longest sequence length  :          27657 bp
+Total number of Ns in sequences:    0
+N50:	4350	(332 sequences)	(2615156 bp combined)
+
