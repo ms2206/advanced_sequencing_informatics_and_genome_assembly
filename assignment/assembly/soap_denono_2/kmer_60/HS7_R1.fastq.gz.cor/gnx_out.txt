@@ -1,0 +1,9 @@
+kmer_60: \n
+Results for HS7_R1.fastq.gz.cor_pregraph.contig
+Total number of sequences:          2937
+Total length of sequences:          5135216 bp
+Shortest sequence length :          60 bp
+Longest sequence length  :          82527 bp
+Total number of Ns in sequences:    0
+N50:	17822	(89 sequences)	(2576650 bp combined)
+
