@@ -1,4 +1,4 @@
-kmer_60: \n
+kmer_60:
 Results for HS7_R1.fastq.gz.cor_pregraph.contig
 Total number of sequences:          2937
 Total length of sequences:          5135216 bp
