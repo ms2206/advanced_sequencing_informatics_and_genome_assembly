@@ -64,6 +64,7 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
 # get sample name
 sample=$(basename "${ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
 kmer=${input_kmer_size}
+assembly_filepath="${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/${sample}_pregraph.contig"
 
 # Create output directory and change to it
 output_dir="${WORKING_FOLDER}/assembly_qc/ale/kmer_${kmer}/${sample}"
@@ -76,9 +77,17 @@ echo "Running ALE assembly evaluation for sample: ${sample}"
 echo "Results will be saved to: ${output_dir}"
 
 # First thing to do before running ALE is to align the paired end reads to the assembly.
+# BWA creates 5 index files in the same directory as your FASTA:
+
 singularity exec ${SINGULARITY} \
-    bwa index ${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/"${sample}_pregraph.contig"
-    
+    bwa index "${assembly_filepath}"
+
+# map the reads to the assembly
+singularity exec ${SINGULARITY} \
+    bwa mem "${assembly_filepath}" \
+    "${ILLUMINA_SR_READ_1}" "${ILLUMINA_SR_READ_2}" | 
+    samtools view -bS - > "${sample}_aligned.bam"
+
 
 # Completion message
 echo "Done"
