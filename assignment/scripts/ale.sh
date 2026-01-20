@@ -84,9 +84,19 @@ singularity exec ${SINGULARITY} \
 
 # map the reads to the assembly
 singularity exec ${SINGULARITY} \
-    bwa mem "${assembly_filepath}" \
-    "${ILLUMINA_SR_READ_1}" "${ILLUMINA_SR_READ_2}" | 
-    samtools view -bS - > "${sample}_aligned.bam"
+    bash -c "\
+    bwa mem '${assembly_filepath}' \
+    '${ILLUMINA_SR_READ_1}' '${ILLUMINA_SR_READ_2}' | \
+    samtools view -bS - > '${sample}_aligned.bam'"
+
+
+
+
+
+
+    # bwa mem "${assembly_filepath}" \
+    # "${ILLUMINA_SR_READ_1}" "${ILLUMINA_SR_READ_2}" | 
+    # samtools view -bS - > "${sample}_aligned.bam"
 
 
 # Completion message
