@@ -89,14 +89,16 @@ singularity exec ${SINGULARITY} \
     '${ILLUMINA_SR_READ_1}' '${ILLUMINA_SR_READ_2}' | \
     samtools view -bS - > '${sample}_aligned.bam'"
 
+# sort the BAM file
+singularity exec ${SINGULARITY} \
+    samtools sort -o "${sample}_aligned_sorted.bam" "${sample}_aligned.bam"
 
+# index the sorted BAM file
+singularity exec ${SINGULARITY} \
+    samtools index "${sample}_aligned_sorted.bam"
 
+# Now run ALE
 
-
-
-    # bwa mem "${assembly_filepath}" \
-    # "${ILLUMINA_SR_READ_1}" "${ILLUMINA_SR_READ_2}" | 
-    # samtools view -bS - > "${sample}_aligned.bam"
 
 
 # Completion message
