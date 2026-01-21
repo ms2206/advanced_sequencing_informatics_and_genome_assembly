@@ -71,12 +71,19 @@ kmer=${input_kmer_size}
 mkdir -p "${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}"
 cd "${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}"
 
-echo "Performing k-mer based error correction"
+# After cd to the kmer output dir:
+ln -sf "${ILLUMINA_SR_READ_1}" .
+ln -sf "${ILLUMINA_SR_READ_2}" .
+
+echo "Performing k-mer based error correction using SOAPec for kmer size: ${kmer}"
 echo "Results will be stored in: ${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}"
 
 # Create list for KmerFreq_AR
-echo "${ILLUMINA_SR_READ_1}" > frag_reads
-echo "${ILLUMINA_SR_READ_2}" >> frag_reads
+basename "${ILLUMINA_SR_READ_1}" > frag_reads
+basename "${ILLUMINA_SR_READ_2}" >> frag_reads
+
+# echo "${ILLUMINA_SR_READ_1}" > frag_reads
+# echo "${ILLUMINA_SR_READ_2}" >> frag_reads
 
 singularity exec ${SINGULARITY} \
     KmerFreq_AR -k ${kmer} -t 4 -q 33 -p "frag_corr_k_${kmer}" frag_reads 

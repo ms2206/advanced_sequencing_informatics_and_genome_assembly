@@ -78,7 +78,6 @@ echo "Results will be saved to: ${output_dir}"
 
 # First thing to do before running ALE is to align the paired end reads to the assembly.
 # BWA creates 5 index files in the same directory as your FASTA:
-
 singularity exec ${SINGULARITY} \
     bwa index "${assembly_filepath}"
 
@@ -98,8 +97,9 @@ singularity exec ${SINGULARITY} \
     samtools index "${sample}_aligned_sorted.bam"
 
 # Now run ALE
-
-
+singularity exec ${SINGULARITY} \
+    ${ALE} "${sample}_aligned_sorted.bam" \
+    ${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/
 
 # Completion message
 echo "Done"
