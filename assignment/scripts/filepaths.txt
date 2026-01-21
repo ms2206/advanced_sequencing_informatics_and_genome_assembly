@@ -5,7 +5,7 @@ PACBIO_READS="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genom
 
 JELLYFISH="/MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish"
 SINGULARITY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/gamod.simg"
-ALE="/ALE/src/ALE
+ALE="/ALE/src/ALE"
 
 FASTQC_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/qc"
 KMER_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer"
