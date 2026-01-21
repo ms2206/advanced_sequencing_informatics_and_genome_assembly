@@ -1,0 +1,83 @@
+Started script
+Wed Jan 21 09:17:09 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Performing k-mer based error correction with k=17
+Results will be stored in: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17
+Program start..
+Program:	KmerFreq_AR
+Version:	v2.0
+Author:		BGI-ShenZhen
+CompileDate:	Dec 17 2012 time: 10:56:25
+Current time:	Wed Jan 21 09:17:10 2026
+Command line:	/usr/local/bin/KmerFreq_AR -k 17 -t 4 -q 33 -p frag_corr_k_17 frag_reads
+
+Begin to construct Kmer frequency table...
+Kmer frequency table initialization completed
+Run time: 5s.
+Start to parse read file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz ...
+4 threads were created!
+Finished parse reads file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz
+Run time: 11s.
+Start to parse read file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz ...
+4 threads were created!
+Finished parse reads file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz
+Run time: 16s.
+Parsed all the reads files completed
+Run time: 16s.
+Start to combine forward and reverse strands of Kmers...
+4 threads were created!
+Complete to combine forward and reverse strands of Kmers!
+Construction of Kmer frequency table completed!
+Run time: 26s.
+Start to output compressed kmer frequency file...
+4 threads were created!
+Complete to generate the kmer frequency compressed file!
+Run time: 66s.
+Start to generate kmer frequency statistics file...
+Complete to generate the kmer frequency statistics file!
+Run time: 66s.
+Please check the peek position carefully.
+Start to generate genome characters estimate-file...
+Complete to generate the genome characters estimate-file!
+
+All done!
+Run time: 66s.
+Program start..
+Program:	Corrector_AR
+Version:	v2.01
+Author:		BGI-ShenZhen
+CompileDate:	Dec 17 2012 time: 10:53:45
+Current time:	Wed Jan 21 09:18:17 2026
+Command line:	/usr/local/bin/Corrector_AR -k 17 -l 2 -Q 33 -t 2 frag_corr_k_17.freq.cz frag_corr_k_17.freq.cz.len frag_reads
+Start to load the consecutive kmer frequency table...
+To uncompress the kmer-freq-table, 2 threads were created!
+
+Load the consecutive kmer frequency table completed
+KmerSize 17
+Kmer_effect_num 92117677
+low_freq_kmer_ratio 0.888888
+Run time: 23s.
+2 threads creation done!
+
+Finished to parse file /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz
+
+2 threads creation done!
+
+Finished to parse file /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz
+
+Parsed all the reads files completed
+Run time: 89s.
+Start to convert /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz.cor & /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz.cor
+Finished to convert /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R1.fastq.gz.cor & /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz.cor
+Convert all the paired reads files completed
+Run time: 209s.
+Begin output the QC file...
+Lane naming format error!
+Finished output QC file!
+All done!
+Run time: 209s.
+Error correction completed.
+ Moving corrected reads to output directory /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17
+Done
+Wed Jan 21 09:21:47 GMT 2026
