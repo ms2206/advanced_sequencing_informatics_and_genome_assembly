@@ -91,11 +91,7 @@ echo "Error correction completed."
 echo " Moving corrected reads to output directory ${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}"
 
 # Move outputs to current directory
-mv "${ILLUMINA_SR_READ_1}.cor.pair_1.fq" . || true
-mv "${ILLUMINA_SR_READ_2}.cor.pair_2.fq" . || true
-mv "$(dirname ${ILLUMINA_SR_READ_1})"/*.cor.single.fq . 2>/dev/null || true
-
-
+find "$(dirname ${ILLUMINA_SR_READ_1})" -maxdepth 1 -name "*.cor*" -print0 | xargs -0 -I {} mv {} .
 
 # Completion message
 echo "Done"
