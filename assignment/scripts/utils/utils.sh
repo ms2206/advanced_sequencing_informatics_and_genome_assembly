@@ -35,3 +35,10 @@ function unziped_calculate_read_length {
     read_len=$(cat $fastq_file | awk 'NR % 4 == 2' | head -n1 | awk '{print length}')
     echo $read_len
 }
+
+# calculate the number of reads in fastq with a length greater than a specified threshold
+function count_reads_above_length {
+    fastq_file=$1
+    length_threshold=$2
+    count=$(zcat $fastq_file | awk 'NR % 4 == 2' | awk '{print length($0)}' | awk -v threshold=$length_threshold '$1 > threshold' | wc -l)
+}
