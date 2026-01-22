@@ -85,8 +85,10 @@ fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 
 # # ========================
 # Run MultiQC in the current folder
-mkdir -p ${FASTQC_OUTPUT_DIR}/multiqc_report
-multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/multiqc_report
+sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .fastq.gz)
+
+mkdir -p ${FASTQC_OUTPUT_DIR}/${sample}_multiqc_report
+multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/${sample}_multiqc_report
 echo ""
 # # ========================
 
@@ -113,9 +115,7 @@ num_bases_pb=$(count_fastq_bases ${PACBIO_READS})
 echo "File: ${PACBIO_READS} - Number of bases: $num_bases_pb"
 echo ""
 
-
-
-
+# # ========================
 # Completion message
 echo "Done"
 date
