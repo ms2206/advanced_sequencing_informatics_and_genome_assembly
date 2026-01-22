@@ -73,7 +73,7 @@ date
 echo ""
 
 # List of fastq files in data folder
-fastq_files="${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2}"
+fastq_files="${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}"
 
 echo "Fastq files to be processed:"
 echo $fastq_files

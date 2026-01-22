@@ -62,7 +62,7 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # Any additional variables or paths can be added here
 # get sample name
-sample=$(basename "${ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
+sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
 kmer=${input_kmer_size}
 
 #  Create output directory and change to it

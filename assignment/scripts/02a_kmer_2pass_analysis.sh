@@ -69,7 +69,7 @@ kmer=${input_kmer_size}
 # Working folder 
 
 # mkdir for kmer analysis output
-sample=$(basename "${ILLUMINA_SR_READ_1}" .fastq.gz)
+sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .fastq.gz)
 
 mkdir -p "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}/${sample}"
 cd "${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}/${sample}"
@@ -78,10 +78,10 @@ echo "K-mer analysis with k=${kmer}"
 echo "Results will be stored in: ${KMER_OUTPUT_DIR}/two_pass_method/kmer_${kmer}/${sample}"
 
 singularity exec ${SINGULARITY} \
-    ${JELLYFISH} bc -m ${kmer} -s 1G -t 2 -o ${kmer}_out.bc <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
+    ${JELLYFISH} bc -m ${kmer} -s 1G -t 2 -o ${kmer}_out.bc <(zcat ${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2})
 
 singularity exec ${SINGULARITY} \
-    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G --bc ${kmer}_out.bc <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
+    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G --bc ${kmer}_out.bc <(zcat ${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2})
 
 singularity exec ${SINGULARITY} \
     ${JELLYFISH} histo -o ${kmer}_histo.histo mer_counts.jf

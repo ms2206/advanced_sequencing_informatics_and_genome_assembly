@@ -76,7 +76,7 @@ echo "K-mer analysis with k=${kmer}"
 echo "Results will be stored in: ${KMER_OUTPUT_DIR}/kmer_${kmer}"
 
 singularity exec ${SINGULARITY} \
-    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G -o ${kmer}_out <(zcat ${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2})
+    ${JELLYFISH} count -t 2 -C -m ${kmer} -s 1G -o ${kmer}_out <(zcat ${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2})
 
 singularity exec ${SINGULARITY} \
     ${JELLYFISH} histo -o ${kmer}_histo.histo ${kmer}_out
