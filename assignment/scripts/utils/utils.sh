@@ -41,4 +41,5 @@ function count_reads_above_length {
     fastq_file=$1
     length_threshold=$2
     count=$(zcat $fastq_file | awk 'NR % 4 == 2' | awk '{print length($0)}' | awk '$1 > 92' | wc -l)
+    echo $count
 }
