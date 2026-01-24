@@ -3,6 +3,7 @@ ILLUMINA_SR_READ_1="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and
 ILLUMINA_SR_READ_2="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_R2.fastq.gz"
 COR_ILLUMINA_SR_READ_1="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz"
 COR_ILLUMINA_SR_READ_2="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz"
+SOAP_ASSEMBELLY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/soap_denono_2/kmer_64/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig"
 
 PACBIO_READS="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_pacbioData.fastq.gz"
 
