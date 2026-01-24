@@ -1,0 +1,1 @@
+find . -type f -name *cor_pregraph.contig | xargs -I {} singularity exec /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/gamod.simg java -jar /usr/local/bin/gnx.jar {}
