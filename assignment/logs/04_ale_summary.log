@@ -70,3 +70,75 @@ ALE score file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_gen
 # avgReadOverlap: 91.707387
 # Reference: 1 60 0.000000
 =========================
+ALE score file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/ale/kmer_64/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_ale_output.ale
+=========================
+# ALE_score: -7369700.605924
+# numContigs: 2767
+# totalAssemLen: 5139508
+# placeAvg: 0.983727
+# insertAvg: -1.421313
+# kmerAvg: -0.157241
+# depthScoreAvg: -1.082150
+# depthAvg: 81.579520
+# totalReads: 4571328
+# totalMappedReads: 4571295
+# totalUnmappedReads: 33
+# totalPlacedReads: 4571254
+# readAvgLen: 91.000000
+# avgReadOverlap: 91.720695
+# Reference: 1 64 0.000000
+=========================
+ALE score file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/ale/kmer_58/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_ale_output.ale
+=========================
+# ALE_score: -8273462.263066
+# numContigs: 3214
+# totalAssemLen: 5145299
+# placeAvg: 0.847091
+# insertAvg: -1.391208
+# kmerAvg: -0.157022
+# depthScoreAvg: -1.209445
+# depthAvg: 81.456951
+# totalReads: 4571328
+# totalMappedReads: 4571306
+# totalUnmappedReads: 22
+# totalPlacedReads: 4571283
+# readAvgLen: 91.000000
+# avgReadOverlap: 91.685500
+# Reference: 1 58 0.000000
+=========================
+ALE score file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/ale/kmer_55/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_ale_output.ale
+=========================
+# ALE_score: -9363978.911373
+# numContigs: 3567
+# totalAssemLen: 5155507
+# placeAvg: 0.690942
+# insertAvg: -1.488938
+# kmerAvg: -0.157021
+# depthScoreAvg: -1.305695
+# depthAvg: 81.268291
+# totalReads: 4571328
+# totalMappedReads: 4571301
+# totalUnmappedReads: 27
+# totalPlacedReads: 4571272
+# readAvgLen: 91.000000
+# avgReadOverlap: 91.654848
+# Reference: 1 56 0.000000
+=========================
+ALE score file: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/ale/kmer_60/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_ale_output.ale
+=========================
+# ALE_score: -7436427.468041
+# numContigs: 2932
+# totalAssemLen: 5135855
+# placeAvg: 0.966488
+# insertAvg: -1.347644
+# kmerAvg: -0.157273
+# depthScoreAvg: -1.121171
+# depthAvg: 81.626057
+# totalReads: 4571328
+# totalMappedReads: 4571299
+# totalUnmappedReads: 29
+# totalPlacedReads: 4571274
+# readAvgLen: 91.000000
+# avgReadOverlap: 91.707387
+# Reference: 1 60 0.000000
+=========================
