@@ -1,0 +1,39 @@
+K-mer statistics for: 
+ - Hash 1: "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz"
+ - Hash 2: "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/soap_denono_2/kmer_58/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig"
+
+Total K-mers in: 
+ - Hash 1: 301036085
+ - Hash 2: 5061735
+
+Distinct K-mers in:
+ - Hash 1: 10269822
+ - Hash 2: 4813512
+
+Total K-mers only found in:
+ - Hash 1: 15154197
+ - Hash 2: 0
+
+Distinct K-mers only found in:
+ - Hash 1: 5456310
+ - Hash 2: 0
+
+Shared K-mers:
+ - Total shared found in hash 1: 285881888
+ - Total shared found in hash 2: 5061735
+ - Distinct shared K-mers: 4813512
+
+Distance between spectra 1 and 2 (all k-mers):
+ - Manhattan distance: 1.05014e+07
+ - Euclidean distance: 3.14701e+06
+ - Cosine distance: 0.236749
+ - Canberra distance: 966.802
+ - Jaccard distance: 0.820911
+
+Distance between spectra 1 and 2 (shared k-mers):
+ - Manhattan distance: 9.61562e+06
+ - Euclidean distance: 4.83281e+06
+ - Cosine distance: 0.999989
+ - Canberra distance: 961.051
+ - Jaccard distance: 0.999408
+
