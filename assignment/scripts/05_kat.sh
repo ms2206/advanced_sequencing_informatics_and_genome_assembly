@@ -83,7 +83,7 @@ singularity exec ${SINGULARITY} \
     "${SOAP_ASSEMBELLY}"
 
 singularity exec ${SINGULARITY} \
-   python3 /usr/local/share/kat/scripts/kat/plot/spectra.py \
+   python3 /usr/local/share/kat/scripts/kat/plot/spectra_cn.py \
    "${output_dir}/kat_comp_${sample}_k${kmer}-main.mx" \
    -o "${output_dir}/kat_comp_${sample}_k${kmer}_spectrum.png"
    
