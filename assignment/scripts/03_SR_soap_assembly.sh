@@ -76,7 +76,7 @@ cat "${WORKING_FOLDER}/scripts/soapPE.conf"
 echo "Results will be stored in: ${WORKING_FOLDER}/assembly/soap_denono_2/kmer_${kmer}/${sample}"
 
 singularity exec ${SINGULARITY} \
-    SOAPdenovo-63mer sparse_pregraph \
+    SOAPdenovo-127mer sparse_pregraph \
     -s "${WORKING_FOLDER}/scripts/soapPE.conf" \
     -K ${kmer} \
     -z 5000000 \
@@ -84,7 +84,7 @@ singularity exec ${SINGULARITY} \
     -o "${sample}_pregraph"
 
 singularity exec ${SINGULARITY} \
-    SOAPdenovo-63mer contig \
+    SOAPdenovo-127mer contig \
     -g "${sample}_pregraph" \
     -s "${WORKING_FOLDER}/scripts/soapPE.conf" \
     -p 4 
