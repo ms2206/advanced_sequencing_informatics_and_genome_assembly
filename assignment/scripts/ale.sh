@@ -99,7 +99,9 @@ singularity exec ${SINGULARITY} \
 # Now run ALE
 singularity exec ${SINGULARITY} \
     ${ALE} "${sample}_aligned_sorted.bam" \
-    ${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/
+    ${assembly_filepath} \
+    "${sample}_ale_output.ale"
+
 
 # Completion message
 echo "Done"
