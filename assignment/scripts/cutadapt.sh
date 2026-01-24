@@ -50,7 +50,7 @@ echo ""
 
 # Load required modules (this is an example, change it if needed!)
 module load Singularity/3.11.0-1-system
-module cutadapt/4.4-GCCcore-12.2.0
+module load cutadapt/4.4-GCCcore-12.2.0
 singularity --version
 
 # Working folder (this is an example, change it if needed!)
