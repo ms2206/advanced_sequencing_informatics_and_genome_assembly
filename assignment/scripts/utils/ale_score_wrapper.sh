@@ -1,1 +1,1 @@
-find $1 -type f -name *ale_output.ale | xargs -I {} echo "ALE score file: {}" echo "=========================" head -n 15 {}
+find "${1}" -type f -name "*ale_output.ale" -print0 | xargs -I {} bash -c "echo ALE score file: {}; echo =========================; head -n 15 {};"
