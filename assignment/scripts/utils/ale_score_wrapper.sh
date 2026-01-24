@@ -1,0 +1,1 @@
+find $1 -type f -name *ale_output.ale | xargs -I {} echo "ALE score file: {}" echo "=========================" head -n 15 {}
