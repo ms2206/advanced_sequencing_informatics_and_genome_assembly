@@ -1,0 +1,138 @@
+Started script
+Sat Jan 24 09:37:41 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Running SOAPdenovo2 denovo assembly with k=60. Using configuration file:
+[LIB]
+avg_ins=180
+reverse_seq=0
+asm_flags=1
+rank=1
+q1=/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz
+q2=/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz
+Results will be stored in: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment//assembly/soap_denono_2/kmer_60/HS7_R1.fastq.gz.cor
+
+Version 2.04: released on July 13th, 2012
+Compile Jul  9 2013	11:57:30
+********************
+SparsePregraph
+********************
+
+Parameters: pregraph_sparse -s /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment//scripts/soapPE.conf -K 59 -g 15 -z 5000000 -d 1 -e 1 -r 0 -p 4 -o HS7_R1.fastq.gz.cor_pregraph
+
+Start to build the sparse de Brujin graph, round: 1
+1 io thread initialized.
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz
+4 work threads initialized.
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz
+Time spent on building graph round 1: 24s, 4571328 reads processed, 1195277 nodes allocated
+
+Start to build the sparse de Brujin graph, round: 2
+1 io thread initialized.
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz
+4 work threads initialized.
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz
+Time spent on building graph round 2: 23s, 4571328 reads processed
+1195277 nodes allocated, 2317958 kmer-edges allocated.
+
+Start to remove weak nodes and kmer-edges.
+495533 nodes removed.
+1748470 edges removed.
+
+Start to remove tips with minority links.
+Total nodes number: 699744
+Linear nodes number: 482911
+44556 tips removed in cycle 1.
+
+Total nodes number: 699744
+Linear nodes number: 502168
+16 tips removed in cycle 2.
+
+Total nodes number: 699744
+Linear nodes number: 502160
+Total 44572 tips removed.
+Time spent on removing tips: 1s.
+
+Start to construct edges.
+26305 edges and 8561 vertexes constructed.
+Time spent on constructing edges: 2s.
+
+Start to build vertex indexes.
+Time spent on building vertex indexes: 0s.
+
+Start to build preArcs.
+1 io thread initialized.
+4 work threads initialized.
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz
+Import reads from file:
+ /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz
+Time spent on building preArcs: 19s.
+
+Overall time spent on constructing lightgraph: 1m.
+
+Version 2.04: released on July 13th, 2012
+Compile Jul  9 2013	11:57:30
+
+********************
+Contig
+********************
+
+Parameters: contig -g HS7_R1.fastq.gz.cor_pregraph -s /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment//scripts/soapPE.conf -p 4 
+
+There are 8561 kmer(s) in vertex file.
+There are 26305 edge(s) in edge file.
+Kmers sorted.
+26305 edge(s) input.
+35180 pre-arcs loaded.
+6609 none-palindrome edge(s) swapped, 0 palindrome edge(s) processed.
+26305 edge(s) sorted.
+Arcs sorted.
+Start to pinch bubbles, cutoff 0.100000, MAX NODE NUM 3, MAX DIFF NUM 2.
+22 start points, 22243 dheap nodes.
+5553 pair(s) found, 3477 pair of path(s) compared, 3298 pair(s) merged.
+Sequence comparison failed:
+ Path crossing deleted edge                         0
+ Length difference of two paths greater than two    152
+ Mismatch score greater than cutoff (2)             17
+ Mismatch score ratio greater than cutoff (0.1)     0
+ Path length shorter than (Kmer-1)                  10
+DFibHeap: 643 node(s) allocated.
+5836 edge(s) concatenated in cycle 1.
+737 edge(s) concatenated in cycle 2.
+45 edge(s) concatenated in cycle 3.
+0 edge(s) concatenated in cycle 4.
+Time spent on pinching bubbles: 1s.
+Start to destroy weak inner edges.
+4 weak inner edge(s) destroyed in cycle 1.
+0 weak inner edge(s) destroyed in cycle 2.
+8 dead arc(s) removed.
+0 inner edge(s) with coverage lower than or equal to 1 destroyed.
+0 dead arc(s) removed.
+7 edge(s) concatenated in cycle 1.
+0 edge(s) concatenated in cycle 2.
+Before compacting, 26305 edge(s) existed.
+After compacting, 6443 edge(s) left.
+
+Strict: 0, cutoff length: 118.
+167 tips cut in cycle 1.
+2 tips cut in cycle 2.
+0 tips cut in cycle 3.
+170 dead arc(s) removed.
+121 edge(s) concatenated in cycle 1.
+0 edge(s) concatenated in cycle 2.
+Before compacting, 6443 edge(s) existed.
+After compacting, 5863 edge(s) left.
+
+There are 1462 contig(s) longer than 100, sum up 5033085 bp, with average length 3442.
+The longest length is 65454 bp, contig N50 is 18959 bp,contig N90 is 4568 bp.
+2932 contig(s) longer than 60 output.
+
+Time spent on constructing contig: 0m.
+
+Done
+Sat Jan 24 09:38:53 GMT 2026
