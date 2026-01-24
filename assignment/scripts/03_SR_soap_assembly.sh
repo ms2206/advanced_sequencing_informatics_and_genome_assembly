@@ -71,7 +71,8 @@ cd "assembly/soap_denono_2/kmer_${kmer}/${sample}"
     
 # Main code 
 # ========================
-echo "Running SOAPdenovo2 denovo assembly with k=${kmer}"
+echo "Running SOAPdenovo2 denovo assembly with k=${kmer}. Using configuration file:"
+cat "${WORKING_FOLDER}/scripts/soapPE.conf"
 echo "Results will be stored in: ${WORKING_FOLDER}/assembly/soap_denono_2/kmer_${kmer}/${sample}"
 
 singularity exec ${SINGULARITY} \
