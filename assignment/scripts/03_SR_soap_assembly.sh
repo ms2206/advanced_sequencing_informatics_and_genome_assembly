@@ -75,15 +75,15 @@ echo "Running SOAPdenovo2 denovo assembly with k=${kmer}"
 echo "Results will be stored in: ${WORKING_FOLDER}/assembly/soap_denono_2/kmer_${kmer}/${sample}"
 
 singularity exec ${SINGULARITY} \
-    SOAPdenovo-127mer sparse_pregraph \
+    SOAPdenovo-63mer sparse_pregraph \
     -s "${WORKING_FOLDER}/scripts/soapPE.conf" \
     -K ${kmer} \
-    -z 5061839 \
+    -z 5000000 \
     -p 4 \
     -o "${sample}_pregraph"
 
 singularity exec ${SINGULARITY} \
-    SOAPdenovo-127mer contig \
+    SOAPdenovo-63mer contig \
     -g "${sample}_pregraph" \
     -s "${WORKING_FOLDER}/scripts/soapPE.conf" \
     -p 4 

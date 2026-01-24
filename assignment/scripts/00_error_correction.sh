@@ -88,7 +88,7 @@ singularity exec ${SINGULARITY} \
     frag_reads
 
 echo "Error correction completed."
-echo " Moving corrected reads to output directory ${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}"
+echo " Moving corrected reads to output directory ${KMER_OUTPUT_DIR}/soap_ec/kmer_${kmer}" # Note to self: why have I nested this in soap dir? It's misleading, this is jellyfish.
 
 # Move outputs to current directory
 find "$(dirname ${ILLUMINA_SR_READ_1})" -maxdepth 1 -name "*.cor*" -print0 | xargs -0 -I {} mv {} .
