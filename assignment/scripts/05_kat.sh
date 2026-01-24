@@ -82,6 +82,11 @@ singularity exec ${SINGULARITY} \
     "${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}" \
     "${SOAP_ASSEMBELLY}"
 
+singularity exec ${SINGULARITY} \
+   python3 /usr/local/share/kat/scripts/kat/plot/spectra.py \
+   "${output_dir}/kat_comp_${sample}_k${kmer}-main.mx" \
+   -o "${output_dir}/kat_comp_${sample}_k${kmer}_spectrum.png"
+   
 # Completion message
 echo "Done"
 date
