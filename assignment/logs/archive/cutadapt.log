@@ -1,0 +1,25 @@
+Started script
+Sat Jan 24 08:20:54 GMT 2026
+
+apptainer version 1.1.3-1.el8
+This is cutadapt 4.4 with Python 3.10.8
+Command line parameters: -m 50 -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/cutadapt/HS7_R1.fastq.gz.cor_m50.trimmed.pair_1.fq.gz -p /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/cutadapt/HS7_R1.fastq.gz.cor_m50.trimmed.pair_2.fq.gz /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz
+Processing paired-end reads on 1 core ...
+Finished in 51.188 s (22.395 µs/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,285,664
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     2,285,664 (100.0%)
+
+Total basepairs processed:   419,890,613 bp
+  Read 1:   209,949,135 bp
+  Read 2:   209,941,478 bp
+Total written (filtered):    419,890,613 bp (100.0%)
+  Read 1:   209,949,135 bp
+  Read 2:   209,941,478 bp
+Done
+Sat Jan 24 08:21:46 GMT 2026
