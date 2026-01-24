@@ -71,9 +71,9 @@ sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
     
 # Main code 
 # ========================
-cutadapt -m 94 \
-    -o "${CUTADAPT_WORKING_DIR}/${sample}.trimmed.pair_1.fq.gz" \
-    -p "${CUTADAPT_WORKING_DIR}/${sample}.trimmed.pair_2.fq.gz" \
+cutadapt -m 50 \
+    -o "${CUTADAPT_WORKING_DIR}/${sample}_m50.trimmed.pair_1.fq.gz" \
+    -p "${CUTADAPT_WORKING_DIR}/${sample}_m50.trimmed.pair_2.fq.gz" \
     "${COR_ILLUMINA_SR_READ_1}" \
     "${COR_ILLUMINA_SR_READ_2}" 
 
