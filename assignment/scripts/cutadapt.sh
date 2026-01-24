@@ -6,13 +6,12 @@
 # Crescent2 script
 # Note: this script should be run on a compute node
 # Note: output and error logs will be stored in the logs folder, this folder must exist
-# Note: this script requires one argument: input_kmer_size, as required input
 # qsub script.sh
 
 # PBS directives
 #---------------
 
-#PBS -N ale_assembly_qc
+#PBS -N cutadapt_job
 #PBS -l nodes=1:ncpus=4
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
@@ -51,55 +50,31 @@ echo ""
 
 # Load required modules (this is an example, change it if needed!)
 module load Singularity/3.11.0-1-system
+module cutadapt/4.4-GCCcore-12.2.0
 singularity --version
 
 # Working folder (this is an example, change it if needed!)
 WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/"
-cd "${WORKING_FOLDER}"
+
 
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
+# cd to CUT_ADAPT working directory
+cd "${CUTADAPT_WORKING_DIR}"
+
 # Any additional variables or paths can be added here
 # get sample name
 sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
-kmer=${input_kmer_size}
-assembly_filepath="${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/${sample}_pregraph.contig"
-
-# Create output directory and change to it
-output_dir="${WORKING_FOLDER}/assembly_qc/ale/kmer_${kmer}/${sample}"
-mkdir -p "${output_dir}"
-cd "${output_dir}"
-
+    
 # Main code 
 # ========================
-echo "Running ALE assembly evaluation for sample: ${sample}"
-echo "Results will be saved to: ${output_dir}"
+cutadapt -m 94 \
+    -o "${CUTADAPT_WORKING_DIR}/${sample}.trimmed.pair_1.fq.gz" \
+    -p "${CUTADAPT_WORKING_DIR}/${sample}.trimmed.pair_2.fq.gz" \
+    "${COR_ILLUMINA_SR_READ_1}" \
+    "${COR_ILLUMINA_SR_READ_2}" 
 
-# First thing to do before running ALE is to align the paired end reads to the assembly.
-# BWA creates 5 index files in the same directory as your FASTA:
-singularity exec ${SINGULARITY} \
-    bwa index "${assembly_filepath}"
-
-# map the reads to the assembly
-singularity exec ${SINGULARITY} \
-    bash -c "\
-    bwa mem '${assembly_filepath}' \
-    '${COR_ILLUMINA_SR_READ_1}' '${COR_ILLUMINA_SR_READ_2}' | \
-    samtools view -bS - > '${sample}_aligned.bam'"
-
-# sort the BAM file
-singularity exec ${SINGULARITY} \
-    samtools sort -o "${sample}_aligned_sorted.bam" "${sample}_aligned.bam"
-
-# index the sorted BAM file
-singularity exec ${SINGULARITY} \
-    samtools index "${sample}_aligned_sorted.bam"
-
-# Now run ALE
-singularity exec ${SINGULARITY} \
-    ${ALE} "${sample}_aligned_sorted.bam" \
-    ${SOAP_OUTPUT_DIR}/kmer_${kmer}/${sample}/
 
 # Completion message
 echo "Done"
