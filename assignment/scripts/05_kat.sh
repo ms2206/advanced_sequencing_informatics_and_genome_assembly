@@ -40,9 +40,6 @@ module purge all
 
 # --- Your code starts here --- #
 
-# Stop at runtime errors
-set -e
-
 # Start message (this is an example, change it!)
 echo "Started script"
 date
