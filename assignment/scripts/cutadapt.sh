@@ -61,6 +61,8 @@ WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_gen
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # cd to CUT_ADAPT working directory
+# make sure the folder exists
+mkdir -p "${CUTADAPT_WORKING_DIR}"
 cd "${CUTADAPT_WORKING_DIR}"
 
 # Any additional variables or paths can be added here
