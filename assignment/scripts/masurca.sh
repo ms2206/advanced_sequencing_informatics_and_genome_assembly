@@ -79,7 +79,7 @@ if [[ ! -e "masurca_config.txt" ]]; then
     # Dynamically update the config file with the correct paths to the reads
     sed -i "s|PACBIO=/FULL_PATH/pacbio.fa|PACBIO=${PACBIO_READS}|" masurca_config.txt
     sed -i "s|PE= pe 180 20  /FULL_PATH/frag_1.fastq  /FULL_PATH/frag_2.fastq|PE= pe 180 20  ${COR_ILLUMINA_SR_READ_1}  ${COR_ILLUMINA_SR_READ_2}|" masurca_config.txt
-    sed -i "s|JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq|#JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq" masurca_config.txt
+    sed -i "s|JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq|#JUMP= sh 3600 200  /FULL_PATH/short_1.fastq  /FULL_PATH/short_2.fastq|" masurca_config.txt
     sed -i "s|OTHER=/FULL_PATH/file.frg|#OTHER=/FULL_PATH/file.frg|" masurca_config.txt
     sed -i "s|NUM_THREADS= 16|NUM_THREADS= 4|" masurca_config.txt
 
