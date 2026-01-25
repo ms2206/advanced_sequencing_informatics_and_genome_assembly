@@ -88,7 +88,7 @@ echo "Running DBG2OLC for sample ${sample} with kmer size ${kmer}"
 echo "Results will be saved to: ${output_dir}"
 
 # Unzip PacBio reads
-# zcat "${PACBIO_READS}" > "HS7_pacbioData.fastq"
+zcat "${PACBIO_READS}" > "HS7_pacbioData.fastq"
 
 # Run DBG2OLC using my soapdenovo2 assembly
 singularity exec ${SINGULARITY} \
@@ -99,10 +99,10 @@ singularity exec ${SINGULARITY} \
     MinOverlap 20 \
     RemoveChimera 1 \
     Contigs "${SOAP_ASSEMBELLY}" \
-    f <(zcat ${PACBIO_READS})
-    
+    f "HS7_pacbioData.fastq"
+
 # remove intermediate file
-# rm "HS7_pacbioData.fastq"
+rm "HS7_pacbioData.fastq"
 
 # Completion message
 echo "Done"
