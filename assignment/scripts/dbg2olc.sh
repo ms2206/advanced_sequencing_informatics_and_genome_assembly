@@ -73,12 +73,12 @@ cd "${output_dir}"
 
 # Sanity checks
 if [[ ! -s "${SOAP_ASSEMBELLY}" ]]; then
-    echo "ERROR: Contigs file not found or empty: ${SOAP_ASSEMBELLY}" >&2
+    echo "ERROR: Contigs file not found or empty: ${SOAP_ASSEMBELLY}" 
     exit 1
 fi
 
 if [[ ! -s "${PACBIO_READS}" ]]; then
-    echo "ERROR: PacBio reads file not found or empty: ${PACBIO_READS}" >&2
+    echo "ERROR: PacBio reads file not found or empty: ${PACBIO_READS}" 
     exit 1
 fi
 
