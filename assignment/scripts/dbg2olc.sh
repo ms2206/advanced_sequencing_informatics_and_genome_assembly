@@ -107,16 +107,18 @@ singularity exec ${SINGULARITY} \
 
 echo "DBG2OLC assembly completed."
 
+# consensus stage
+echo "Preparing reads in single fasta..."
+cat "${SOAP_ASSEMBELLY}" "HS7_pacbioData.fasta" > "DBG2OLC_contigs_plus_pacbio.fasta"
+
 # Enable the use of my_split_nrun_sparc and pitchfork
 echo "Setting up environment for Sparc polishing..."
 singularity exec ${SINGULARITY} \
     bash -c "source ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
     && source /pitchfork/setup-env.sh"
 
-# consensus stage
-cat "${SOAP_ASSEMBELLY}" "HS7_pacbioData.fasta" > "DBG2OLC_contigs_plus_pacbio.fasta"
-echo "Running Sparc polishing..."
 
+echo "Running my_split_nrun_sparc.sh..."
 singularity exec "${SINGULARITY}" \
     ./my_split_nrun_sparc.sh \
     backbone_raw.fasta \
