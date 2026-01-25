@@ -85,8 +85,13 @@ if [[ ! -e "masurca_config.txt" ]]; then
 
 fi
 
+# Run MASURCA
+# Export PATH
+export PATH=$PATH:./
 
-
+singularity exec "${SINGULARITY}" \
+    ${MASURCA} masurca_config.txt
+    
 
 
 # Completion message
