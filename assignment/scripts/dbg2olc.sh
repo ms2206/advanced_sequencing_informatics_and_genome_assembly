@@ -78,7 +78,7 @@ echo "Results will be saved to: ${output_dir}"
 
 # Run DBG2OLC using my soapdenovo2 assembly
 singularity exec ${SINGULARITY} \
-    "${DBG2OLC}/compiled/DBG2OLC" \
+    "${DBG2OLC}/DBG2OLC" \
     -k ${kmer} \
     AdaptiveTh 0.0001 \
     KmerCovTh 2 \
