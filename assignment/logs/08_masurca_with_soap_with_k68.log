@@ -1,0 +1,53 @@
+Started script
+Sun Jan 25 14:55:24 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Creating MASURCA config file
+Dynamically updating MASURCA config file with correct paths to reads
+Verifying PATHS...
+jellyfish OK
+runCA OK
+createSuperReadsForDirectory.perl OK
+nucmer OK
+mega_reads_assemble_cluster.sh OK
+creating script file for the actions...done.
+execute assemble.sh to run assembly
+[Sun Jan 25 14:55:26 GMT 2026] Processing pe library reads
+[Sun Jan 25 14:55:31 GMT 2026] Average PE read length 91
+[Sun Jan 25 14:55:31 GMT 2026] Using kmer size of 57 for the graph
+[Sun Jan 25 14:55:31 GMT 2026] MIN_Q_CHAR: 33
+[Sun Jan 25 14:55:31 GMT 2026] Creating mer database for Quorum
+[Sun Jan 25 14:55:38 GMT 2026] Error correct PE.
+[Sun Jan 25 14:56:12 GMT 2026] Estimating genome size.
+[Sun Jan 25 14:56:18 GMT 2026] Estimated genome size: 5882480
+[Sun Jan 25 14:56:18 GMT 2026] Creating k-unitigs with k=57
+[Sun Jan 25 14:56:38 GMT 2026] Computing super reads from PE 
+Using CABOG from is /MaSuRCA-3.2.7/bin/../CA8/Linux-amd64/bin
+Running mega-reads correction/assembly
+Using mer size 15 for mapping, B=17, d=0.029
+Estimated Genome Size 5882480
+Estimated Ploidy 1
+Using 16 threads
+Output prefix mr.41.15.17.0.029
+Pacbio coverage <30x, using the longest subreads
+Reducing super-read k-mer size
+Mega-reads pass 1
+Running locally in 1 batch
+compute_psa 31441 21416885
+Mega-reads pass 2
+Running locally in 1 batch
+compute_psa 16624 37404401
+Refining alignments
+Joining
+Gap consensus
+xargs: do_consensus.sh: No such file or directory
+Warning! Creation of gap consensus sequences failed, see files in mr.41.15.17.0.029.join_consensus.tmp, proceeding without it
+Generating assembly input files
+Coverage threshold for splitting unitigs is 15 minimum ovl 250
+Running assembly
+Mega-reads initial assembly complete.
+[Sun Jan 25 14:59:47 GMT 2026] No gap closing possible.
+[Sun Jan 25 14:59:53 GMT 2026] Assembly complete, final scaffold sequences are in CA.mr.41.15.17.0.029/final.genome.scf.fasta
+[Sun Jan 25 14:59:53 GMT 2026] All done
+Done
+Sun Jan 25 14:59:53 GMT 2026

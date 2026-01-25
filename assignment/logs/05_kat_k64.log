@@ -1,0 +1,90 @@
+Started script
+Sat Jan 24 12:53:20 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Running KAT comp for sample HS7_R1.fastq.gz.cor with kmer size 64
+Results will be saved to: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment//assembly_qc/kat/HS7_R1.fastq.gz.cor_k64
+Kmer Analysis Toolkit (KAT) V2.4.2
+
+Running KAT in COMP mode
+------------------------
+
+Input 1 is a sequence file.  Counting kmers for input 1 (/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R2.fastq.gz.cor.pair_2.fq.gz) ... done.  Time taken: 32.4s
+
+Input 2 is a sequence file.  Counting kmers for input 2 (/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/soap_denono_2/kmer_64/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig) ... done.  Time taken: 0.6s
+
+Comparing hashes ... done.  Time taken: 5.5s
+
+Merging results ... done.  Time taken: 0.3s
+
+Saving results to disk ... done.  Time taken: 0.2s
+
+
+Summary statistics
+------------------
+
+K-mer statistics for: 
+ - Hash 1: "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/kmer/soap_ec/kmer_17/HS7_R1.fastq.gz.cor.pair_1.fq.gz"
+ - Hash 2: "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/soap_denono_2/kmer_64/HS7_R1.fastq.gz.cor/HS7_R1.fastq.gz.cor_pregraph.contig"
+
+Total K-mers in: 
+ - Hash 1: 301036085
+ - Hash 2: 5064770
+
+Distinct K-mers in:
+ - Hash 1: 10269822
+ - Hash 2: 4813048
+
+Total K-mers only found in:
+ - Hash 1: 15177028
+ - Hash 2: 0
+
+Distinct K-mers only found in:
+ - Hash 1: 5456774
+ - Hash 2: 0
+
+Shared K-mers:
+ - Total shared found in hash 1: 285859057
+ - Total shared found in hash 2: 5064770
+ - Distinct shared K-mers: 4813048
+
+Distance between spectra 1 and 2 (all k-mers):
+ - Manhattan distance: 1.04908e+07
+ - Euclidean distance: 3.14052e+06
+ - Cosine distance: 0.236271
+ - Canberra distance: 967.143
+ - Jaccard distance: 0.820439
+
+Distance between spectra 1 and 2 (shared k-mers):
+ - Manhattan distance: 9.61712e+06
+ - Euclidean distance: 4.82741e+06
+ - Cosine distance: 0.999989
+ - Canberra distance: 963.21
+ - Jaccard distance: 0.999534
+
+Creating plot(s) ...  Time taken: 0.1s
+
+KAT COMP completed.
+Total runtime: 39.2s
+
+../lib/include/kat/pyhelper.hpp(159): Throw in function void kat::PyHelper::execute(std::__cxx11::string, int, char**)
+Dynamic exception type: boost::exception_detail::clone_impl<kat::KatPythonException>
+std::exception::what: std::exception
+[kat::KatPythonError*] = Unexpected python error
+Traceback (most recent call last):
+  File "//usr/local/share/kat/scripts/kat/plot/spectra_cn.py", line 6, in <module>
+    from misc import *
+  File "/usr/local/share/kat/scripts/kat/plot/misc.py", line 1, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "//usr/local/share/kat/scripts/kat/plot/spectra_cn.py", line 8, in <module>
+    from kat.plot.misc import *
+  File "//usr/local/share/kat/scripts/kat/plot/misc.py", line 1, in <module>
+    import numpy as np
+ImportError: No module named 'numpy'
+Done
+Sat Jan 24 12:54:04 GMT 2026
