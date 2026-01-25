@@ -67,7 +67,7 @@ sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
 kmer=${input_kmer_size}
 
 # Create output directory and change to it
-output_dir="${WORKING_FOLDER}/assembly/dbg2olc/${sample}_k${kmer}"
+output_dir="${DBG2OLC_DIR}/${sample}_k${kmer}"
 mkdir -p "${output_dir}"
 cd "${output_dir}"
     
@@ -79,7 +79,7 @@ echo "Results will be saved to: ${output_dir}"
 # Run DBG2OLC
 singularity exec ${SINGULARITY} \
     "${DBG2OLC}/SparseAssembler" \
-    GS 5000000 \
+    GS 15000000 \
     NodeCovTh 1 \
     k ${kmer} \
     g 1 \
