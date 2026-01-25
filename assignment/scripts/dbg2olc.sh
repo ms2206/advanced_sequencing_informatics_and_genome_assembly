@@ -76,15 +76,16 @@ cd "${output_dir}"
 echo "Running DBG2OLC for sample ${sample} with kmer size ${kmer}"
 echo "Results will be saved to: ${output_dir}"
 
-# Run DBG2OLC
+# Run DBG2OLC using my soapdenovo2 assembly
 singularity exec ${SINGULARITY} \
-    "${DBG2OLC}/SparseAssembler" \
-    GS 15000000 \
-    NodeCovTh 1 \
-    EdgeCovTh 1 \
-    k ${kmer} \
-    g 1 \
-    f "${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}" 
+    "${DBG2OLC}/compiled/DBG2OLC" \
+    -k ${kmer} \
+    AdaptiveTh 0.0001 \
+    KmerCovTh 2 \
+    MinOverlap 20 \
+    RemoveChimera 1 \
+    Contigs "${SOAP_ASSEMBELLY}" \
+    f "${PACBIO_READS}"
 
 # Completion message
 echo "Done"
