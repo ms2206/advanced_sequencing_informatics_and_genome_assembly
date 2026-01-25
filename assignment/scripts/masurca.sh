@@ -65,6 +65,7 @@ assembly_tool=${input_assembly_tool}
 # Any additional variables or paths can be added here
 output_dir="${MASURCA_DIR}/${assembly_tool}"
 mkdir -p "${output_dir}"
+cd "${output_dir}"
     
 # Main code 
 # ========================
