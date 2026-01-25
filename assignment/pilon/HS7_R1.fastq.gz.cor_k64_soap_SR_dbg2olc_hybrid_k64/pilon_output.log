@@ -1,0 +1,565 @@
+Pilon version 1.22 Wed Mar 15 16:38:30 2017 -0400
+Genome: final_assembly.fasta
+Fixing snps, indels, gaps, local
+Input genome size: 4229677
+Scanning BAMs
+aligned_reads_sorted.bam: 4579674 reads, 0 filtered, 3340885 mapped, 3073924 proper, 109620 stray, FR 100% 339+/-17, max 390
+Processing Backbone_1:1-178413
+unpaired aligned_reads_sorted.bam: coverage 50
+Total Reads: 143731, Coverage: 50, minDepth: 5
+Confirmed 143139 of 178413 bases (80.23%)
+Corrected 446 snps; 0 ambiguous bases; corrected 156 small insertions totaling 172 bases, 442 small deletions totaling 621 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_1:27301-28231 0 -0 +0 NoSolution
+# fix break: Backbone_1:33443-38317 0 -0 +0 NoSolution
+# fix break: Backbone_1:42331-47466 0 -0 +0 NoSolution
+# fix break: Backbone_1:56319-58674 0 -0 +0 NoSolution
+fix break: Backbone_1:59020-59430 58986 -14 +14 BreakFix
+# fix break: Backbone_1:66399 0 -0 +0 NoSolution
+# fix break: Backbone_1:78731-83323 0 -0 +0 NoSolution
+# fix break: Backbone_1:101268-103020 0 -0 +0 NoSolution
+# fix break: Backbone_1:111657-114798 0 -0 +0 NoSolution
+# fix break: Backbone_1:120687-124659 0 -0 +0 NoSolution
+# fix break: Backbone_1:135302-138253 0 -0 +0 NoSolution
+# fix break: Backbone_1:160157-167391 0 -0 +0 NoSolution
+# fix break: Backbone_1:169914-174980 0 -0 +0 NoSolution
+Backbone_1:1-178413 log:
+Finished processing Backbone_1:1-178413
+Processing Backbone_2:1-60915
+unpaired aligned_reads_sorted.bam: coverage 33
+Total Reads: 33151, Coverage: 33, minDepth: 5
+Confirmed 34781 of 60915 bases (57.10%)
+Corrected 298 snps; 1 ambiguous bases; corrected 113 small insertions totaling 126 bases, 247 small deletions totaling 338 bases
+Large collapsed region: Backbone_2:40976-52062 size 11087
+# Attempting to fix local continuity breaks
+# fix break: Backbone_2:20092-20116 0 -0 +0 NoSolution
+# fix break: Backbone_2:21308-31653 0 -0 +0 NoSolution
+# fix break: Backbone_2:38290-40949 0 -0 +0 NoSolution
+Backbone_2:1-60915 log:
+Finished processing Backbone_2:1-60915
+Processing Backbone_11:1-19307
+unpaired aligned_reads_sorted.bam: coverage 20
+Total Reads: 7313, Coverage: 20, minDepth: 5
+Confirmed 7813 of 19307 bases (40.47%)
+Corrected 95 snps; 1 ambiguous bases; corrected 30 small insertions totaling 32 bases, 90 small deletions totaling 132 bases
+# Attempting to fix local continuity breaks
+Backbone_11:1-19307 log:
+Finished processing Backbone_11:1-19307
+Processing Backbone_12:1-47708
+unpaired aligned_reads_sorted.bam: coverage 49
+Total Reads: 36376, Coverage: 49, minDepth: 5
+Confirmed 36843 of 47708 bases (77.23%)
+Corrected 119 snps; 0 ambiguous bases; corrected 47 small insertions totaling 50 bases, 117 small deletions totaling 170 bases
+# Attempting to fix local continuity breaks
+fix break: Backbone_12:13621-14704 13623 -882 +821 BreakFix
+# fix break: Backbone_12:18441 0 -0 +0 NoSolution
+# fix break: Backbone_12:25398-30799 0 -0 +0 NoSolution
+# fix break: Backbone_12:39628-40075 0 -0 +0 NoSolution
+Backbone_12:1-47708 log:
+Finished processing Backbone_12:1-47708
+Processing Backbone_13:1-284812
+unpaired aligned_reads_sorted.bam: coverage 53
+Total Reads: 233445, Coverage: 53, minDepth: 5
+Confirmed 226600 of 284812 bases (79.56%)
+Corrected 861 snps; 5 ambiguous bases; corrected 343 small insertions totaling 386 bases, 816 small deletions totaling 1155 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_13:48073-54209 0 -0 +0 NoSolution
+# fix break: Backbone_13:56499-60092 0 -0 +0 NoSolution
+# fix break: Backbone_13:68496-79600 0 -0 +0 NoSolution
+# fix break: Backbone_13:80478-84160 0 -0 +0 NoSolution
+# fix break: Backbone_13:94791-97443 0 -0 +0 NoSolution
+# fix break: Backbone_13:124858-127047 0 -0 +0 NoSolution
+# fix break: Backbone_13:133763-135991 0 -0 +0 NoSolution
+# fix break: Backbone_13:148304-150373 0 -0 +0 NoSolution
+# fix break: Backbone_13:165987-166204 0 -0 +0 NoSolution
+# fix break: Backbone_13:173991-176687 0 -0 +0 NoSolution
+# fix break: Backbone_13:179191-181046 0 -0 +0 NoSolution
+# fix break: Backbone_13:187901-192586 0 -0 +0 NoSolution
+# fix break: Backbone_13:207750-210751 0 -0 +0 NoSolution
+# fix break: Backbone_13:218534-220256 0 -0 +0 NoSolution
+# fix break: Backbone_13:235216-238310 0 -0 +0 NoSolution
+# fix break: Backbone_13:241633-244127 0 -0 +0 NoSolution
+# fix break: Backbone_13:257409-275504 0 -0 +0 NoSolution
+Backbone_13:1-284812 log:
+Finished processing Backbone_13:1-284812
+Processing Backbone_14:1-65822
+unpaired aligned_reads_sorted.bam: coverage 75
+Total Reads: 82042, Coverage: 75, minDepth: 8
+Confirmed 59515 of 65822 bases (90.42%)
+Corrected 196 snps; 2 ambiguous bases; corrected 55 small insertions totaling 64 bases, 133 small deletions totaling 174 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_14:46790-52207 0 -0 +0 NoSolution
+# fix break: Backbone_14:54707-56231 0 -0 +0 NoSolution
+Backbone_14:1-65822 log:
+Finished processing Backbone_14:1-65822
+Processing Backbone_15:1-191101
+unpaired aligned_reads_sorted.bam: coverage 52
+Total Reads: 167032, Coverage: 52, minDepth: 5
+Confirmed 146614 of 191101 bases (76.72%)
+Corrected 486 snps; 3 ambiguous bases; corrected 188 small insertions totaling 202 bases, 434 small deletions totaling 600 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_15:5369-10780 0 -0 +0 NoSolution
+# fix break: Backbone_15:14188-17346 0 -0 +0 NoSolution
+# fix break: Backbone_15:47349-52892 0 -0 +0 NoSolution
+# fix break: Backbone_15:61016-76149 0 -0 +0 NoSolution
+# fix break: Backbone_15:82540-92719 0 -0 +0 NoSolution
+# fix break: Backbone_15:98048-102513 0 -0 +0 NoSolution
+# fix break: Backbone_15:112898-117381 0 -0 +0 NoSolution
+fix break: Backbone_15:129230-129345 129319 -18 +18 BreakFix
+# fix break: Backbone_15:144131-145365 0 -0 +0 NoSolution
+# fix break: Backbone_15:148946-154649 0 -0 +0 NoSolution
+Backbone_15:1-191101 log:
+Finished processing Backbone_15:1-191101
+Processing Backbone_16:1-72086
+unpaired aligned_reads_sorted.bam: coverage 48
+Total Reads: 55964, Coverage: 48, minDepth: 5
+Confirmed 54121 of 72086 bases (75.08%)
+Corrected 246 snps; 0 ambiguous bases; corrected 104 small insertions totaling 122 bases, 232 small deletions totaling 333 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_16:17206-19408 0 -0 +0 NoSolution
+# fix break: Backbone_16:22753-35215 0 -0 +0 NoSolution
+# fix break: Backbone_16:38279-38315 0 -0 +0 NoSolution TandemRepeat 47
+# fix break: Backbone_16:47115-49581 0 -0 +0 NoSolution
+Backbone_16:1-72086 log:
+Finished processing Backbone_16:1-72086
+Processing Backbone_17:1-106158
+unpaired aligned_reads_sorted.bam: coverage 45
+Total Reads: 79963, Coverage: 45, minDepth: 5
+Confirmed 80231 of 106158 bases (75.58%)
+Corrected 657 snps; 1 ambiguous bases; corrected 320 small insertions totaling 364 bases, 586 small deletions totaling 800 bases
+Large collapsed region: Backbone_17:37912-52517 size 14606
+Large collapsed region: Backbone_17:79180-98282 size 19103
+# Attempting to fix local continuity breaks
+# fix break: Backbone_17:7790-18030 0 -0 +0 NoSolution
+# fix break: Backbone_17:20244-26792 0 -0 +0 NoSolution
+# fix break: Backbone_17:56024-56394 0 -0 +0 NoSolution TandemRepeat 4
+# fix break: Backbone_17:64928-76911 0 -0 +0 NoSolution
+Backbone_17:1-106158 log:
+Finished processing Backbone_17:1-106158
+Processing Backbone_18:1-150366
+unpaired aligned_reads_sorted.bam: coverage 46
+Total Reads: 114894, Coverage: 46, minDepth: 5
+Confirmed 111818 of 150366 bases (74.36%)
+Corrected 514 snps; 0 ambiguous bases; corrected 211 small insertions totaling 234 bases, 465 small deletions totaling 638 bases
+Large collapsed region: Backbone_18:61193-82227 size 21035
+Large collapsed region: Backbone_18:87973-108923 size 20951
+Large collapsed region: Backbone_18:122526-138304 size 15779
+# Attempting to fix local continuity breaks
+# fix break: Backbone_18:14929-29394 0 -0 +0 NoSolution
+# fix break: Backbone_18:36541-39186 0 -0 +0 NoSolution
+# fix break: Backbone_18:42502-45480 0 -0 +0 NoSolution
+# fix break: Backbone_18:48562-51899 0 -0 +0 NoSolution TandemRepeat 79
+# fix break: Backbone_18:57043-60956 0 -0 +0 NoSolution
+# fix break: Backbone_18:82366-87346 0 -0 +0 NoSolution
+# fix break: Backbone_18:108942-118763 0 -0 +0 NoSolution
+Backbone_18:1-150366 log:
+Finished processing Backbone_18:1-150366
+Processing Backbone_19:1-190414
+unpaired aligned_reads_sorted.bam: coverage 50
+Total Reads: 161327, Coverage: 50, minDepth: 5
+Confirmed 140155 of 190414 bases (73.61%)
+Corrected 791 snps; 4 ambiguous bases; corrected 354 small insertions totaling 387 bases, 688 small deletions totaling 951 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_19:5158 0 -0 +0 NoSolution
+# fix break: Backbone_19:7909-8076 0 -0 +0 NoSolution
+# fix break: Backbone_19:17999-28494 0 -0 +0 NoSolution
+# fix break: Backbone_19:36273-42448 0 -0 +0 NoSolution
+# fix break: Backbone_19:46025-56435 0 -0 +0 NoSolution
+# fix break: Backbone_19:58757-64883 0 -0 +0 NoSolution
+# fix break: Backbone_19:71739-81594 0 -0 +0 NoSolution
+# fix break: Backbone_19:94012 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_19:108698-110342 0 -0 +0 NoSolution
+# fix break: Backbone_19:129516-134879 0 -0 +0 NoSolution
+# fix break: Backbone_19:141418-145279 0 -0 +0 NoSolution
+# fix break: Backbone_19:154747-154795 0 -0 +0 NoSolution
+# fix break: Backbone_19:161076-163427 0 -0 +0 NoSolution TandemRepeat 19
+# fix break: Backbone_19:168189-170552 0 -0 +0 NoSolution
+# fix break: Backbone_19:171075-173589 0 -0 +0 NoSolution
+# fix break: Backbone_19:173994-177311 0 -0 +0 NoSolution
+Backbone_19:1-190414 log:
+Finished processing Backbone_19:1-190414
+Processing Backbone_20:1-72936
+unpaired aligned_reads_sorted.bam: coverage 56
+Total Reads: 66787, Coverage: 56, minDepth: 6
+Confirmed 63560 of 72936 bases (87.14%)
+Corrected 110 snps; 0 ambiguous bases; corrected 51 small insertions totaling 57 bases, 123 small deletions totaling 175 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_20:28932-33213 0 -0 +0 NoSolution
+fix break: Backbone_20:55487-55722 55450 -353 +353 BreakFix
+# fix break: Backbone_20:64032-66245 0 -0 +0 NoSolution
+Backbone_20:1-72936 log:
+Finished processing Backbone_20:1-72936
+Processing Backbone_3:1-113371
+unpaired aligned_reads_sorted.bam: coverage 49
+Total Reads: 95654, Coverage: 49, minDepth: 5
+Confirmed 80502 of 113371 bases (71.01%)
+Corrected 411 snps; 1 ambiguous bases; corrected 147 small insertions totaling 171 bases, 421 small deletions totaling 584 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_3:18619-22453 0 -0 +0 NoSolution
+# fix break: Backbone_3:40036-48977 0 -0 +0 NoSolution
+# fix break: Backbone_3:58822-60082 0 -0 +0 NoSolution
+# fix break: Backbone_3:69669-74258 0 -0 +0 NoSolution
+# fix break: Backbone_3:77079-85632 0 -0 +0 NoSolution
+# fix break: Backbone_3:86508-86606 0 -0 +0 NoSolution TandemRepeat 4
+# fix break: Backbone_3:95433-95581 0 -0 +0 NoSolution TandemRepeat 4
+Backbone_3:1-113371 log:
+Finished processing Backbone_3:1-113371
+Processing Backbone_21:1-54559
+unpaired aligned_reads_sorted.bam: coverage 50
+Total Reads: 41488, Coverage: 50, minDepth: 5
+Confirmed 44079 of 54559 bases (80.79%)
+Corrected 189 snps; 0 ambiguous bases; corrected 79 small insertions totaling 85 bases, 149 small deletions totaling 220 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_21:20393-24816 0 -0 +0 NoSolution
+# fix break: Backbone_21:43985-44231 0 -0 +0 NoSolution TandemRepeat 5
+Backbone_21:1-54559 log:
+Finished processing Backbone_21:1-54559
+Processing Backbone_22:1-149331
+unpaired aligned_reads_sorted.bam: coverage 53
+Total Reads: 129354, Coverage: 53, minDepth: 5
+Confirmed 123296 of 149331 bases (82.57%)
+Corrected 379 snps; 3 ambiguous bases; corrected 132 small insertions totaling 147 bases, 324 small deletions totaling 454 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_22:21176-26831 0 -0 +0 NoSolution
+# fix break: Backbone_22:33297-41561 0 -0 +0 NoSolution
+fix break: Backbone_22:65745-66173 65740 -431 +416 BreakFix
+# fix break: Backbone_22:87686-90177 0 -0 +0 NoSolution
+# fix break: Backbone_22:93695-95565 0 -0 +0 NoSolution
+# fix break: Backbone_22:118431-125344 0 -0 +0 NoSolution
+Backbone_22:1-149331 log:
+Finished processing Backbone_22:1-149331
+Processing Backbone_23:1-18348
+unpaired aligned_reads_sorted.bam: coverage 31
+Total Reads: 9879, Coverage: 31, minDepth: 5
+Confirmed 10355 of 18348 bases (56.44%)
+Corrected 118 snps; 0 ambiguous bases; corrected 63 small insertions totaling 71 bases, 109 small deletions totaling 151 bases
+# Attempting to fix local continuity breaks
+Backbone_23:1-18348 log:
+Finished processing Backbone_23:1-18348
+Processing Backbone_24:1-19888
+unpaired aligned_reads_sorted.bam: coverage 32
+Total Reads: 10382, Coverage: 32, minDepth: 5
+Confirmed 11173 of 19888 bases (56.18%)
+Corrected 78 snps; 0 ambiguous bases; corrected 46 small insertions totaling 50 bases, 71 small deletions totaling 97 bases
+# Attempting to fix local continuity breaks
+Backbone_24:1-19888 log:
+Finished processing Backbone_24:1-19888
+Processing Backbone_25:1-15296
+unpaired aligned_reads_sorted.bam: coverage 21
+Total Reads: 6135, Coverage: 21, minDepth: 5
+Confirmed 6342 of 15296 bases (41.46%)
+Corrected 104 snps; 0 ambiguous bases; corrected 34 small insertions totaling 35 bases, 97 small deletions totaling 128 bases
+# Attempting to fix local continuity breaks
+Backbone_25:1-15296 log:
+Finished processing Backbone_25:1-15296
+Processing Backbone_26:1-14983
+unpaired aligned_reads_sorted.bam: coverage 15
+Total Reads: 5617, Coverage: 15, minDepth: 5
+Confirmed 6362 of 14983 bases (42.46%)
+Corrected 208 snps; 0 ambiguous bases; corrected 77 small insertions totaling 81 bases, 196 small deletions totaling 260 bases
+Backbone_26:1-14983 log:
+Finished processing Backbone_26:1-14983
+Processing Backbone_27:1-35105
+unpaired aligned_reads_sorted.bam: coverage 33
+Total Reads: 21305, Coverage: 33, minDepth: 5
+Confirmed 20870 of 35105 bases (59.45%)
+Corrected 217 snps; 0 ambiguous bases; corrected 100 small insertions totaling 119 bases, 209 small deletions totaling 314 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_27:10585-17056 0 -0 +0 NoSolution
+Backbone_27:1-35105 log:
+Finished processing Backbone_27:1-35105
+Processing Backbone_28:1-70742
+unpaired aligned_reads_sorted.bam: coverage 44
+Total Reads: 50019, Coverage: 44, minDepth: 5
+Confirmed 51836 of 70742 bases (73.27%)
+Corrected 342 snps; 0 ambiguous bases; corrected 166 small insertions totaling 185 bases, 349 small deletions totaling 485 bases
+Large collapsed region: Backbone_28:11895-41469 size 29575
+# Attempting to fix local continuity breaks
+# fix break: Backbone_28:30989-30992 0 -0 +0 NoSolution
+# fix break: Backbone_28:36368-37932 0 -0 +0 NoSolution
+# fix break: Backbone_28:41555-45558 0 -0 +0 NoSolution
+# fix break: Backbone_28:48863-53964 0 -0 +0 NoSolution
+# fix break: Backbone_28:56710 0 -0 +0 NoSolution
+Backbone_28:1-70742 log:
+Finished processing Backbone_28:1-70742
+Processing Backbone_29:1-12375
+unpaired aligned_reads_sorted.bam: coverage 33
+Total Reads: 14316, Coverage: 33, minDepth: 5
+Confirmed 7129 of 12375 bases (57.61%)
+Corrected 104 snps; 0 ambiguous bases; corrected 38 small insertions totaling 43 bases, 118 small deletions totaling 169 bases
+# Attempting to fix local continuity breaks
+Backbone_29:1-12375 log:
+Finished processing Backbone_29:1-12375
+Processing Backbone_30:1-22315
+unpaired aligned_reads_sorted.bam: coverage 30
+Total Reads: 15745, Coverage: 30, minDepth: 5
+Confirmed 11765 of 22315 bases (52.72%)
+Corrected 259 snps; 2 ambiguous bases; corrected 100 small insertions totaling 114 bases, 201 small deletions totaling 267 bases
+# Attempting to fix local continuity breaks
+Backbone_30:1-22315 log:
+Finished processing Backbone_30:1-22315
+Processing Backbone_4:1-733224
+unpaired aligned_reads_sorted.bam: coverage 53
+Total Reads: 627992, Coverage: 53, minDepth: 5
+Confirmed 604980 of 733224 bases (82.51%)
+Corrected 1913 snps; 4 ambiguous bases; corrected 813 small insertions totaling 920 bases, 1723 small deletions totaling 2432 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_4:14205-17547 0 -0 +0 NoSolution
+# fix break: Backbone_4:23238-28857 0 -0 +0 NoSolution
+# fix break: Backbone_4:33047-39678 0 -0 +0 NoSolution
+# fix break: Backbone_4:43794-43907 0 -0 +0 NoSolution TandemRepeat 58
+# fix break: Backbone_4:44279-44355 0 -0 +0 NoSolution TandemRepeat 58
+# fix break: Backbone_4:75125-80135 0 -0 +0 NoSolution
+# fix break: Backbone_4:95445-96799 0 -0 +0 NoSolution TandemRepeat 38
+# fix break: Backbone_4:105370-109156 0 -0 +0 NoSolution
+# fix break: Backbone_4:114143-119128 0 -0 +0 NoSolution
+# fix break: Backbone_4:132624-136470 0 -0 +0 NoSolution
+# fix break: Backbone_4:181063-190106 0 -0 +0 NoSolution
+# fix break: Backbone_4:197208-202096 0 -0 +0 NoSolution
+# fix break: Backbone_4:214576-222764 0 -0 +0 NoSolution
+# fix break: Backbone_4:240374-242613 0 -0 +0 NoSolution
+# fix break: Backbone_4:244487-247720 0 -0 +0 NoSolution
+# fix break: Backbone_4:259976-263293 0 -0 +0 NoSolution
+# fix break: Backbone_4:276114-277876 0 -0 +0 NoSolution
+# fix break: Backbone_4:286323-288487 0 -0 +0 NoSolution
+# fix break: Backbone_4:293349-296922 0 -0 +0 NoSolution
+# fix break: Backbone_4:306646-308331 0 -0 +0 NoSolution
+# fix break: Backbone_4:312586-315912 0 -0 +0 NoSolution
+# fix break: Backbone_4:351608-353669 0 -0 +0 NoSolution
+# fix break: Backbone_4:365634-368288 0 -0 +0 NoSolution TandemRepeat 115
+# fix break: Backbone_4:389297-394661 0 -0 +0 NoSolution
+# fix break: Backbone_4:419178-422270 0 -0 +0 NoSolution
+# fix break: Backbone_4:475581-475610 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_4:478066-480350 0 -0 +0 NoSolution
+# fix break: Backbone_4:501026-502595 0 -0 +0 NoSolution
+# fix break: Backbone_4:521766-521890 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_4:526610-529324 0 -0 +0 NoSolution
+# fix break: Backbone_4:532713-544271 0 -0 +0 NoSolution
+# fix break: Backbone_4:547551-562736 0 -0 +0 NoSolution
+# fix break: Backbone_4:564306-564720 0 -0 +0 NoSolution
+# fix break: Backbone_4:569376-571387 0 -0 +0 NoSolution
+# fix break: Backbone_4:583662-584280 0 -0 +0 NoSolution
+# fix break: Backbone_4:587465-593895 0 -0 +0 NoSolution
+# fix break: Backbone_4:594781-598146 0 -0 +0 NoSolution
+# fix break: Backbone_4:606769-608364 0 -0 +0 NoSolution
+# fix break: Backbone_4:628603-632182 0 -0 +0 NoSolution
+# fix break: Backbone_4:639896-642363 0 -0 +0 NoSolution
+# fix break: Backbone_4:651992-656988 0 -0 +0 NoSolution
+# fix break: Backbone_4:668177-668308 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_4:668946-673061 0 -0 +0 NoSolution
+# fix break: Backbone_4:684604-697758 0 -0 +0 NoSolution
+# fix break: Backbone_4:706884-714957 0 -0 +0 NoSolution
+Backbone_4:1-733224 log:
+Finished processing Backbone_4:1-733224
+Processing Backbone_31:1-34816
+unpaired aligned_reads_sorted.bam: coverage 29
+Total Reads: 16889, Coverage: 29, minDepth: 5
+Confirmed 18175 of 34816 bases (52.20%)
+Corrected 183 snps; 0 ambiguous bases; corrected 72 small insertions totaling 83 bases, 151 small deletions totaling 213 bases
+Large collapsed region: Backbone_31:16573-26608 size 10036
+# Attempting to fix local continuity breaks
+# fix break: Backbone_31:10303-16701 0 -0 +0 NoSolution
+# fix break: Backbone_31:20746-20748 0 -0 +0 NoSolution
+# fix break: Backbone_31:22889 0 -0 +0 NoSolution
+Backbone_31:1-34816 log:
+Finished processing Backbone_31:1-34816
+Processing Backbone_32:1-24763
+unpaired aligned_reads_sorted.bam: coverage 45
+Total Reads: 19752, Coverage: 45, minDepth: 5
+Confirmed 17916 of 24763 bases (72.35%)
+Corrected 110 snps; 1 ambiguous bases; corrected 27 small insertions totaling 32 bases, 77 small deletions totaling 113 bases
+Large collapsed region: Backbone_32:7768-22545 size 14778
+# Attempting to fix local continuity breaks
+Backbone_32:1-24763 log:
+Finished processing Backbone_32:1-24763
+Processing Backbone_5:1-134358
+unpaired aligned_reads_sorted.bam: coverage 49
+Total Reads: 110929, Coverage: 49, minDepth: 5
+Confirmed 104691 of 134358 bases (77.92%)
+Corrected 385 snps; 0 ambiguous bases; corrected 159 small insertions totaling 182 bases, 362 small deletions totaling 506 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_5:5893-6101 0 -0 +0 NoSolution
+# fix break: Backbone_5:17773-33689 0 -0 +0 NoSolution
+# fix break: Backbone_5:48063-48220 0 -0 +0 NoSolution TandemRepeat 4
+# fix break: Backbone_5:54278-56314 0 -0 +0 NoSolution
+# fix break: Backbone_5:59415-62222 0 -0 +0 NoSolution
+# fix break: Backbone_5:68210-76477 0 -0 +0 NoSolution
+# fix break: Backbone_5:77926-80242 0 -0 +0 NoSolution
+# fix break: Backbone_5:124303-127921 0 -0 +0 NoSolution
+Backbone_5:1-134358 log:
+Finished processing Backbone_5:1-134358
+Processing Backbone_6:1-174473
+unpaired aligned_reads_sorted.bam: coverage 50
+Total Reads: 149887, Coverage: 50, minDepth: 5
+Confirmed 139385 of 174473 bases (79.89%)
+Corrected 548 snps; 0 ambiguous bases; corrected 205 small insertions totaling 224 bases, 508 small deletions totaling 725 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_6:12051-16430 0 -0 +0 NoSolution
+# fix break: Backbone_6:17719-24503 0 -0 +0 NoSolution
+# fix break: Backbone_6:34610-36243 0 -0 +0 NoSolution
+# fix break: Backbone_6:55823-59934 0 -0 +0 NoSolution
+# fix break: Backbone_6:68935-73704 0 -0 +0 NoSolution
+# fix break: Backbone_6:77452-84075 0 -0 +0 NoSolution
+# fix break: Backbone_6:111858-119570 0 -0 +0 NoSolution
+# fix break: Backbone_6:147422-154787 0 -0 +0 NoSolution
+Backbone_6:1-174473 log:
+Finished processing Backbone_6:1-174473
+Processing Backbone_7:1-601725
+unpaired aligned_reads_sorted.bam: coverage 57
+Total Reads: 543732, Coverage: 57, minDepth: 6
+Confirmed 516224 of 601725 bases (85.79%)
+Corrected 1383 snps; 7 ambiguous bases; corrected 527 small insertions totaling 573 bases, 1248 small deletions totaling 1754 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_7:14701-21169 0 -0 +0 NoSolution
+# fix break: Backbone_7:25295-31514 0 -0 +0 NoSolution
+# fix break: Backbone_7:50979-57046 0 -0 +0 NoSolution
+# fix break: Backbone_7:65210-73027 0 -0 +0 NoSolution
+# fix break: Backbone_7:74154-77594 0 -0 +0 NoSolution
+# fix break: Backbone_7:90207-90331 0 -0 +0 NoSolution
+# fix break: Backbone_7:102774-103003 0 -0 +0 NoSolution
+# fix break: Backbone_7:108769-112413 0 -0 +0 NoSolution
+# fix break: Backbone_7:112866-113328 0 -0 +0 NoSolution
+# fix break: Backbone_7:143500-145627 0 -0 +0 NoSolution TandemRepeat 308
+# fix break: Backbone_7:153570-159142 0 -0 +0 NoSolution
+# fix break: Backbone_7:166714-168146 0 -0 +0 NoSolution
+# fix break: Backbone_7:226048-229924 0 -0 +0 NoSolution
+# fix break: Backbone_7:231253-231605 0 -0 +0 NoSolution
+# fix break: Backbone_7:244466-248785 0 -0 +0 NoSolution
+# fix break: Backbone_7:251906-252161 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_7:266103-266387 0 -0 +0 NoSolution
+# fix break: Backbone_7:276469-280365 0 -0 +0 NoSolution
+# fix break: Backbone_7:309431-311608 0 -0 +0 NoSolution
+# fix break: Backbone_7:330127-333507 0 -0 +0 NoSolution
+# fix break: Backbone_7:353775-353878 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_7:358717-372066 0 -0 +0 NoSolution
+# fix break: Backbone_7:381171-382612 0 -0 +0 NoSolution
+# fix break: Backbone_7:385116-387985 0 -0 +0 NoSolution
+# fix break: Backbone_7:393226-399980 0 -0 +0 NoSolution
+# fix break: Backbone_7:404357-407198 0 -0 +0 NoSolution
+# fix break: Backbone_7:421376-425921 0 -0 +0 NoSolution
+# fix break: Backbone_7:444722-447754 0 -0 +0 NoSolution
+# fix break: Backbone_7:453760-454081 0 -0 +0 NoSolution TandemRepeat 5
+# fix break: Backbone_7:457921 0 -0 +0 NoSolution TandemRepeat 3
+# fix break: Backbone_7:464467-466924 0 -0 +0 NoSolution
+# fix break: Backbone_7:476253-477687 0 -0 +0 NoSolution
+# fix break: Backbone_7:482172-482514 0 -0 +0 NoSolution
+# fix break: Backbone_7:485271-487314 0 -0 +0 NoSolution
+# fix break: Backbone_7:488828-492277 0 -0 +0 NoSolution
+# fix break: Backbone_7:500650-504990 0 -0 +0 NoSolution
+# fix break: Backbone_7:530759-531954 0 -0 +0 NoSolution
+# fix break: Backbone_7:571429-578104 0 -0 +0 NoSolution
+# fix break: Backbone_7:581898-583339 0 -0 +0 NoSolution
+# fix break: Backbone_7:597445-597591 0 -0 +0 NoSolution TandemRepeat 2
+Backbone_7:1-601725 log:
+Finished processing Backbone_7:1-601725
+Processing Backbone_8:1-240910
+unpaired aligned_reads_sorted.bam: coverage 48
+Total Reads: 187370, Coverage: 48, minDepth: 5
+Confirmed 183758 of 240910 bases (76.28%)
+Corrected 937 snps; 1 ambiguous bases; corrected 413 small insertions totaling 458 bases, 912 small deletions totaling 1297 bases
+Large collapsed region: Backbone_8:27047-43547 size 16501
+Large collapsed region: Backbone_8:220652-236347 size 15696
+# Attempting to fix local continuity breaks
+# fix break: Backbone_8:8298-13957 0 -0 +0 NoSolution
+# fix break: Backbone_8:16802-26402 0 -0 +0 NoSolution
+# fix break: Backbone_8:52634-60768 0 -0 +0 NoSolution
+# fix break: Backbone_8:75789-91709 0 -0 +0 NoSolution
+# fix break: Backbone_8:101653-107367 0 -0 +0 NoSolution
+fix break: Backbone_8:112209-112398 112220 -165 +165 BreakFix
+# fix break: Backbone_8:130529-136954 0 -0 +0 NoSolution
+# fix break: Backbone_8:140378-140457 0 -0 +0 NoSolution
+# fix break: Backbone_8:156366-158233 0 -0 +0 NoSolution
+# fix break: Backbone_8:161416-163645 0 -0 +0 NoSolution
+# fix break: Backbone_8:172277-174853 0 -0 +0 NoSolution
+# fix break: Backbone_8:178677-180325 0 -0 +0 NoSolution
+# fix break: Backbone_8:183506-190785 0 -0 +0 NoSolution
+# fix break: Backbone_8:195784-200099 0 -0 +0 NoSolution
+# fix break: Backbone_8:210177-218369 0 -0 +0 NoSolution
+# fix break: Backbone_8:221142-221246 0 -0 +0 NoSolution TandemRepeat 2
+Backbone_8:1-240910 log:
+Finished processing Backbone_8:1-240910
+Processing Backbone_9:1-158575
+unpaired aligned_reads_sorted.bam: coverage 46
+Total Reads: 122179, Coverage: 46, minDepth: 5
+Confirmed 116732 of 158575 bases (73.61%)
+Corrected 527 snps; 0 ambiguous bases; corrected 222 small insertions totaling 249 bases, 505 small deletions totaling 715 bases
+Large collapsed region: Backbone_9:65458-80966 size 15509
+# Attempting to fix local continuity breaks
+# fix break: Backbone_9:11021-13594 0 -0 +0 NoSolution
+# fix break: Backbone_9:16249-18770 0 -0 +0 NoSolution
+# fix break: Backbone_9:32389-36892 0 -0 +0 NoSolution
+# fix break: Backbone_9:41304-49450 0 -0 +0 NoSolution
+# fix break: Backbone_9:50767-55804 0 -0 +0 NoSolution
+# fix break: Backbone_9:66840-67582 0 -0 +0 NoSolution TandemRepeat 27
+# fix break: Backbone_9:68049-68152 0 -0 +0 NoSolution TandemRepeat 27
+# fix break: Backbone_9:70924-71039 0 -0 +0 NoSolution TandemRepeat 29
+# fix break: Backbone_9:71278-71339 0 -0 +0 NoSolution TandemRepeat 29
+# fix break: Backbone_9:81293-84874 0 -0 +0 NoSolution
+# fix break: Backbone_9:96998-99247 0 -0 +0 NoSolution
+# fix break: Backbone_9:100749-108615 0 -0 +0 NoSolution
+# fix break: Backbone_9:129216-135529 0 -0 +0 NoSolution
+Backbone_9:1-158575 log:
+Finished processing Backbone_9:1-158575
+Processing Backbone_10:1-160482
+unpaired aligned_reads_sorted.bam: coverage 49
+Total Reads: 129821, Coverage: 49, minDepth: 5
+Confirmed 125985 of 160482 bases (78.50%)
+Corrected 529 snps; 0 ambiguous bases; corrected 217 small insertions totaling 237 bases, 444 small deletions totaling 616 bases
+# Attempting to fix local continuity breaks
+# fix break: Backbone_10:14729-18688 0 -0 +0 NoSolution
+# fix break: Backbone_10:22817-25801 0 -0 +0 NoSolution
+# fix break: Backbone_10:51338-52483 0 -0 +0 NoSolution TandemRepeat 2
+# fix break: Backbone_10:72199-74518 0 -0 +0 NoSolution
+# fix break: Backbone_10:99593-110616 0 -0 +0 NoSolution
+# fix break: Backbone_10:115165-125982 0 -0 +0 NoSolution
+# fix break: Backbone_10:137118-137415 0 -0 +0 NoSolution
+Backbone_10:1-160482 log:
+Finished processing Backbone_10:1-160482
+Writing updated Backbone_1_pilon to pilon_polished.fasta
+Writing updated Backbone_2_pilon to pilon_polished.fasta
+Writing updated Backbone_11_pilon to pilon_polished.fasta
+Writing updated Backbone_12_pilon to pilon_polished.fasta
+Writing updated Backbone_13_pilon to pilon_polished.fasta
+Writing updated Backbone_14_pilon to pilon_polished.fasta
+Writing updated Backbone_15_pilon to pilon_polished.fasta
+Writing updated Backbone_16_pilon to pilon_polished.fasta
+Writing updated Backbone_17_pilon to pilon_polished.fasta
+Writing updated Backbone_18_pilon to pilon_polished.fasta
+Writing updated Backbone_19_pilon to pilon_polished.fasta
+Writing updated Backbone_20_pilon to pilon_polished.fasta
+Writing updated Backbone_3_pilon to pilon_polished.fasta
+Writing updated Backbone_21_pilon to pilon_polished.fasta
+Writing updated Backbone_22_pilon to pilon_polished.fasta
+Writing updated Backbone_23_pilon to pilon_polished.fasta
+Writing updated Backbone_24_pilon to pilon_polished.fasta
+Writing updated Backbone_25_pilon to pilon_polished.fasta
+Writing updated Backbone_26_pilon to pilon_polished.fasta
+Writing updated Backbone_27_pilon to pilon_polished.fasta
+Writing updated Backbone_28_pilon to pilon_polished.fasta
+Writing updated Backbone_29_pilon to pilon_polished.fasta
+Writing updated Backbone_30_pilon to pilon_polished.fasta
+Writing updated Backbone_4_pilon to pilon_polished.fasta
+Writing updated Backbone_31_pilon to pilon_polished.fasta
+Writing updated Backbone_32_pilon to pilon_polished.fasta
+Writing updated Backbone_5_pilon to pilon_polished.fasta
+Writing updated Backbone_6_pilon to pilon_polished.fasta
+Writing updated Backbone_7_pilon to pilon_polished.fasta
+Writing updated Backbone_8_pilon to pilon_polished.fasta
+Writing updated Backbone_9_pilon to pilon_polished.fasta
+Writing updated Backbone_10_pilon to pilon_polished.fasta
+Mean unpaired coverage: 50
+Mean total coverage: 50
+Creating Pilon track in file pilon_polishedPilon.bed
+Creating Changes track in file pilon_polishedChanges.wig
+Creating Unconfirmed track in file pilon_polishedUnconfirmed.wig
+Creating Copy Number track in file pilon_polishedCopyNumber.wig
+Creating Coverage track in file pilon_polishedCoverage.wig
+Creating Bad Coverage track in file pilon_polishedBadCoverage.wig
+Creating Pct Bad track in file pilon_polishedPctBad.wig
+Creating Delta Coverage track in file pilon_polishedDeltaCoverage.wig
+Creating Dip Coverage track in file pilon_polishedDipCoverage.wig
+Creating Physical Coverage track in file pilon_polishedPhysicalCoverage.wig
+Creating Clipped Alignments track in file pilon_polishedClippedAlignments.wig
+Creating Weighted Qual track in file pilon_polishedWeightedQual.wig
+Creating Weighted MQ track in file pilon_polishedWeightedMq.wig
+Creating GC track in file pilon_polishedGC.wig
