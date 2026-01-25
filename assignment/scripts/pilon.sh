@@ -99,7 +99,7 @@ singularity exec ${SINGULARITY} \
 
 singularity exec ${SINGULARITY} \
     bash -c "\
-    samtools sort -o aligned_reads.bam -o aligned_reads_sorted.bam \
+    samtools sort aligned_reads.bam -o aligned_reads_sorted.bam \
     && samtools index aligned_reads_sorted.bam"
 
 singularity exec ${SINGULARITY} \
@@ -108,7 +108,7 @@ singularity exec ${SINGULARITY} \
     --genome final_assembly.fasta \
     --output pilon_polished \
     --tracks > pilon_output.log
-    
+
 # Completion message
 echo "Done"
 date
