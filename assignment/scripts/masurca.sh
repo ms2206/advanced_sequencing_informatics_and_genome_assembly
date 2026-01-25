@@ -11,7 +11,7 @@
 # PBS directives
 #---------------
 
-#PBS -N <NAME_YOUR_JOB>
+#PBS -N masurca
 #PBS -l nodes=1:ncpus=4
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
@@ -68,8 +68,13 @@ mkdir -p "${output_dir}"
     
 # Main code 
 # ========================
-singularity exec "${SINGULARITY}" \
-    ${MASURCA} -g masurca_config.txt
+
+if [[ ! -e "masurca_config.txt"]] ; then
+    echo "Creating MASURCA config file"
+    singularity exec "${SINGULARITY}" \
+        ${MASURCA} -g masurca_config.txt
+
+fi
 
 
 
