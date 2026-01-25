@@ -11,7 +11,7 @@
 # PBS directives
 #---------------
 
-#PBS -N dbg2olc
+#PBS -N pilon
 #PBS -l nodes=1:ncpus=4
 #PBS -l walltime=00:30:00
 #PBS -q half_hour
@@ -56,79 +56,45 @@ singularity --version
 WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/"
 cd "${WORKING_FOLDER}"
 
+
 # Load static file paths 
 source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # Any additional variables or paths can be added here
+# Any additional variables or paths can be added here
 # get sample name
 sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .pair_1.fq.gz)
 
-# dynamically get kmer size from SOAP assembly path
+# get kmer size from user input
 kmer=${input_kmer_size}
 
+# get assembly tool that generated the assembly to be polished
+assembly_tool=${input_assembly_tool}
+
 # Create output directory and change to it
-output_dir="${DBG2OLC_DIR}/${sample}_k${kmer}"
+output_dir="${PILON_DIR}"/"${sample}_k${kmer}_${assembly_tool}"
 mkdir -p "${output_dir}"
 cd "${output_dir}"
 
-# Sanity checks
-if [[ ! -s "${SOAP_ASSEMBELLY}" ]]; then
-    echo "ERROR: Contigs file not found or empty: ${SOAP_ASSEMBELLY}" 
-    exit 1
-fi
-
-if [[ ! -s "${PACBIO_READS}" ]]; then
-    echo "ERROR: PacBio reads file not found or empty: ${PACBIO_READS}" 
-    exit 1
-fi
-
+   
 # Main code 
 # ========================
-echo "Running DBG2OLC for sample ${sample} with kmer size ${kmer}"
-echo "Results will be saved to: ${output_dir}"
+# Run Pilon
+# Make symlink to final assembly in current directory
+ls -s "${DBG2OLC_DIR}/${sample}_k${kmer}"/consensus_output/final_assembly.fasta .
 
-# Unzip reads
-zcat "${PACBIO_READS}" > "HS7_pacbioData.fasta"
-
-
-# Run DBG2OLC using my soapdenovo2 assembly
 singularity exec ${SINGULARITY} \
-    "${DBG2OLC}/DBG2OLC" \
-    -k ${kmer} \
-    AdaptiveTh 0.0001 \
-    KmerCovTh 2 \
-    MinOverlap 20 \
-    RemoveChimera 1 \
-    Contigs "${SOAP_ASSEMBELLY}" \
-    f "HS7_pacbioData.fasta"
+    bwa index final_assembly.fasta
 
-# remove intermediate file
-
-
-echo "DBG2OLC assembly completed."
-
-# consensus stage
-echo "Preparing reads in single fasta..."
-cat "${SOAP_ASSEMBELLY}" "HS7_pacbioData.fasta" > "DBG2OLC_contigs_plus_pacbio.fasta"
-
-# Enable the use of my_split_nrun_sparc and pitchfork
-echo "Setting up environment for Sparc polishing..."
 singularity exec ${SINGULARITY} \
-    bash -c "chmod a+x ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
-    && source /pitchfork/setup-env.sh"
+    bash -c "\
+    bwa mem -t ${cpus} final_assembly.fasta \
+    "${COR_ILLUMINA_SR_READ_1}" "${COR_ILLUMINA_SR_READ_2}" | \
+    samtools view -bS - > aligned_reads.bam"
 
 
-echo "Running my_split_nrun_sparc.sh..."
-singularity exec "${SINGULARITY}" \
-    ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
-    backbone_raw.fasta \
-    DBG2OLC_Consensus_info.txt \
-    DBG2OLC_contigs_plus_pacbio.fasta \
-    consensus_output 2
 
 
-# clean up intermediate files
-rm "HS7_pacbioData.fasta"
 # Completion message
 echo "Done"
 date

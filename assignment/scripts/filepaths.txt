@@ -17,3 +17,4 @@ KMER_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_ge
 SOAP_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/soap_denono_2"
 CUTADAPT_WORKING_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/cutadapt"
 DBG2OLC_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/dbg2olc"
+PILON_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon"
