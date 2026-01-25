@@ -87,8 +87,9 @@ fi
 echo "Running DBG2OLC for sample ${sample} with kmer size ${kmer}"
 echo "Results will be saved to: ${output_dir}"
 
-# Unzip PacBio reads
+# Unzip reads
 zcat "${PACBIO_READS}" > "HS7_pacbioData.fasta"
+
 
 # Run DBG2OLC using my soapdenovo2 assembly
 singularity exec ${SINGULARITY} \
@@ -102,8 +103,30 @@ singularity exec ${SINGULARITY} \
     f "HS7_pacbioData.fasta"
 
 # remove intermediate file
-rm "HS7_pacbioData.fasta"
 
+
+echo "DBG2OLC assembly completed."
+
+# Enable the use of my_split_nrun_sparc and pitchfork
+echo "Setting up environment for Sparc polishing..."
+singularity exec ${SINGULARITY} \
+    bash -c "source ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
+    && source /pitchfork/setup-env.sh"
+
+# consensus stage
+cat "${SOAP_ASSEMBELLY}" "HS7_pacbioData.fasta" > "DBG2OLC_contigs_plus_pacbio.fasta"
+echo "Running Sparc polishing..."
+
+singularity exec "${SINGULARITY}" \
+    ./my_split_nrun_sparc.sh \
+    backbone_raw.fasta \
+    DBG2OLC_Consensus_info.txt \
+    DBG2OLC_contigs_plus_pacbio.fasta \
+    consensus_output 2
+
+
+# clean up intermediate files
+rm "HS7_pacbioData.fasta"
 # Completion message
 echo "Done"
 date
