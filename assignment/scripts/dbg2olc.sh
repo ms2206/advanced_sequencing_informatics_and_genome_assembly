@@ -70,7 +70,18 @@ kmer=${input_kmer_size}
 output_dir="${DBG2OLC_DIR}/${sample}_k${kmer}"
 mkdir -p "${output_dir}"
 cd "${output_dir}"
-    
+
+# Sanity checks
+if [[ ! -s "${SOAP_ASSEMBELLY}" ]]; then
+    echo "ERROR: Contigs file not found or empty: ${SOAP_ASSEMBELLY}" >&2
+    exit 1
+fi
+
+if [[ ! -s "${PACBIO_READS}" ]]; then
+    echo "ERROR: PacBio reads file not found or empty: ${PACBIO_READS}" >&2
+    exit 1
+fi
+
 # Main code 
 # ========================
 echo "Running DBG2OLC for sample ${sample} with kmer size ${kmer}"
@@ -85,7 +96,7 @@ singularity exec ${SINGULARITY} \
     MinOverlap 20 \
     RemoveChimera 1 \
     Contigs "${SOAP_ASSEMBELLY}" \
-    f "${PACBIO_READS}"
+    f "${PACBIO_READS_LOCAL}"
 
 # Completion message
 echo "Done"
