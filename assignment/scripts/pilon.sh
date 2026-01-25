@@ -81,7 +81,7 @@ cd "${output_dir}"
 # ========================
 # Run Pilon
 # Make symlink to final assembly in current directory
-ls -s "${DBG2OLC_DIR}/${sample}_k${kmer}"/consensus_output/final_assembly.fasta .
+ln -s "${DBG2OLC_DIR}/${sample}_k${kmer}"/consensus_output/final_assembly.fasta .
 
 singularity exec ${SINGULARITY} \
     bwa index final_assembly.fasta
