@@ -69,7 +69,7 @@ mkdir -p "${output_dir}"
 # Main code 
 # ========================
 
-if [[ ! -e "masurca_config.txt"]]; then
+if [[ ! -e "masurca_config.txt" ]]; then
     echo "Creating MASURCA config file"
     singularity exec "${SINGULARITY}" \
         ${MASURCA} -g masurca_config.txt
