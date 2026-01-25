@@ -102,7 +102,13 @@ singularity exec ${SINGULARITY} \
     samtools sort -o aligned_reads.bam -o aligned_reads_sorted.bam \
     && samtools index aligned_reads_sorted.bam"
 
-
+singularity exec ${SINGULARITY} \
+    java -jar /usr/local/bin/pilon-1.22.jar \
+    --unpaired aligned_reads_sorted.bam \
+    --genome final_assembly.fasta \
+    --output pilon_polished \
+    --tracks > pilon_output.log
+    
 # Completion message
 echo "Done"
 date
