@@ -83,16 +83,21 @@ cd "${output_dir}"
 # Make symlink to final assembly in current directory
 ln -s "${DBG2OLC_DIR}/${sample}_k${kmer}"/consensus_output/final_assembly.fasta .
 
+# Index the assembly
 singularity exec ${SINGULARITY} \
     bwa index final_assembly.fasta
 
+# Align the Illumina reads to the assembly
 singularity exec ${SINGULARITY} \
     bash -c "\
     bwa mem -t ${cpus} final_assembly.fasta \
     "${COR_ILLUMINA_SR_READ_1}" "${COR_ILLUMINA_SR_READ_2}" | \
     samtools view -bS - > aligned_reads.bam"
 
-
+singularity exec ${SINGULARITY} \
+    bash -c "\
+    samtools sort -o aligned_reads.bam -o aligned_reads_sorted.bam \
+    && samtools index aligned_reads_sorted.bam"
 
 
 # Completion message
