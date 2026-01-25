@@ -83,7 +83,7 @@ singularity exec ${SINGULARITY} \
     NodeCovTh 1 \
     k ${kmer} \
     g 1 \
-    ${}
+    f "${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}" 
 
 # Completion message
 echo "Done"
