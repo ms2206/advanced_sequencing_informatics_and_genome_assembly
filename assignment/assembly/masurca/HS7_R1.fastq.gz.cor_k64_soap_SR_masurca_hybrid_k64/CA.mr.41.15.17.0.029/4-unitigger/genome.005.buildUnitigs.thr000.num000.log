@@ -1,0 +1,22 @@
+==> BUILDING UNITIGS from 11671 fragments.
+==> BUILDING UNITIGS catching missed fragments.
+InsertSizes()-- lib 1 mean 0 stddev 0 samples 0
+==> MATE HAPPINESS
+
+unmated          2763
+
+                  dove-dove  dove-cont  cont-cont
+happy                     0          0          0
+
+goodExternalFwd           0          0          0
+goodExternalRev           0          0          0
+
+badExternalFwd            0          0          0
+badExternalRev            0          0          0
+badCompressed             0          0          0
+badStretched              0          0          0
+badNormal                 0          0          0
+badAnti                   0          0          0
+badOuttie                 0          0          0
+badFwd                    0          0          0
+badRev                    0          0          0

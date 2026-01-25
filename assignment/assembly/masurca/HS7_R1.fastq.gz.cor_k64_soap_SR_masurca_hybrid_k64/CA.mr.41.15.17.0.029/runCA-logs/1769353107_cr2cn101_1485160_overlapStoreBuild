@@ -1,0 +1,17 @@
+CA version 8.2 ($Id: overlapStoreBuild.C 4550 2014-07-31 13:56:46Z brianwalenz $).
+
+Error Rates:
+AS_OVL_ERROR_RATE 0.100000
+AS_CNS_ERROR_RATE 0.100000
+AS_CGW_ERROR_RATE 0.150000
+AS_MAX_ERROR_RATE 0.400000
+
+Current Working Directory:
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029
+
+Command:
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/overlapStoreBuild \
+  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.BUILDING \
+  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+  -M 65536 \
+  -L /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.list

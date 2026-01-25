@@ -1,0 +1,39 @@
+LoadScaffoldGraphFromCheckpoint()--  Loading checkpoint '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-CGW/genome.ckp.11' at Sun Jan 25 14:59:46 2026
+LoadScaffoldGraphFromCheckpoint()--  Loading reads and dists.
+LoadScaffoldGraphFromCheckpoint()--  Loading unitigs.
+LoadScaffoldGraphFromCheckpoint()--  Loading contigs.
+LoadScaffoldGraphFromCheckpoint()--  Loading scaffolds.
+LoadScaffoldGraphFromCheckpoint()--  Loading chunk overlaps.
+LoadScaffoldGraphFromCheckpoint()--  Rebuilding unitig edges.
+ResizeEdgeList()-- sizing list for 'c' to 292 (currently 0)
+RebuildGraphEdges()-- Rebuilding 0 edges in 138 unitigs.
+LoadScaffoldGraphFromCheckpoint()--  Rebuilding contig edges.
+ResizeEdgeList()-- sizing list for 'C' to 292 (currently 0)
+RebuildGraphEdges()-- Rebuilding 0 edges in 138 contigs.
+LoadScaffoldGraphFromCheckpoint()--  Rebuilding scaffold edges.
+ResizeEdgeList()-- sizing list for 'S' to 54 (currently 0)
+RebuildGraphEdges()-- Rebuilding 0 edges in 19 scaffolds.
+* ScaffoldGraph Memory Report:
+*	     	numElements	AllocatedElements	AllocatedSize
+VA        128 bytes; elements:          2 active;          2 allocated;    64 bytes; 'Dists'
+VA    1120512 bytes; elements:      11672 active;      11672 allocated;    96 bytes; 'CIFrags'
+VA      23184 bytes; elements:        138 active;        138 allocated;   168 bytes; 'CIs    '
+VA          0 bytes; elements:          0 active;          0 allocated;    96 bytes; 'CIEdges'
+VA      23184 bytes; elements:        138 active;        138 allocated;   168 bytes; 'Contigs    '
+VA          0 bytes; elements:          0 active;          0 allocated;    96 bytes; 'ConEdges'
+VA       3192 bytes; elements:         19 active;         19 allocated;   168 bytes; 'Scaffolds'
+VA          0 bytes; elements:          0 active;          0 allocated;    96 bytes; 'SEdges'
+*	TotalMemorySize = 1170200
+Writing assembly file
+writeMDI()--
+writeAFGFromCGW()--
+writeAMP()--
+writeUTGFromCGW()--
+writeULK()--
+writeCCO()--
+writeCLK()--
+writeSCF()--
+writeSLK()--
+Assembly file complete.
+Writing IID to UID mapping files.
+IID to UID mapping files complete.

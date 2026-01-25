@@ -1,0 +1,56 @@
+repeatDetect()-- WORKING on unitig 8/155 of length 334974 with 803 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 8 error 0.000858 +- 0.001874
+markRepeats()--  filtering low coverage spurious with t=15 in 1 repeat regions (1 depth regions)
+markRepeats()--  filtered 348 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 8 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 9/155 of length 33753 with 85 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 9 error 0.001320 +- 0.002976
+markRepeats()--  filtering low coverage spurious with t=15 in 3 repeat regions (5 depth regions)
+markRepeats()--  filtered 1417 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 9 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 11/155 of length 58002 with 123 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 11 error 0.002195 +- 0.005302
+markRepeats()--  filtering low coverage spurious with t=15 in 3 repeat regions (13 depth regions)
+markRepeats()--  filtered 2513 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 11 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 29/155 of length 69437 with 147 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 29 error 0.001242 +- 0.003180
+markRepeats()--  filtering low coverage spurious with t=15 in 0 repeat regions (0 depth regions)
+markRepeats()--  filtered 0 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 29 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 31/155 of length 18837 with 56 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 31 error 0.001348 +- 0.001063
+markRepeats()--  filtering low coverage spurious with t=15 in 0 repeat regions (0 depth regions)
+markRepeats()--  filtered 0 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 31 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 38/155 of length 25996 with 56 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 38 error 0.001471 +- 0.004255
+markRepeats()--  filtering low coverage spurious with t=15 in 1 repeat regions (12 depth regions)
+markRepeats()--  filtered 1204 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 38 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 43/155 of length 362045 with 792 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 43 error 0.000560 +- 0.000709
+markRepeats()--  filtering low coverage spurious with t=15 in 0 repeat regions (0 depth regions)
+markRepeats()--  filtered 0 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 43 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 58/155 of length 23590 with 48 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 58 error 0.000579 +- 0.000992
+markRepeats()--  filtering low coverage spurious with t=15 in 0 repeat regions (0 depth regions)
+markRepeats()--  filtered 0 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 58 has 0 interesting junctions:

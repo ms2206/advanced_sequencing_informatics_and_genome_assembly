@@ -1,0 +1,7 @@
+repeatDetect()-- WORKING on unitig 1/155 of length 1408351 with 3406 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 1 error 0.001464 +- 0.004131
+markRepeats()--  filtering low coverage spurious with t=15 in 18 repeat regions (85 depth regions)
+markRepeats()--  filtered 10891 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 1 has 0 interesting junctions:

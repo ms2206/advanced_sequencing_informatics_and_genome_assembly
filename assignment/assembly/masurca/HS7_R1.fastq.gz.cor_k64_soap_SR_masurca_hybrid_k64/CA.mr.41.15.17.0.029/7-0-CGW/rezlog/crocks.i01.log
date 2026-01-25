@@ -1,0 +1,193 @@
+### Contigs in graph = 138
+
+Unique Chunks
+Chunk#   Scaff#    A End    B End (Celsim coords)
+
+### total unique chunks = 19
+
+Scaffolds
+Scaffold   0:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       0    (       0,        0)  ( 1408291,    36616)  1408291
+Scaffold   1:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       2    (       0,        0)  ( 1414129,    36767)  1414129
+Scaffold   2:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       3    (       0,        0)  (  226904,     5900)   226904
+Scaffold   3:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       4    (       0,        0)  (   46752,     1216)    46752
+Scaffold   4:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       5    (       0,        0)  (  335050,     8711)   335050
+Scaffold   5:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       6    (       0,        0)  (   33750,      878)    33750
+Scaffold   6:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:       7    (       0,        0)  (   58000,     1508)    58000
+Scaffold   7:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      12    (       0,        0)  (  399793,    10395)   399793
+Scaffold   8:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      22    (       0,        0)  (   12481,      325)    12481
+Scaffold   9:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      23    (       0,        0)  (   69436,     1805)    69436
+Scaffold  10:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      25    (       0,        0)  (   18841,      490)    18841
+Scaffold  11:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      26    (       0,        0)  (   14973,      389)    14973
+Scaffold  12:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      27    (       0,        0)  (  119347,     3103)   119347
+Scaffold  13:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      28    (       0,        0)  (   25994,      676)    25994
+Scaffold  14:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      31    (       0,        0)  (  362062,     9414)   362062
+Scaffold  15:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      34    (       0,        0)  (  161801,     4207)   161801
+Scaffold  16:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      35    (       0,        0)  (   49780,     1294)    49780
+Scaffold  17:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      36    (       0,        0)  (  188100,     4891)   188100
+Scaffold  18:
+  Idx    Chunk    (   Start, Variance)  (     End, Variance)      Len
+    0:      42    (       0,        0)  (   23596,      613)    23596
+
+Scaffold Edges
+Scaffold   0:
+A Edges
+B Edges
+Scaffold   1:
+A Edges
+B Edges
+Scaffold   2:
+A Edges
+B Edges
+Scaffold   3:
+A Edges
+B Edges
+Scaffold   4:
+A Edges
+B Edges
+Scaffold   5:
+A Edges
+B Edges
+Scaffold   6:
+A Edges
+B Edges
+Scaffold   7:
+A Edges
+B Edges
+Scaffold   8:
+A Edges
+B Edges
+Scaffold   9:
+A Edges
+B Edges
+Scaffold  10:
+A Edges
+B Edges
+Scaffold  11:
+A Edges
+B Edges
+Scaffold  12:
+A Edges
+B Edges
+Scaffold  13:
+A Edges
+B Edges
+Scaffold  14:
+A Edges
+B Edges
+Scaffold  15:
+A Edges
+B Edges
+Scaffold  16:
+A Edges
+B Edges
+Scaffold  17:
+A Edges
+B Edges
+Scaffold  18:
+A Edges
+B Edges
+
+Connections from unresolved chunks to uniques
+
+ Confirm_Contained:
+
+>>> Fill before  Update_Scaffold_Graph <<<
+
+*** Chunks to fill in gaps ***
+
+ Scaffold #0  num_gaps = 2:
+   EMPTY
+
+ Scaffold #1  num_gaps = 2:
+   EMPTY
+
+ Scaffold #2  num_gaps = 2:
+   EMPTY
+
+ Scaffold #3  num_gaps = 2:
+   EMPTY
+
+ Scaffold #4  num_gaps = 2:
+   EMPTY
+
+ Scaffold #5  num_gaps = 2:
+   EMPTY
+
+ Scaffold #6  num_gaps = 2:
+   EMPTY
+
+ Scaffold #7  num_gaps = 2:
+   EMPTY
+
+ Scaffold #8  num_gaps = 2:
+   EMPTY
+
+ Scaffold #9  num_gaps = 2:
+   EMPTY
+
+ Scaffold #10  num_gaps = 2:
+   EMPTY
+
+ Scaffold #11  num_gaps = 2:
+   EMPTY
+
+ Scaffold #12  num_gaps = 2:
+   EMPTY
+
+ Scaffold #13  num_gaps = 2:
+   EMPTY
+
+ Scaffold #14  num_gaps = 2:
+   EMPTY
+
+ Scaffold #15  num_gaps = 2:
+   EMPTY
+
+ Scaffold #16  num_gaps = 2:
+   EMPTY
+
+ Scaffold #17  num_gaps = 2:
+   EMPTY
+
+ Scaffold #18  num_gaps = 2:
+   EMPTY
+
+*** Total chunks in fill_info = 0 ***
+***               Keep chunks = 0 ***
+***        Bytes in fill_info = 4256 ***

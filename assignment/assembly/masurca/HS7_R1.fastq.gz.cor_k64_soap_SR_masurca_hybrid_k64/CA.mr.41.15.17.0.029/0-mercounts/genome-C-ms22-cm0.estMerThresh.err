@@ -1,0 +1,16 @@
+distinct: 4853399
+unique:   50519
+total:    35945352
+distinct: 4853399
+unique:   50519
+total:    35945352
+Xcoverage zero 1 0 50519
+Xcoverage incr 2 50519 101613
+Xcoverage incr 3 101613 218552
+Xcoverage incr 4 218552 418621
+Xcoverage incr 5 418621 597613
+Xcoverage incr 6 597613 693270
+Xcoverage incr 7 693270 717995
+Guessed X coverage is 7
+Set maxCount to 23, which will cover 99.52% of distinct mers and 95.45% of all mers.
+Reset maxCount to 35

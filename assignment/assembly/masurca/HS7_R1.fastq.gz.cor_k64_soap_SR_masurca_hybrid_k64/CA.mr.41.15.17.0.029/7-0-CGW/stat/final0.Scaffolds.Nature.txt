@@ -1,0 +1,2 @@
+Number removed by transitive reduction: 0
+Number Edges marked inferred by end-tuck: 0

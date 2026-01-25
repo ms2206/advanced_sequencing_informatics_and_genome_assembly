@@ -1,0 +1,19 @@
+Computing unitig consensus for b=0 to e=138
+Working on unitig 31 of length 362062 (1 unitigs 792 fragments) - already computed, skipped
+Working on unitig 34 of length 161801 (1 unitigs 372 fragments) - already computed, skipped
+Working on unitig 35 of length 49780 (1 unitigs 117 fragments) - already computed, skipped
+Working on unitig 36 of length 188100 (1 unitigs 425 fragments) - already computed, skipped
+Working on unitig 42 of length 23596 (1 unitigs 48 fragments) - already computed, skipped
+
+NumColumnsInUnitigs             = 0
+NumGapsInUnitigs                = 0
+NumRunsOfGapsInUnitigReads      = 0
+NumColumnsInContigs             = 0
+NumGapsInContigs                = 0
+NumRunsOfGapsInContigReads      = 0
+NumAAMismatches                 = 0
+NumVARRecords                   = 0
+NumVARStringsWithFlankingGaps   = 0
+NumUnitigRetrySuccess           = 0
+
+Consensus finished successfully.  Bye.

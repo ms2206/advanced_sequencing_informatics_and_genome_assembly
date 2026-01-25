@@ -1,0 +1,8 @@
+HASH: 0 reads or 10000000 length.
+REF:  1000000 reads or 0 length.
+Loading lengths of 11671 fragments (0mb)
+Partitioning for hash: 1-11671 ref: 1,11671
+HASH          1-      3063  REFR          1-      3063  STRINGS       3063  BASES   10001868 JOB 1
+HASH       3064-      6117  REFR          1-      6117  STRINGS       3054  BASES   10003347 JOB 2
+HASH       6118-      9266  REFR          1-      9266  STRINGS       3149  BASES   10002902 JOB 3
+HASH       9267-     11671  REFR          1-     11671  STRINGS       2405  BASES    6198731 JOB 4

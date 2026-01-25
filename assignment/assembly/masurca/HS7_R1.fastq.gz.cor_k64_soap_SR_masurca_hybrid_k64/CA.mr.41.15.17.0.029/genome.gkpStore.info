@@ -1,0 +1,4 @@
+libIID	bgnIID	endIID	active	deleted	mated	totLen	clrLen	libName
+0	1	11671	11671	0	0	36195177	36195177	GLOBAL
+0	0	0	0	0	0	0	0	LegacyUnmatedReads
+1	1	11671	11671	0	0	36195177	36195177	mr

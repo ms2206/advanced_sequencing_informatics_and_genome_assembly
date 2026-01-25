@@ -1,0 +1,26 @@
+==> SPLIT DISCONTINUOUS
+splitDiscontinuous()-- Tested 27 unitigs, split 0 into 0 new unitigs.
+==> PLACING CONTAINED FRAGMENTS
+placeContainsUsingBestOverlaps()-- Placed 0 fragments; still need to place 0
+placeContainsUsingBestOverlaps()-- 0 frags placed in unitigs (including singleton unitigs)
+placeContainsUsingBestOverlaps()-- 0 frags placed in singleton unitigs
+placeContainsUsingBestOverlaps()-- 0 frags unplaced
+checkUnitigMembership()--  numfrags=11671
+checkUnitigMembership()-- nutg=72 nfrg=11671 lost=0 found=11671
+checkUnitigMembership()-- log2 length histogram:
+checkUnitigMembership()--  5 (       32-       64) 0
+checkUnitigMembership()--  6 (       64-      128) 0
+checkUnitigMembership()--  7 (      128-      256) 0
+checkUnitigMembership()--  8 (      256-      512) 0
+checkUnitigMembership()--  9 (      512-     1024) 17
+checkUnitigMembership()-- 10 (     1024-     2048) 20
+checkUnitigMembership()-- 11 (     2048-     4096) 8
+checkUnitigMembership()-- 12 (     4096-     8192) 4
+checkUnitigMembership()-- 13 (     8192-    16384) 4
+checkUnitigMembership()-- 14 (    16384-    32768) 3
+checkUnitigMembership()-- 15 (    32768-    65536) 6
+checkUnitigMembership()-- 16 (    65536-   131072) 2
+checkUnitigMembership()-- 17 (   131072-   262144) 3
+checkUnitigMembership()-- 18 (   262144-   524288) 3
+checkUnitigMembership()-- 19 (   524288-  1048576) 0
+checkUnitigMembership()-- 20 (  1048576-  2097152) 2

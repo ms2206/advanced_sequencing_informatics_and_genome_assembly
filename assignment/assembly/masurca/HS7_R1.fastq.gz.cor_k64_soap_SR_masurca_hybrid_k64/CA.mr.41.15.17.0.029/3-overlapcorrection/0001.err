@@ -1,0 +1,11 @@
+Quality Threshold = 1.50%
+Allocating 42987688 words for Edit_Space.
+Starting Read_Frags ()
+Starting Correct_Frags ()
+Starting Read_Olaps ()
+Starting qsort ()
+Starting Redo_Olaps ()
+Starting re-sort
+Saving corrected error rates to file /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/0001.erate.WORKING
+982/203602 failed/total alignments (0.5%)
+Finished

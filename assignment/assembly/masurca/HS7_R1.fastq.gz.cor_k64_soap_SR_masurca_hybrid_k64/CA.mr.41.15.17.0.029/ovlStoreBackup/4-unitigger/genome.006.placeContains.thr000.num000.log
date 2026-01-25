@@ -1,0 +1,7 @@
+==> PLACING CONTAINED FRAGMENTS
+placeContainsUsingBestOverlaps()-- Placed 8827 fragments; still need to place 0
+==> PLACING CONTAINED FRAGMENTS
+placeContainsUsingBestOverlaps()-- Placed 0 fragments; still need to place 0
+placeContainsUsingBestOverlaps()-- 8827 frags placed in unitigs (including singleton unitigs)
+placeContainsUsingBestOverlaps()-- 15 frags placed in singleton unitigs
+placeContainsUsingBestOverlaps()-- 0 frags unplaced

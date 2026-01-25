@@ -1,0 +1,12 @@
+BASED ON ALL UNITIGS:
+sumRho:                           4963410
+totalRandomFrags:                 11671
+Supplied genome size              0
+Computed genome size:             4994220.53
+Calculated Global Arrival rate:   0.002337
+BASED ON UNITIGS > N50:
+rho N50:                          1360588
+sumRho:                           2773947
+totalRandomFrags:                 6431
+Computed genome size:             5034168.16
+Calculated Global Arrival rate:   0.002318

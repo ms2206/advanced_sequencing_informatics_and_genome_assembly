@@ -1,0 +1,19 @@
+CA version 8.2 ($Id: overlap_partition.C 4477 2013-12-02 17:41:49Z skoren $).
+
+Error Rates:
+AS_OVL_ERROR_RATE 0.100000
+AS_CNS_ERROR_RATE 0.100000
+AS_CGW_ERROR_RATE 0.150000
+AS_MAX_ERROR_RATE 0.400000
+
+Current Working Directory:
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029
+
+Command:
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/overlap_partition \
+  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+  -bl 10000000 \
+  -bs 0 \
+  -rs 1000000 \
+  -rl 0 \
+  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper

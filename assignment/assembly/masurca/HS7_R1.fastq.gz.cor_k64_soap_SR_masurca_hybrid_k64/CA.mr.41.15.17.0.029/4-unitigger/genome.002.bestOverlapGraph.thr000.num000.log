@@ -1,0 +1,28 @@
+BestOverlapGraph-- allocating best edges (0MB) and containments (0MB)
+BestOverlapGraph()-- analyzing 11671 fragments for best contains, with 4 threads.
+BestOverlapGraph()-- analyzing 11671 fragments for best edges, with 4 threads.
+BestOverlapGraph()-- detecting spur fragments.
+BestOverlapGraph()-- frag 398 is a 5' spur.
+BestOverlapGraph()-- frag 479 is a 3' spur.
+BestOverlapGraph()-- frag 1150 is a 3' spur.
+BestOverlapGraph()-- frag 1819 is a 5' spur.
+BestOverlapGraph()-- frag 2821 is a 5' spur.
+BestOverlapGraph()-- frag 4065 is a 5' spur.
+BestOverlapGraph()-- frag 4309 is a 3' spur.
+BestOverlapGraph()-- frag 4677 is a 3' spur.
+BestOverlapGraph()-- frag 5748 is a 5' spur.
+BestOverlapGraph()-- frag 6865 is a 3' spur.
+BestOverlapGraph()-- frag 7180 is a 5' spur.
+BestOverlapGraph()-- frag 8253 is a 3' spur.
+BestOverlapGraph()-- frag 9862 is a 3' spur.
+BestOverlapGraph()-- frag 9901 is a 5' spur.
+BestOverlapGraph()-- frag 10270 is a 3' spur.
+BestOverlapGraph()-- frag 10278 is a 5' spur.
+BestOverlapGraph()-- frag 10285 is a 3' spur.
+BestOverlapGraph()-- frag 10325 is a 3' spur.
+BestOverlapGraph()-- frag 10787 is a 3' spur.
+BestOverlapGraph()-- frag 11602 is a 3' spur.
+BestOverlapGraph()-- analyzing 11671 fragments for best contains, with 4 threads.
+BestOverlapGraph()-- analyzing 11671 fragments for best edges, with 4 threads.
+BestOverlapGraph()-- removing best edges for contained fragments, with 4 threads.
+BestOverlapGraph()-- dumping best edges/contains/singletons.

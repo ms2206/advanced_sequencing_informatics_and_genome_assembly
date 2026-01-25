@@ -1,0 +1,21 @@
+repeatDetect()-- WORKING on unitig 4/155 of length 1414189 with 3144 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 4 error 0.000679 +- 0.001549
+markRepeats()--  filtering low coverage spurious with t=15 in 2 repeat regions (9 depth regions)
+markRepeats()--  filtered 4558 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 4 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 6/155 of length 226862 with 528 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 6 error 0.001866 +- 0.004494
+markRepeats()--  filtering low coverage spurious with t=15 in 7 repeat regions (34 depth regions)
+markRepeats()--  filtered 5242 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 6 has 0 interesting junctions:
+repeatDetect()-- WORKING on unitig 7/155 of length 46751 with 127 fragments.
+markRepeats_computeUnitigErrorRate()--  tig 7 error 0.002334 +- 0.005155
+markRepeats()--  filtering low coverage spurious with t=15 in 3 repeat regions (9 depth regions)
+markRepeats()--  filtered 3997 bases, now with 0 repeat regions
+markRepeats()--  filtered 0 repeat regions after picking read endpoints, now with 0 repeat regions.
+markRepeats()--  filtered 0 repeat regions contained in a read, now with 0 repeat regions
+markRepeats()--  unitig 7 has 0 interesting junctions:

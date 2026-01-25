@@ -1,0 +1,4 @@
+-h 1-3063 -r 1-3063 --hashstrings 3063 --hashdatalen 10001868
+-h 3064-6117 -r 1-6117 --hashstrings 3054 --hashdatalen 10003347
+-h 6118-9266 -r 1-9266 --hashstrings 3149 --hashdatalen 10002902
+-h 9267-11671 -r 1-11671 --hashstrings 2405 --hashdatalen 6198731

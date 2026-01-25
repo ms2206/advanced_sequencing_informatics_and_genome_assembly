@@ -1,0 +1,176 @@
+Using up to 4 OpenMP threads.
+Beginning ckp01-INI (loaded ckp00-NUL).
+Reading fragments.
+Reading unitigs.
+ResizeEdgeList()-- sizing list for 'c' to 18 (currently 0)
+ResizeEdgeList()-- sizing list for 'c' to 52 (currently 18)
+ResizeEdgeList()-- sizing list for 'c' to 120 (currently 52)
+ResizeEdgeList()-- sizing list for 'c' to 256 (currently 120)
+Checking sanity of loaded fragments.
+* Loaded dist mr,1 (3000 +/- 300)
+ComputeMatePairStatisticsRestricted()-- LIB IID 1 distance 0.00 0.00 -- only 0 samples, can't reestimate
+Beginning ckp02-EDG (loaded ckp00-NUL).
+BuildGraphEdgesDirectly()--
+BuildGraphEdgesDirectly()-- Found 11671 fragments
+BuildGraphEdgesDirectly()-- Found 0/0 BacEnd pairs Unique-Unique
+BuildGraphEdgesDirectly()-- Found 0/0 (0.00%) mate pairs node external
+ComputeOverlaps()--
+ComputeOverlaps()-- removed 0 duplicate edges.
+ComputeOverlaps()-- took 0 seconds, found 0 edges (-nan%).
+**** Calling CheckEdgesAgainstOverlapper ****
+**** Survived CheckEdgesAgainstOverlapper with 0 failures****
+BuildInitialContigs()-- converting 138 unitigs with 0 edges to contigs.
+ResizeEdgeList()-- sizing list for 'C' to 292 (currently 0)
+BuildInitialContigs()-- converted 0 merged edges with 0 raw edges; skipped 0 raw edges in merged edges; converted 0 top level raw edges.
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.6 (logical ckp02-EDG) after building edges at Sun Jan 25 14:59:43 2026
+Beginning ckp03-SCF-partial (loaded ckp00-NUL).
+BuildUniqueCIScaffolds()-- with 1 threads out of 4 max.
+* AddScaffoldInferredEdges   scaffolds = 0
+MarkRedundantUniqueToUniqueEdges()--
+MarkTwoHopConfirmedEdgesOMP()-- working on 19 nodes, with 4 threads.
+MarkPathRemovedEdgesOMP()-- working on 19 nodes, with 4 threads.
+BuildUniqueCIScaffolds()-- After iteration 1, found 0 shaky contigs.
+* AddScaffoldInferredEdges   scaffolds = 0
+MarkRedundantUniqueToUniqueEdges()--
+MarkTwoHopConfirmedEdgesOMP()-- working on 19 nodes, with 4 threads.
+MarkPathRemovedEdgesOMP()-- working on 19 nodes, with 4 threads.
+*** Inititializing scaffold instrumenter bookkeeping, but graph has no live scaffolds! ***
+ResizeEdgeList()-- sizing list for 'S' to 16 (currently 0)
+ResizeEdgeList()-- sizing list for 'S' to 48 (currently 16)
+**** Calling CheckEdgesAgainstOverlapper ****
+**** Survived CheckEdgesAgainstOverlapper with 0 failures****
+Beginning ckp04-SCF (loaded ckp00-NUL).
+ResizeEdgeList()-- sizing list for 'S' to 54 (currently 0)
+** Running Level 1 Repeat Rez **
+**** Calling CheckEdgesAgainstOverlapper ****
+**** Survived CheckEdgesAgainstOverlapper with 0 failures****
+**** Calling CheckEdgesAgainstOverlapper ****
+**** Survived CheckEdgesAgainstOverlapper with 0 failures****
+### Fill_Gaps iteration #0
+>>> Before  Print_Unique_Chunks
+Size of Ref = 6624
+Size of Chunk_Info = 3312
+### actual Ref entries = 20  size= 960
+>>> Before  Print_Scaffolds
+>>> Before  Print_Potential_Fill_Chunks
+>>> Before  Scan_Gaps
+>>> Before  Choose_Safe_Chunks
+             Non-unique chunks:     119
+         With edges to uniques:       0
+                    Consistent:       0
+       Placed in scaffold gaps:       0
+                  Total chunks:     138
+   Discriminator unique chunks:       0
+             Scaffolded chunks:      19
+Back from Include_Good_Joins
+Before  Identify_Best_Rocks
+Before  Add_Gap_Ends
+Before  check_consistency
+Before  Disqualify_Scaff_Chunks
+      Passed consistency check:       0
+Before Confirm_Stones
+Before Restore_Best_Rocks
+Before Jiggle_Positions
+### Jiggle_Positions ###
+After Jiggle
+### Adjust_By_Ref_Variance ###
+After Adjust_By_Ref_Variance
+After Sort_Insertions
+### Doublecheck_Positions ###
+Set_Split_Flags
+After Set_Split_Flags
+Update_Scaffold_Graph()-- place 0 chunks into 38 gaps in 19 scaffolds.
+Update_Scaffold_Graph()-- Inserted 0 elements ... rebuilding scaffolds
+             Actually inserted:       0
+### Hurl_Contained_Rocks iteration #0
+>>> Before  Print_Unique_Chunks
+Size of Ref = 6624
+Size of Chunk_Info = 3312
+### actual Ref entries = 20  size= 960
+>>> Before  Print_Scaffolds
+>>> Before  Print_Potential_Fill_Chunks
+>>> Before  Scan_Gaps
+>>> Before  Choose_Safe_Chunks
+             Non-unique chunks:     119
+         With edges to uniques:       0
+                    Consistent:       0
+       Placed in scaffold gaps:       0
+                  Total chunks:     138
+   Discriminator unique chunks:       0
+             Scaffolded chunks:      19
+Set_Split_Flags
+After Set_Split_Flags
+Update_Scaffold_Graph()-- place 0 chunks into 38 gaps in 19 scaffolds.
+Update_Scaffold_Graph()-- Inserted 0 elements ... rebuilding scaffolds
+             Actually inserted:       0
+**** AFTER repeat rez ****
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.7 (logical ckp04-SCF) after initial scaffolding at Sun Jan 25 14:59:43 2026
+Beginning ckp06-1SM (loaded ckp00-NUL).
+* CleanupScaffolds through scaffold 0
+MergeScaffoldsAggressive()-- begins.  minWeightToMerge=2
+ResizeEdgeList()-- sizing list for 'S' to 54 (currently 0)
+MergeScaffoldsAggressive()-- No additional scaffold merging is possible.
+* CleanupScaffolds through scaffold 0
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.8 (logical ckp06-1SM) after 1st scaffold merge at Sun Jan 25 14:59:43 2026
+Beginning ckp07-AS (loaded ckp00-NUL).
+Beginning ckp09-2SM (loaded ckp00-NUL).
+Beginning ckp10-FR (loaded ckp00-NUL).
+### Fill_Gaps iteration #1
+>>> Before  Print_Unique_Chunks
+Size of Ref = 6624
+Size of Chunk_Info = 3312
+### actual Ref entries = 20  size= 960
+>>> Before  Print_Scaffolds
+>>> Before  Print_Potential_Fill_Chunks
+>>> Before  Scan_Gaps
+>>> Before  Choose_Safe_Chunks
+             Non-unique chunks:     119
+         With edges to uniques:       0
+                    Consistent:       0
+       Placed in scaffold gaps:       0
+                  Total chunks:     138
+   Discriminator unique chunks:       0
+             Scaffolded chunks:      19
+Back from Include_Good_Joins
+Before  Identify_Best_Rocks
+Before  Add_Gap_Ends
+Before  check_consistency
+Before  Disqualify_Scaff_Chunks
+      Passed consistency check:       0
+Before Confirm_Stones
+Before Restore_Best_Rocks
+Before Jiggle_Positions
+### Jiggle_Positions ###
+After Jiggle
+### Adjust_By_Ref_Variance ###
+After Adjust_By_Ref_Variance
+After Sort_Insertions
+### Doublecheck_Positions ###
+Set_Split_Flags
+After Set_Split_Flags
+Update_Scaffold_Graph()-- place 0 chunks into 38 gaps in 19 scaffolds.
+Update_Scaffold_Graph()-- Inserted 0 elements ... rebuilding scaffolds
+             Actually inserted:       0
+Threw additional 0 rocks on iter 0
+Beta - LeastSquaresGapEstimates #1 after final rocks
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.9 (logical ckp10-FR) after final rocks at Sun Jan 25 14:59:43 2026
+Beginning ckp11-PS (loaded ckp00-NUL).
+Beginning ckp12-FCS (loaded ckp00-NUL).
+Beginning ckp13-FC (loaded ckp00-NUL).
+* CleanupFailedMergesInScaffolds
+Beginning ckp14-RS (loaded ckp00-NUL).
+resolveSurrogates()--  Allocating 128 vectors.
+Placed 0 surrogate fragments out of 0 surrogate fragments
+resolveSurrogates()--  Allocating 128 vectors.
+Placed 0 surrogate fragments out of 0 surrogate fragments
+Beta - LeastSquaresGapEstimates #5 after resolve surrogates
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.10 (logical ckp14-RS) after resolve surrogates at Sun Jan 25 14:59:43 2026
+ComputeMatePairStatisticsRestricted()-- LIB IID 1 distance 0.00 0.00 -- only 0 samples, can't reestimate
+ComputeMatePairStatisticsRestricted()-- LIB IID 1 distance 0.00 0.00 -- only 0 samples, can't reestimate
+**** GenerateCIGraph_U_Stats ****
+**** GeneratePlacedContigStats final 0****
+*** Links confirmed by cgbOlaps 0  onCGBOlaps 0
+**** GeneratePlacedContigStats final 0 ****
+* Stones: 0  Walks:0
+====> Writing /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome.ckp.11 (logical ckp15-FIN) after output at Sun Jan 25 14:59:43 2026
+* Bye *

@@ -1,0 +1,62 @@
+mkdir: cannot create directory '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/001': File exists
+
+STRING_NUM_BITS       31
+OFFSET_BITS           31
+STRING_NUM_MASK       2147483647
+OFFSET_MASK           2147483647
+MAX_STRING_NUM        2147483647
+
+Hash_Mask_Bits        22
+Max_Hash_Strings      3054
+Max_Hash_Data_Len     10003347
+Max_Hash_Load         0.750000
+Kmer Length           22
+Min Overlap Length    250
+MAX_ERRORS            6554
+ERRORS_FOR_FREE       1
+
+Num_PThreads          2
+Max_Reads_Per_Batch   3054
+Max_Reads_Per_Thread  381
+
+HASH_TABLE_SIZE         4194304
+sizeof(Hash_Bucket_t)   216
+hash table size:        864 MB
+
+check  16 MB
+info   0 MB
+start  0 MB
+
+Initialize_Work_Area:  MAX_ERRORS=6554  allocated 165MB
+Initialize_Work_Area:  MAX_ERRORS=6554  allocated 165MB
+Build_Hash_Index from 3064 to 6117
+HASH LOADING STOPPED: strings          3054 out of         3054 max.
+HASH LOADING STOPPED: length       10003347 out of     10003347 max.
+HASH LOADING STOPPED: entries       6097646 out of     66060288 max (load 6.92).
+### realloc  Extra_Ref_Space  max_extra_ref_ct = 6389221
+String_Ct = 3054  Extra_String_Ct = 0  Extra_String_Subcount = 2978
+Read 14382 kmers to mark to skip
+Index built.
+Starting 1 3054
+Choose_And_Process_Stream_Segment()-- tid 0
+Choose_And_Process_Stream_Segment()-- tid 1
+Choose_And_Process_Stream_Segment()-- tid 1 returns
+Choose_And_Process_Stream_Segment()-- tid 0 returns
+Starting 3055 6108
+Choose_And_Process_Stream_Segment()-- tid 0
+Choose_And_Process_Stream_Segment()-- tid 1
+Choose_And_Process_Stream_Segment()-- tid 0 returns
+Choose_And_Process_Stream_Segment()-- tid 1 returns
+Starting 6109 6117
+Choose_And_Process_Stream_Segment()-- tid 0
+Choose_And_Process_Stream_Segment()-- tid 1
+Choose_And_Process_Stream_Segment()-- tid 1 returns
+Choose_And_Process_Stream_Segment()-- tid 0 returns
+ Kmer hits without olaps = 195382
+    Kmer hits with olaps = 19223
+  Multiple overlaps/pair = 0
+ Total overlaps produced = 19223
+      Contained overlaps = 6274
+       Dovetail overlaps = 12949
+Rejected by short window = 0
+ Rejected by long window = 0

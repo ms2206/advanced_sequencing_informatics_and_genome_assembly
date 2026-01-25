@@ -1,0 +1,75 @@
+
+Graph error threshold  = 0.030 (3.000%)
+Graph error limit      = 1000.000 errors
+Merge error threshold  = 0.030 (3.000%)
+Merge error limit      = 1000.000 errors
+
+Minimum overlap length = 250 bases
+
+SPURIOUS_COVERAGE_THRESHOLD  15
+ISECT_NEEDED_TO_BREAK        15
+REGION_END_WEIGHT            15
+
+number of threads     = 4 (OpenMP default)
+
+FragmentInfo()-- Loading fragment information
+FragmentInfo()-- Loaded 11671 alive fragments, skipped 0 short and 0 dead fragments.
+FragmentInfo()-- Saving fragment information to cache '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.fragmentInfo'
+
+PHYS_PAGES = 32823814
+PAGE_SIZE  = 4096
+MEMORY     = 134446342144
+OverlapCache()-- limited to 128218MB memory (total physical memory).
+PHYS_PAGES = 32823814
+PAGE_SIZE  = 4096
+MEMORY     = 134446342144
+PHYS_PAGES = 32823814
+PAGE_SIZE  = 4096
+MEMORY     = 134446342144
+OverlapCache()--       0MB for fragment data.
+OverlapCache()--       0MB for best edges.
+OverlapCache()--       0MB for best containments.
+OverlapCache()--       0MB for unitig layouts.
+OverlapCache()--       0MB for unitigs.
+OverlapCache()--       0MB for id maps.
+OverlapCache()--       0MB for overlap cache pointers.
+OverlapCache()--       0MB for overlap cache initial bucket.
+OverlapCache()--     128MB for overlap cache thread data.
+OverlapCache()--       0MB for number of overlaps per read.
+OverlapCache()--   12821MB for other processes.
+OverlapCache()-- ---------
+OverlapCache()--   12950MB for data structures (sum of above).
+OverlapCache()--  115267MB available for overlaps.
+
+OverlapCache()-- Loading number of overlaps per fragment [1 to 11671]
+OverlapCache()--  Initial guess at _maxPer=647257 (max of 297) from (memLimit=120866320145 - memUsed=0) / (numFrags=11671 * sizeof(OVL)=16)
+OverlapCache()-- _maxPer= 647257 (numBelow=11671 numEqual=0 numAbove=0 totalLoad=188880 -- 0 + 188880 = 3022080 <? 120866320145
+
+OverlapCache()-- blockSize        = 67108864 (1024MB)
+
+OverlapCache()-- _maxPer          = 647257 overlaps/reads
+OverlapCache()-- numBelow         = 11671 reads (all overlaps loaded)
+OverlapCache()-- numEqual         = 0 reads (all overlaps loaded)
+OverlapCache()-- numAbove         = 0 reads (some overlaps loaded)
+OverlapCache()-- totalLoad        = 188880 overlaps (100.00%)
+
+OverlapCache()-- availForOverlaps = 115267MB
+OverlapCache()-- totalMemory      = 0MB for organization
+OverlapCache()-- totalMemory      = 2MB for overlaps
+OverlapCache()-- totalMemory      = 2MB used
+
+OverlapCache()-- Loading overlap information
+OverlapCache()-- Loading overlap information: overlaps processed            4 (000.00%) loaded            4 (000.00%) (at read iid 1)
+OverlapCache()-- Loading overlap information: overlaps processed       188880 (100.00%) loaded       162214 (085.88%)
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.002.bestOverlapGraph'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.004.ChunkGraph'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.005.buildUnitigs'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.006.placeContains'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.007.placeZombies'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.008.mergeSplitJoin'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.009.popBubbles'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.010.mergeSplitJoin'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.011.cleanup'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.012.setParentAndHang'
+setLogFile()-- Now logging to '/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.013.output'
+Bye.

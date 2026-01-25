@@ -1,0 +1,30 @@
+Computing unitig consensus for b=0 to e=138
+Working on unitig 0 of length 1408291 (1 unitigs 3406 fragments) - already computed, skipped
+Working on unitig 2 of length 1414129 (1 unitigs 3144 fragments) - already computed, skipped
+Working on unitig 3 of length 226904 (1 unitigs 528 fragments) - already computed, skipped
+Working on unitig 4 of length 46752 (1 unitigs 127 fragments) - already computed, skipped
+Working on unitig 5 of length 335050 (1 unitigs 803 fragments) - already computed, skipped
+Working on unitig 6 of length 33750 (1 unitigs 85 fragments) - already computed, skipped
+Working on unitig 7 of length 58000 (1 unitigs 123 fragments) - already computed, skipped
+Working on unitig 8 of length 1869 (1 unitigs 3 fragments) - already computed, skipped
+Working on unitig 12 of length 399793 (1 unitigs 926 fragments) - already computed, skipped
+Working on unitig 21 of length 7557 (1 unitigs 30 fragments) - already computed, skipped
+Working on unitig 22 of length 12481 (1 unitigs 43 fragments) - already computed, skipped
+Working on unitig 23 of length 69436 (1 unitigs 147 fragments) - already computed, skipped
+Working on unitig 25 of length 18841 (1 unitigs 56 fragments) - already computed, skipped
+Working on unitig 26 of length 14973 (1 unitigs 45 fragments) - already computed, skipped
+Working on unitig 27 of length 119347 (1 unitigs 278 fragments) - already computed, skipped
+Working on unitig 28 of length 25994 (1 unitigs 56 fragments) - already computed, skipped
+
+NumColumnsInUnitigs             = 0
+NumGapsInUnitigs                = 0
+NumRunsOfGapsInUnitigReads      = 0
+NumColumnsInContigs             = 0
+NumGapsInContigs                = 0
+NumRunsOfGapsInContigReads      = 0
+NumAAMismatches                 = 0
+NumVARRecords                   = 0
+NumVARStringsWithFlankingGaps   = 0
+NumUnitigRetrySuccess           = 0
+
+Consensus finished successfully.  Bye.

@@ -1,0 +1,8 @@
+[2026/01/25 14:55:38] Loading mer database
+[2026/01/25 14:55:38] Loading contaminant sequences
+[2026/01/25 14:55:38] Computing Poisson cutoff
+[2026/01/25 14:55:39] distinct mers:8179918 total mers:269556163 estimated coverage:32.9534
+[2026/01/25 14:55:39] lambda:0.109845 collision_prob:0.00333333 poisson_threshold:0.0001
+[2026/01/25 14:55:39] Using cutoff of 5
+[2026/01/25 14:55:39] Correcting reads
+[2026/01/25 14:56:12] Done

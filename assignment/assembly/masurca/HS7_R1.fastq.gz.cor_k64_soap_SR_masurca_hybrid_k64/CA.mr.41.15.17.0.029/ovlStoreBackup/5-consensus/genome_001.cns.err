@@ -1,0 +1,32 @@
+Computing unitig consensus for b=0 to e=72
+Working on unitig 0 of length 1361689 (1 unitigs 3287 fragments) - already computed, skipped
+Working on unitig 1 of length 48701 (1 unitigs 128 fragments) - already computed, skipped
+Working on unitig 2 of length 1414166 (1 unitigs 3146 fragments) - already computed, skipped
+Working on unitig 3 of length 46749 (1 unitigs 127 fragments) - already computed, skipped
+Working on unitig 4 of length 335050 (1 unitigs 803 fragments) - already computed, skipped
+Working on unitig 5 of length 35981 (1 unitigs 93 fragments) - already computed, skipped
+Working on unitig 6 of length 2656 (1 unitigs 5 fragments) - already computed, skipped
+Working on unitig 7 of length 39669 (1 unitigs 93 fragments) - already computed, skipped
+Working on unitig 8 of length 4312 (1 unitigs 4 fragments) - already computed, skipped
+Working on unitig 9 of length 399793 (1 unitigs 926 fragments) - already computed, skipped
+Working on unitig 12 of length 64614 (1 unitigs 160 fragments) - already computed, skipped
+Working on unitig 13 of length 12480 (1 unitigs 43 fragments) - already computed, skipped
+Working on unitig 15 of length 69436 (1 unitigs 147 fragments) - already computed, skipped
+Working on unitig 19 of length 18841 (1 unitigs 56 fragments) - already computed, skipped
+Working on unitig 20 of length 14973 (1 unitigs 45 fragments) - already computed, skipped
+Working on unitig 22 of length 119345 (1 unitigs 278 fragments) - already computed, skipped
+Working on unitig 24 of length 185649 (1 unitigs 421 fragments) - already computed, skipped
+Working on unitig 26 of length 26285 (1 unitigs 58 fragments) - already computed, skipped
+
+NumColumnsInUnitigs             = 0
+NumGapsInUnitigs                = 0
+NumRunsOfGapsInUnitigReads      = 0
+NumColumnsInContigs             = 0
+NumGapsInContigs                = 0
+NumRunsOfGapsInContigReads      = 0
+NumAAMismatches                 = 0
+NumVARRecords                   = 0
+NumVARStringsWithFlankingGaps   = 0
+NumUnitigRetrySuccess           = 0
+
+Consensus finished successfully.  Bye.

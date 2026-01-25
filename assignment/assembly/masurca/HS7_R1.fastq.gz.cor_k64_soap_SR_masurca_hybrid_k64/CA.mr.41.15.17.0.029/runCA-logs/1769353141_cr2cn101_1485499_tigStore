@@ -1,0 +1,19 @@
+CA version 8.2 ($Id: tigStore.C 4572 2014-10-14 23:06:05Z brianwalenz $).
+
+Error Rates:
+AS_OVL_ERROR_RATE 0.100000
+AS_CNS_ERROR_RATE 0.100000
+AS_CGW_ERROR_RATE 0.150000
+AS_MAX_ERROR_RATE 0.400000
+
+Current Working Directory:
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64
+
+Command:
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore \
+  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+  -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 1 \
+  -up 001 \
+  -N \
+  -A \
+  -R /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/genome.001.cns.001.cnslay

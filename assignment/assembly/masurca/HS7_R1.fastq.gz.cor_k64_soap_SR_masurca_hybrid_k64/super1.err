@@ -1,0 +1,154 @@
+mkdir work1_mr1
+ufasta sizes -H /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/guillaumeKUnitigsAtLeast32bases_all.31.fasta > work1_mr1/kUnitigLengths.txt; wc -l work1_mr1/kUnitigLengths.txt | awk '{print $1}' > work1_mr1/numKUnitigs.txt; tail -n 1 work1_mr1/kUnitigLengths.txt | awk '{print $1+1}' > work1_mr1/maxKUnitigNumber.txt
+touch work1_mr1/createLengthStatisticsFiles.success
+touch work1_mr1/createLengthStatisticsForMergedKUnitigsFiles.success
+/MaSuRCA-3.2.7/bin/createKUnitigMaxOverlaps /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/guillaumeKUnitigsAtLeast32bases_all.31.fasta -kmervalue 31 -largest-kunitig-number 41448 work1_mr1/overlap
+input file = /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/guillaumeKUnitigsAtLeast32bases_all.31.fasta
+largestKUnitigNumber = 41448
+touch work1_mr1/createKUnitigMaxOverlaps.success
+/MaSuRCA-3.2.7/bin/findMatchesBetweenKUnitigsAndReads -m 31 -t 16 -o /dev/fd/1 /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/guillaumeKUnitigsAtLeast32bases_all.31.fasta work1_mr1/maxKUnitigNumber.txt 6286846 mr.fa.in | /MaSuRCA-3.2.7/bin/joinKUnitigs_v3 --max-nodes-allowed 2000 --mean-and-stdev-by-prefix-file meanAndStdevByPrefix.pe.txt --num-stdevs-allowed 5 --unitig-lengths-file work1_mr1/kUnitigLengths.txt --num-kunitigs-file work1_mr1/maxKUnitigNumber.txt --overlaps-file work1_mr1/overlap.overlaps --min-overlap-length 30 -o work1_mr1/readPositionsInSuperReads  -t 16 --join-aggressive 0 /dev/fd/0
+Allocating 331592 bytes for startOverlapByUnitig.
+Allocating 331592 bytes for startOverlapIndexByUnitig2.
+Allocating 165796 bytes for unitigLengths.
+Allocating 948304 bytes for unitig2OverlapIndex.
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread joiner thread 13 returned 05 returned 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread 10
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread  returned 12Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread 15 returned 00Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread 4 returned 
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread 7Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread joiner thread 90joiner thread  returned Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+Num pairs with both reads in same unitig: 0
+Num pairs uniquely joinable: 0
+Num pairs after disambiguation to beginning of insert: 0
+Num pairs after disambiguation to end of insert: 0
+Num still joinable but not uniquely joinable: 0
+Num pairs unjoinable due to missing sequence: 0
+Num pairs unjoinable because there are too many nodes: 0
+joiner thread  returned 11 returned 20 returned 
+ returned 0
+joiner thread 3 returned 0
+0
+ returned 81joiner thread 000 returned  returned joiner thread 
+0
+6
+ returned 00
+
+14 returned 
+0
+touch work1_mr1/joinKUnitigs.success
+/MaSuRCA-3.2.7/bin/getSuperReadInsertCountsFromReadPlacementFile -n `cat work1_mr1/numKUnitigs.txt | perl -ane '{print $F[0]*20}'` -o work1_mr1/superReadCounts.all -i work1_mr1/readPositionsInSuperReads
+touch work1_mr1/getSuperReadInsertCounts.success
+cat work1_mr1/superReadCounts.all | /MaSuRCA-3.2.7/bin/createFastaSuperReadSequences work1_mr1 /dev/fd/0 -seqdiffmax 0 -min-ovl-len 30 -minreadsinsuperread 1  -good-sr-filename work1_mr1/superReadNames.txt -kunitigsfile /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/guillaumeKUnitigsAtLeast32bases_all.31.fasta -good-sequence-output-file work1_mr1/superReadSequences.fasta.all -super-read-name-and-lengths-file work1_mr1/sr_sizes.tmp -rename-super-reads 2> work1_mr1/createFastaSuperReadSequences.errors.txt
+touch work1_mr1/createFastaSuperReadSequences.success
+/MaSuRCA-3.2.7/bin/reduce_sr 41447 work1_mr1/kUnitigLengths.txt 31 work1_mr1/sr_sizes.tmp -o work1_mr1/reduce.tmp
+touch work1_mr1/reduceSuperReads.success
+/MaSuRCA-3.2.7/bin/translateReduceFile.perl work1_mr1/superReadNames.txt work1_mr1/reduce.tmp > work1_mr1/reduce.tmp.renamed
+touch work1_mr1/translateReduceFile.success
+/MaSuRCA-3.2.7/bin/eliminateBadSuperReadsUsingList --read-placement-file work1_mr1/readPositionsInSuperReads --good-super-reads-file work1_mr1/superReadNames.txt --translate-super-read-names --reduce-file work1_mr1/reduce.tmp.renamed > work1_mr1/readPlacementsInSuperReads.final.read.superRead.offset.ori.txt
+touch work1_mr1/createFinalReadPlacementFile.success
+/MaSuRCA-3.2.7/bin/outputRecordsNotOnList work1_mr1/reduce.tmp.renamed work1_mr1/superReadSequences.fasta.all 0 --fld-num 0 > work1_mr1/superReadSequences.fasta
+touch work1_mr1/createFinalSuperReadFastaSequences.success

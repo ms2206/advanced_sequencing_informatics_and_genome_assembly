@@ -1,0 +1,18 @@
+Working on contig 31 (1 unitigs and 792 fragments) - already computed, skipped
+Working on contig 34 (1 unitigs and 372 fragments) - already computed, skipped
+Working on contig 35 (1 unitigs and 117 fragments) - already computed, skipped
+Working on contig 36 (1 unitigs and 425 fragments) - already computed, skipped
+Working on contig 42 (1 unitigs and 48 fragments) - already computed, skipped
+
+NumColumnsInUnitigs             = 0
+NumGapsInUnitigs                = 0
+NumRunsOfGapsInUnitigReads      = 0
+NumColumnsInContigs             = 0
+NumGapsInContigs                = 0
+NumRunsOfGapsInContigReads      = 0
+NumAAMismatches                 = 0
+NumVARRecords                   = 0
+NumVARStringsWithFlankingGaps   = 0
+NumUnitigRetrySuccess           = 0
+
+Consensus finished successfully.  Bye.

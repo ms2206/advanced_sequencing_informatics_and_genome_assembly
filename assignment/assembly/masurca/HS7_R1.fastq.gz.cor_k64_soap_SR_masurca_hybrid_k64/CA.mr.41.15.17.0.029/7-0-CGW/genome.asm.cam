@@ -1,0 +1,96 @@
+0CGBColor: C000000 T2 S  # Unused
+1CGBColor: CFFFF00 T2 S  # DUnique
+2CGBColor: CFF8040 T2 S  # Consistent
+3CGBColor: C808000 T2 S  # OneFrag
+4CGBColor: CFF0000 T2 S  # Repeat
+5CGBColor: CFF00FF T2 S  # BadUnique
+6CGBColor: CFF9A11 T2 S  # ContBadUnique
+7CGBColor: C00FFFF T2 S  # OrphanFrag
+8CGBColor: C00FF00       # LeftBP
+9CGBColor: CFF0000       # RightBP
+10CGBColor: CFF0077 T2 S  # PUnique
+11CGBColor: CFF0000 T2 S  # RockCI
+12CGBColor: C77EF77 T2 S  # StoneCI
+13CGBColor: C8080FF T2 S  # WalkCI
+14CGBColor: C00FFFF T2 S  # InvContig
+15CGBColor: CFF0000 T2 S  # InvMispContig
+16CGBColor: C0040FF T2 S  # Contig
+17CGBColor: C8080FF T2 S  # MispContig
+0CGWColor: CFF0000 T2 S # C0
+1CGWColor: C00FF00 T2 S # C1
+2CGWColor: C0000FF T2 S # C2
+3CGWColor: CFFFF00 T2 S # C3
+4CGWColor: C00FFFF T2 S # C4
+5CGWColor: CFF00FF T2 S # C5
+6CGWColor: CFF0040 T2 S # C6
+7CGWColor: C00FF40 T2 S # C7
+8CGWColor: C4000FF T2 S # C8
+9CGWColor: CFF4000 T2 S # C9
+10CGWColor: C40FF00 T2 S # C10
+11CGWColor: C0040FF T2 S # C11
+12CGWColor: CFF4040 T2 S # C12
+13CGWColor: C40FF40 T2 S # C13
+14CGWColor: C4040FF T2 S # C14
+15CGWColor: CFF4040 T2 S # C15
+16CGWColor: C40FF40 T2 S # C16
+17CGWColor: C4040FF T2 S # C17
+0ScaffoldColor: CFF0040 T2 S # Scaffolds
+0SingleScaffoldColor: CFF4000 T2 S # SingleScaffolds
+0ScaffoldEdgeColor: C00FF40 T2 S # ScaffoldEdges
+0ScaCtg0: 0 A16CGBColor 1408291 R1 # Scaffold 0 Ctg 0
+0CtgCI0: 0 A1CGBColor 1408291 R3 # Contig 0 CI 0 cov:906
+LNK: 0ScaCtg0 A0SingleScaffoldColor
+1ScaCtg2: 1408301 A16CGBColor 2822430 R1 # Scaffold 1 Ctg 2
+2CtgCI2: 1408301 A1CGBColor 2822430 R3 # Contig 2 CI 2 cov:1102
+LNK: 1ScaCtg2 A0SingleScaffoldColor
+2ScaCtg3: 2822440 A16CGBColor 3049344 R1 # Scaffold 2 Ctg 3
+3CtgCI3: 2822440 A1CGBColor 3049344 R3 # Contig 3 CI 3 cov:158
+LNK: 2ScaCtg3 A0SingleScaffoldColor
+3ScaCtg4: 3049354 A16CGBColor 3096106 R1 # Scaffold 3 Ctg 4
+4CtgCI4: 3049354 A1CGBColor 3096106 R3 # Contig 4 CI 4 cov:19
+LNK: 3ScaCtg4 A0SingleScaffoldColor
+4ScaCtg5: 3096116 A16CGBColor 3431166 R1 # Scaffold 4 Ctg 5
+5CtgCI5: 3096116 A1CGBColor 3431166 R3 # Contig 5 CI 5 cov:217
+LNK: 4ScaCtg5 A0SingleScaffoldColor
+5ScaCtg6: 3431176 A16CGBColor 3464926 R1 # Scaffold 5 Ctg 6
+6CtgCI6: 3431176 A1CGBColor 3464926 R3 # Contig 6 CI 6 cov:17
+LNK: 5ScaCtg6 A0SingleScaffoldColor
+6ScaCtg7: 3464936 A16CGBColor 3522936 R1 # Scaffold 6 Ctg 7
+7CtgCI7: 3464936 A1CGBColor 3522936 R3 # Contig 7 CI 7 cov:46
+LNK: 6ScaCtg7 A0SingleScaffoldColor
+7ScaCtg12: 3522946 A16CGBColor 3922739 R1 # Scaffold 7 Ctg 12
+12CtgCI12: 3522946 A1CGBColor 3922739 R3 # Contig 12 CI 12 cov:284
+LNK: 7ScaCtg12 A0SingleScaffoldColor
+8ScaCtg22: 3922749 A16CGBColor 3935230 R1 # Scaffold 8 Ctg 22
+22CtgCI22: 3922749 A1CGBColor 3935230 R3 # Contig 22 CI 22 cov:-4
+LNK: 8ScaCtg22 A0SingleScaffoldColor
+9ScaCtg23: 3935240 A16CGBColor 4004676 R1 # Scaffold 9 Ctg 23
+23CtgCI23: 3935240 A1CGBColor 4004676 R3 # Contig 23 CI 23 cov:56
+LNK: 9ScaCtg23 A0SingleScaffoldColor
+10ScaCtg25: 4004686 A16CGBColor 4023527 R1 # Scaffold 10 Ctg 25
+25CtgCI25: 4004686 A1CGBColor 4023527 R3 # Contig 25 CI 25 cov:3
+LNK: 10ScaCtg25 A0SingleScaffoldColor
+11ScaCtg26: 4023537 A16CGBColor 4038510 R1 # Scaffold 11 Ctg 26
+26CtgCI26: 4023537 A1CGBColor 4038510 R3 # Contig 26 CI 26 cov:0
+LNK: 11ScaCtg26 A0SingleScaffoldColor
+12ScaCtg27: 4038520 A16CGBColor 4157867 R1 # Scaffold 12 Ctg 27
+27CtgCI27: 4038520 A1CGBColor 4157867 R3 # Contig 27 CI 27 cov:81
+LNK: 12ScaCtg27 A0SingleScaffoldColor
+13ScaCtg28: 4157877 A16CGBColor 4183871 R1 # Scaffold 13 Ctg 28
+28CtgCI28: 4157877 A1CGBColor 4183871 R3 # Contig 28 CI 28 cov:18
+LNK: 13ScaCtg28 A0SingleScaffoldColor
+14ScaCtg31: 4183881 A16CGBColor 4545943 R1 # Scaffold 14 Ctg 31
+31CtgCI31: 4183881 A1CGBColor 4545943 R3 # Contig 31 CI 31 cov:287
+LNK: 14ScaCtg31 A0SingleScaffoldColor
+15ScaCtg34: 4545953 A16CGBColor 4707754 R1 # Scaffold 15 Ctg 34
+34CtgCI34: 4545953 A1CGBColor 4707754 R3 # Contig 34 CI 34 cov:113
+LNK: 15ScaCtg34 A0SingleScaffoldColor
+16ScaCtg35: 4707764 A16CGBColor 4757544 R1 # Scaffold 16 Ctg 35
+35CtgCI35: 4707764 A1CGBColor 4757544 R3 # Contig 35 CI 35 cov:29
+LNK: 16ScaCtg35 A0SingleScaffoldColor
+17ScaCtg36: 4757554 A16CGBColor 4945654 R1 # Scaffold 17 Ctg 36
+36CtgCI36: 4757554 A1CGBColor 4945654 R3 # Contig 36 CI 36 cov:139
+LNK: 17ScaCtg36 A0SingleScaffoldColor
+18ScaCtg42: 4945664 A16CGBColor 4969260 R1 # Scaffold 18 Ctg 42
+42CtgCI42: 4945664 A1CGBColor 4969260 R3 # Contig 42 CI 42 cov:18
+LNK: 18ScaCtg42 A0SingleScaffoldColor

@@ -1,0 +1,16 @@
+CA version 8.2 ($Id: FragCorrectOVL.C 4546 2014-07-23 00:23:14Z mcschatz $).
+
+Error Rates:
+AS_OVL_ERROR_RATE 0.100000
+AS_CNS_ERROR_RATE 0.100000
+AS_CGW_ERROR_RATE 0.150000
+AS_MAX_ERROR_RATE 0.400000
+
+Current Working Directory:
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64
+
+Command:
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/correct-frags \
+  -t 16 \
+  -S /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore \
+  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/0001.frgcorr.WORKING /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore 1 11671

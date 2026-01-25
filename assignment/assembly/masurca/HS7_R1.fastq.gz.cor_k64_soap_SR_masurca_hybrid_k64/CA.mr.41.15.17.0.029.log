@@ -1,0 +1,207 @@
+----------------------------------------START Sun Jan 25 14:58:07 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore.BUILDING  -F  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/mr.41.15.17.0.029.1.frg > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:08 2026 (1 seconds)
+numFrags = 11671
+No need to run meryl for OBT (OBT is disabled).
+----------------------------------------START Sun Jan 25 14:58:08 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/meryl  -B -C -v -m 22 -memory 65536 -threads 16 -c 0  -L 2  -s /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore:chain  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome-C-ms22-cm0 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/meryl.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:16 2026 (8 seconds)
+----------------------------------------START Sun Jan 25 14:58:16 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/estimate-mer-threshold  -m /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome-C-ms22-cm0  > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome-C-ms22-cm0.estMerThresh.out 2> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome-C-ms22-cm0.estMerThresh.err
+----------------------------------------END Sun Jan 25 14:58:16 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:58:16 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/meryl -Dt -n 35 -s /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome-C-ms22-cm0 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome.nmers.ovl.fasta 2> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/0-mercounts/genome.nmers.ovl.fasta.err 
+----------------------------------------END Sun Jan 25 14:58:16 2026 (0 seconds)
+Reset OVL mer threshold from  to 35.
+----------------------------------------START Sun Jan 25 14:58:16 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/overlap_partition \
+ -g  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -bl 10000000 \
+ -bs 0 \
+ -rs 1000000 \
+ -rl 0 \
+ -o  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/overlap_partition.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:16 2026 (0 seconds)
+Created 4 overlap jobs.  Last batch '001', last job '000004'.
+----------------------------------------START CONCURRENT Sun Jan 25 14:58:16 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/overlap.sh 1 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/000001.out 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/overlap.sh 2 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/000002.out 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/overlap.sh 3 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/000003.out 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/overlap.sh 4 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper/000004.out 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:58:27 2026 (11 seconds)
+----------------------------------------START Sun Jan 25 14:58:27 2026
+find -L /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/1-overlapper \( -name \*ovb.gz -or -name \*ovb \) -print > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.list
+----------------------------------------END Sun Jan 25 14:58:27 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:58:27 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/overlapStoreBuild  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.BUILDING  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore  -M 65536 -L /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.list  > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:28 2026 (1 seconds)
+----------------------------------------START CONCURRENT Sun Jan 25 14:58:28 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/frgcorr.sh 1 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/0001.err 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:58:29 2026 (1 seconds)
+----------------------------------------START Sun Jan 25 14:58:30 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/cat-corrects -L /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/cat-corrects.frgcorrlist -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/genome.frgcorr > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/cat-corrects.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:30 2026 (0 seconds)
+----------------------------------------START CONCURRENT Sun Jan 25 14:58:30 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/ovlcorr.sh 1 > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/0001.err 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:58:32 2026 (2 seconds)
+----------------------------------------START Sun Jan 25 14:58:32 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/cat-erates -L /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/cat-erates.eratelist -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/genome.erates > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/cat-erates.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:32 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:58:32 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/overlapStore  -u /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/genome.erates > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/3-overlapcorrection/overlapStore-update-erates.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:32 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:58:32 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/bogart  -O /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore  -G /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore  -T /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore  -B 10000  -eg 0.03  -Eg 1000  -em 0.03  -Em 1000  -repeatdetect 15 15 15 -el 250 -RS  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome  > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/unitigger.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:33 2026 (1 seconds)
+----------------------------------------START Sun Jan 25 14:58:33 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper  -P /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.partitioning  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/genome.partitioned.err 2>&1
+----------------------------------------END Sun Jan 25 14:58:33 2026 (0 seconds)
+----------------------------------------START CONCURRENT Sun Jan 25 14:58:33 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:01 2026 (28 seconds)
+----------------------------------------START Sun Jan 25 14:59:01 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 2 -N -R /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/genome.fixes > genome.fixes.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:01 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:01 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/genome.tigStore 3 \
+ -d matepair -U \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/estimates.out 2>&1
+----------------------------------------END Sun Jan 25 14:59:02 2026 (1 seconds)
+----------------------------------------START Sun Jan 25 14:59:02 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper \
+ --edit /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/genome.tigStore.distupdate \
+        /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/updates.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:02 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:02 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/computeCoverageStat \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 5 \
+ -s 0 \
+ -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/genome \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/computeCoverageStat.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:02 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:02 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/markRepeatUnique \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 5 \
+ -j 1 \
+ -k 5 \
+ -long 12000 \
+ -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/genome.markRepeatUnique \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/markRepeatUnique.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:02 2026 (0 seconds)
+Stop requested after 'consensusafterunitigger'.
+----------------------------------------START CONCURRENT Sun Jan 25 14:59:02 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:02 2026 (0 seconds)
+Stop requested after 'consensusafterunitigger'.
+----------------------------------------START Sun Jan 25 14:59:12 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/bogart  -O /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.ovlStore  -G /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore  -T /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore  -B 10000  -eg 0.03  -Eg 1000  -em 0.03  -Em 1000  -repeatdetect 15 15 15 -el 250 -RS  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome  > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/unitigger.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:13 2026 (1 seconds)
+----------------------------------------START Sun Jan 25 14:59:13 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper  -P /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/4-unitigger/genome.partitioning  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/genome.partitioned.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:13 2026 (0 seconds)
+----------------------------------------START CONCURRENT Sun Jan 25 14:59:13 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:42 2026 (29 seconds)
+----------------------------------------START Sun Jan 25 14:59:42 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 2 -N -R /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/genome.fixes > genome.fixes.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:42 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:42 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/genome.tigStore 3 \
+ -d matepair -U \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/estimates.out 2>&1
+----------------------------------------END Sun Jan 25 14:59:42 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:42 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper \
+ --edit /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/genome.tigStore.distupdate \
+        /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-insert-sizes/updates.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:42 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:42 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/computeCoverageStat \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 5 \
+ -s 0 \
+ -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/genome \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/computeCoverageStat.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:42 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:42 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/markRepeatUnique \
+ -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+ -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 5 \
+ -j 1 \
+ -k 5 \
+ -long 12000 \
+ -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/genome.markRepeatUnique \
+> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus-coverage-stat/markRepeatUnique.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:42 2026 (0 seconds)
+Stop requested after 'consensusafterunitigger'.
+----------------------------------------START CONCURRENT Sun Jan 25 14:59:42 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/5-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:43 2026 (1 seconds)
+Stop requested after 'consensusafterunitigger'.
+----------------------------------------START Sun Jan 25 14:59:43 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/cgw  \
+  -j 1 -k 5 \
+  -r 5 \
+  -s 0 \
+  -filter 1 \
+  -minmergeweight 2 \
+  -P 2 \
+  -B 10000 \
+  -shatter 0 \
+  -missingMate -1 \
+  -m 100 \
+  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore \
+  -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore \
+  -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/genome \
+ > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-0-CGW/cgw.out 2>&1
+----------------------------------------END Sun Jan 25 14:59:43 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:43 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/gatekeeper -P /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-CGW/genome.partitioning /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/genome.partitioned.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:43 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:43 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/tigStore -d consensus -U -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 11 -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/genome.unitigs.fasta
+----------------------------------------END Sun Jan 25 14:59:43 2026 (0 seconds)
+----------------------------------------START CONCURRENT Sun Jan 25 14:59:43 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:46 2026 (3 seconds)
+Stop requested after 'consensusafterscaffolder'.
+----------------------------------------START CONCURRENT Sun Jan 25 14:59:46 2026
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/consensus.sh 1 > /dev/null 2>&1
+/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/8-consensus/consensus.sh 2 > /dev/null 2>&1
+----------------------------------------END CONCURRENT Sun Jan 25 14:59:46 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:46 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/terminator -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore 12 -c /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-CGW/genome 11 -o /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.asm.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:46 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:46 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/asmOutputFasta -p /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.asm > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/asmOutputFasta.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:46 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:46 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/dumpSingletons  -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore  -t /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.tigStore  -c /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/7-CGW/genome -n 11 -S > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.singleton.fasta 2> /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/dumpSingletons.err 
+----------------------------------------END Sun Jan 25 14:59:47 2026 (1 seconds)
+----------------------------------------START Sun Jan 25 14:59:47 2026
+/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/buildPosMap -o genome -g /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/genome.gkpStore < /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.asm > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/buildPosMap.err 2>&1
+----------------------------------------END Sun Jan 25 14:59:47 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:47 2026
+sort -k2n -k3n -T /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.sorted &&/MaSuRCA-3.2.7/CA8/Linux-amd64/bin/fragmentDepth -min       0 -max    3000 < /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.sorted > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.histogram1 && /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/fragmentDepth -min    3001 -max   10000 < /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.sorted > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.histogram2 && /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/fragmentDepth -min   10001 -max 1000000 < /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.sorted > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.histogram3 && /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/fragmentDepth -min 1000001              < /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.sorted > /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.posmap.frgscf.histogram4 
+----------------------------------------END Sun Jan 25 14:59:47 2026 (0 seconds)
+----------------------------------------START Sun Jan 25 14:59:47 2026
+/usr/bin/env perl /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/caqc.pl -euid  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca/HS7_R1.fastq.gz.cor_k64_soap_SR_masurca_hybrid_k64/CA.mr.41.15.17.0.029/9-terminator/genome.asm
+Can't locate Statistics/Descriptive.pm in @INC (you may need to install the Statistics::Descriptive module) (@INC contains: /MaSuRCA-3.2.7/bin/../lib/perl /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/caqc.pl line 18.
+BEGIN failed--compilation aborted at /MaSuRCA-3.2.7/CA8/Linux-amd64/bin/caqc.pl line 18.
+----------------------------------------END Sun Jan 25 14:59:47 2026 (0 seconds)
+ERROR: Failed with signal INT (2)
+The Cleaner has arrived.  Doing 'none'.

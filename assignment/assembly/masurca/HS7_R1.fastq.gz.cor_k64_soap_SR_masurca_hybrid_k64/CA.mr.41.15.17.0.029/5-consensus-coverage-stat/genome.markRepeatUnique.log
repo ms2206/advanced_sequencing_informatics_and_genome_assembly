@@ -1,0 +1,139 @@
+tigID	rho	covStat	arrDist
+unitig 0 IS unique -- too long to be repeat, 1408291 > allowed 12000
+unitig 1 not unique -- singleton
+unitig 2 IS unique -- too long to be repeat, 1414129 > allowed 12000
+unitig 3 IS unique -- too long to be repeat, 226904 > allowed 12000
+unitig 4 IS unique -- too long to be repeat, 46752 > allowed 12000
+unitig 5 IS unique -- too long to be repeat, 335050 > allowed 12000
+unitig 6 IS unique -- too long to be repeat, 33750 > allowed 12000
+unitig 7 IS unique -- too long to be repeat, 58000 > allowed 12000
+unitig 8 not unique -- coverage stat 0, needs to be at least 1.000000
+unitig 9 not unique -- singleton
+unitig 10 not unique -- singleton
+unitig 11 not unique -- singleton
+unitig 12 IS unique -- too long to be repeat, 399793 > allowed 12000
+unitig 13 not unique -- singleton
+unitig 14 not unique -- singleton
+unitig 15 not unique -- singleton
+unitig 16 not unique -- singleton
+unitig 17 not unique -- singleton
+unitig 18 not unique -- singleton
+unitig 19 not unique -- singleton
+unitig 20 not unique -- singleton
+unitig 21 not unique -- coverage stat -7, needs to be at least 1.000000
+unitig 22 IS unique -- too long to be repeat, 12481 > allowed 12000
+unitig 23 IS unique -- too long to be repeat, 69436 > allowed 12000
+unitig 24 not unique -- singleton
+unitig 25 IS unique -- too long to be repeat, 18841 > allowed 12000
+unitig 26 IS unique -- too long to be repeat, 14973 > allowed 12000
+unitig 27 IS unique -- too long to be repeat, 119347 > allowed 12000
+unitig 28 IS unique -- too long to be repeat, 25994 > allowed 12000
+unitig 29 not unique -- singleton
+unitig 30 not unique -- singleton
+unitig 31 IS unique -- too long to be repeat, 362062 > allowed 12000
+unitig 32 not unique -- singleton
+unitig 33 not unique -- singleton
+unitig 34 IS unique -- too long to be repeat, 161801 > allowed 12000
+unitig 35 IS unique -- too long to be repeat, 49780 > allowed 12000
+unitig 36 IS unique -- too long to be repeat, 188100 > allowed 12000
+unitig 37 not unique -- singleton
+unitig 38 not unique -- singleton
+unitig 39 not unique -- singleton
+unitig 40 not unique -- singleton
+unitig 41 not unique -- singleton
+unitig 42 IS unique -- too long to be repeat, 23596 > allowed 12000
+unitig 43 not unique -- singleton
+unitig 44 not unique -- singleton
+unitig 45 not unique -- singleton
+unitig 46 not unique -- singleton
+unitig 47 not unique -- singleton
+unitig 48 not unique -- singleton
+unitig 49 not unique -- singleton
+unitig 50 not unique -- singleton
+unitig 51 not unique -- singleton
+unitig 52 not unique -- singleton
+unitig 53 not unique -- singleton
+unitig 54 not unique -- singleton
+unitig 55 not unique -- singleton
+unitig 56 not unique -- singleton
+unitig 57 not unique -- singleton
+unitig 58 not unique -- singleton
+unitig 59 not unique -- singleton
+unitig 60 not unique -- singleton
+unitig 61 not unique -- singleton
+unitig 62 not unique -- singleton
+unitig 63 not unique -- singleton
+unitig 64 not unique -- singleton
+unitig 65 not unique -- singleton
+unitig 66 not unique -- singleton
+unitig 67 not unique -- singleton
+unitig 68 not unique -- singleton
+unitig 69 not unique -- singleton
+unitig 70 not unique -- singleton
+unitig 71 not unique -- singleton
+unitig 72 not unique -- singleton
+unitig 73 not unique -- singleton
+unitig 74 not unique -- singleton
+unitig 75 not unique -- singleton
+unitig 76 not unique -- singleton
+unitig 77 not unique -- singleton
+unitig 78 not unique -- singleton
+unitig 79 not unique -- singleton
+unitig 80 not unique -- singleton
+unitig 81 not unique -- singleton
+unitig 82 not unique -- singleton
+unitig 83 not unique -- singleton
+unitig 84 not unique -- singleton
+unitig 85 not unique -- singleton
+unitig 86 not unique -- singleton
+unitig 87 not unique -- singleton
+unitig 88 not unique -- singleton
+unitig 89 not unique -- singleton
+unitig 90 not unique -- singleton
+unitig 91 not unique -- singleton
+unitig 92 not unique -- singleton
+unitig 93 not unique -- singleton
+unitig 94 not unique -- singleton
+unitig 95 not unique -- singleton
+unitig 96 not unique -- singleton
+unitig 97 not unique -- singleton
+unitig 98 not unique -- singleton
+unitig 99 not unique -- singleton
+unitig 100 not unique -- singleton
+unitig 101 not unique -- singleton
+unitig 102 not unique -- singleton
+unitig 103 not unique -- singleton
+unitig 104 not unique -- singleton
+unitig 105 not unique -- singleton
+unitig 106 not unique -- singleton
+unitig 107 not unique -- singleton
+unitig 108 not unique -- singleton
+unitig 109 not unique -- singleton
+unitig 110 not unique -- singleton
+unitig 111 not unique -- singleton
+unitig 112 not unique -- singleton
+unitig 113 not unique -- singleton
+unitig 114 not unique -- singleton
+unitig 115 not unique -- singleton
+unitig 116 not unique -- singleton
+unitig 117 not unique -- singleton
+unitig 118 not unique -- singleton
+unitig 119 not unique -- singleton
+unitig 120 not unique -- singleton
+unitig 121 not unique -- singleton
+unitig 122 not unique -- singleton
+unitig 123 not unique -- singleton
+unitig 124 not unique -- singleton
+unitig 125 not unique -- singleton
+unitig 126 not unique -- singleton
+unitig 127 not unique -- singleton
+unitig 128 not unique -- singleton
+unitig 129 not unique -- singleton
+unitig 130 not unique -- singleton
+unitig 131 not unique -- singleton
+unitig 132 not unique -- singleton
+unitig 133 not unique -- singleton
+unitig 134 not unique -- singleton
+unitig 135 not unique -- singleton
+unitig 136 not unique -- singleton
+unitig 137 not unique -- singleton

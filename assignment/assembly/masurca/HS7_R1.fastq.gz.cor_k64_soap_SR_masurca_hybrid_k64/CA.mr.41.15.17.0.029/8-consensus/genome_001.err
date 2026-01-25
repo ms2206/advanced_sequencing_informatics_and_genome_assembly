@@ -1,0 +1,29 @@
+Working on contig 0 (1 unitigs and 3406 fragments) - already computed, skipped
+Working on contig 2 (1 unitigs and 3144 fragments) - already computed, skipped
+Working on contig 3 (1 unitigs and 528 fragments) - already computed, skipped
+Working on contig 4 (1 unitigs and 127 fragments) - already computed, skipped
+Working on contig 5 (1 unitigs and 803 fragments) - already computed, skipped
+Working on contig 6 (1 unitigs and 85 fragments) - already computed, skipped
+Working on contig 7 (1 unitigs and 123 fragments) - already computed, skipped
+Working on contig 8 (1 unitigs and 3 fragments) - already computed, skipped
+Working on contig 12 (1 unitigs and 926 fragments) - already computed, skipped
+Working on contig 21 (1 unitigs and 30 fragments) - already computed, skipped
+Working on contig 22 (1 unitigs and 43 fragments) - already computed, skipped
+Working on contig 23 (1 unitigs and 147 fragments) - already computed, skipped
+Working on contig 25 (1 unitigs and 56 fragments) - already computed, skipped
+Working on contig 26 (1 unitigs and 45 fragments) - already computed, skipped
+Working on contig 27 (1 unitigs and 278 fragments) - already computed, skipped
+Working on contig 28 (1 unitigs and 56 fragments) - already computed, skipped
+
+NumColumnsInUnitigs             = 0
+NumGapsInUnitigs                = 0
+NumRunsOfGapsInUnitigReads      = 0
+NumColumnsInContigs             = 0
+NumGapsInContigs                = 0
+NumRunsOfGapsInContigReads      = 0
+NumAAMismatches                 = 0
+NumVARRecords                   = 0
+NumVARStringsWithFlankingGaps   = 0
+NumUnitigRetrySuccess           = 0
+
+Consensus finished successfully.  Bye.

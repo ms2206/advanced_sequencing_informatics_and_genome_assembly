@@ -1,0 +1,8 @@
+PATH="/MaSuRCA-3.2.7/bin/../CA/Linux-amd64/bin:/MaSuRCA-3.2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+PERL5LIB="/MaSuRCA-3.2.7/bin/../lib/perl"
+NUM_THREADS="16"
+PE_AVG_READ_LENGTH="91"
+KMER="57"
+MIN_Q_CHAR="33"
+JF_SIZE="200000000"
+ESTIMATED_GENOME_SIZE="5882480"

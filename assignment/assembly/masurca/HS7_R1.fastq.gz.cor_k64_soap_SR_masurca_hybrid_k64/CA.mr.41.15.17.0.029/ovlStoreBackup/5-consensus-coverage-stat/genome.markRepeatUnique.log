@@ -1,0 +1,73 @@
+tigID	rho	covStat	arrDist
+unitig 0 IS unique -- too long to be repeat, 1361689 > allowed 12000
+unitig 1 IS unique -- too long to be repeat, 48701 > allowed 12000
+unitig 2 IS unique -- too long to be repeat, 1414166 > allowed 12000
+unitig 3 IS unique -- too long to be repeat, 46749 > allowed 12000
+unitig 4 IS unique -- too long to be repeat, 335050 > allowed 12000
+unitig 5 IS unique -- too long to be repeat, 35981 > allowed 12000
+unitig 6 not repeat -- no test failed
+unitig 7 IS unique -- too long to be repeat, 39669 > allowed 12000
+unitig 8 not repeat -- no test failed
+unitig 9 IS unique -- too long to be repeat, 399793 > allowed 12000
+unitig 10 not unique -- singleton
+unitig 11 not unique -- singleton
+unitig 12 IS unique -- too long to be repeat, 64614 > allowed 12000
+unitig 13 IS unique -- too long to be repeat, 12480 > allowed 12000
+unitig 14 not unique -- singleton
+unitig 15 IS unique -- too long to be repeat, 69436 > allowed 12000
+unitig 16 not unique -- singleton
+unitig 17 not unique -- singleton
+unitig 18 not unique -- singleton
+unitig 19 IS unique -- too long to be repeat, 18841 > allowed 12000
+unitig 20 IS unique -- too long to be repeat, 14973 > allowed 12000
+unitig 21 not unique -- singleton
+unitig 22 IS unique -- too long to be repeat, 119345 > allowed 12000
+unitig 23 not unique -- singleton
+unitig 24 IS unique -- too long to be repeat, 185649 > allowed 12000
+unitig 25 not unique -- singleton
+unitig 26 IS unique -- too long to be repeat, 26285 > allowed 12000
+unitig 27 not unique -- singleton
+unitig 28 not unique -- singleton
+unitig 29 not unique -- singleton
+unitig 30 IS unique -- too long to be repeat, 366084 > allowed 12000
+unitig 31 not unique -- singleton
+unitig 32 IS unique -- too long to be repeat, 161800 > allowed 12000
+unitig 33 IS unique -- too long to be repeat, 49780 > allowed 12000
+unitig 34 not repeat -- no test failed
+unitig 35 not unique -- singleton
+unitig 36 not unique -- singleton
+unitig 37 not unique -- singleton
+unitig 38 not unique -- singleton
+unitig 39 not repeat -- no test failed
+unitig 40 IS unique -- too long to be repeat, 191450 > allowed 12000
+unitig 41 not unique -- singleton
+unitig 42 not unique -- singleton
+unitig 43 not unique -- coverage stat 0, needs to be at least 1.000000
+unitig 44 not unique -- singleton
+unitig 45 not unique -- singleton
+unitig 46 not unique -- singleton
+unitig 47 not unique -- singleton
+unitig 48 not unique -- coverage stat -3, needs to be at least 1.000000
+unitig 49 not unique -- singleton
+unitig 50 IS unique -- too long to be repeat, 23574 > allowed 12000
+unitig 51 not unique -- singleton
+unitig 52 not unique -- singleton
+unitig 53 not unique -- singleton
+unitig 54 not unique -- singleton
+unitig 55 not unique -- singleton
+unitig 56 not unique -- singleton
+unitig 57 not unique -- singleton
+unitig 58 not unique -- singleton
+unitig 59 not unique -- singleton
+unitig 60 not unique -- singleton
+unitig 61 not unique -- singleton
+unitig 62 not unique -- singleton
+unitig 63 not unique -- singleton
+unitig 64 not unique -- singleton
+unitig 65 not unique -- singleton
+unitig 66 not unique -- singleton
+unitig 67 not unique -- singleton
+unitig 68 not unique -- singleton
+unitig 69 not unique -- singleton
+unitig 70 not unique -- singleton
+unitig 71 not unique -- singleton

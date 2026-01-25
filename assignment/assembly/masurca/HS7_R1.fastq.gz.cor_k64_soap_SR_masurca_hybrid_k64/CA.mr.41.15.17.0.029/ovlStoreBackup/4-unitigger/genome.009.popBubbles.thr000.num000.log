@@ -1,0 +1,145 @@
+popBubbles()-- working on 97 unitigs.
+popBubbles()-- WORKING on unitig 1/97 of length 1361742 with 3267 fragments.
+popBubbles()--   merged bubble unitig 50 with 1 frags into unitig 1 now with 3268 frags
+popBubbles()-- Skip bubble 1 length 1361742 with 3268 frags - edge from 1150/5' to utg 1 11080/3'
+popBubbles()--   merged bubble unitig 51 with 1 frags into unitig 1 now with 3269 frags
+popBubbles()-- Skip bubble 1 length 1361742 with 3269 frags - edge from 1150/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3269 frags - edge from 7628/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 39 length 185605 with 421 frags - edge from 790/5' to utg 1 5693/3'
+popBubbles()--   merged bubble unitig 3 with 7 frags into unitig 1 now with 3276 frags
+popBubbles()-- Skip bubble 1 length 1361742 with 3276 frags - edge from 1150/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3276 frags - edge from 7628/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 39 length 185605 with 421 frags - edge from 790/5' to utg 1 5693/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3276 frags - edge from 7242/5' to utg 1 11317/5'
+popBubbles()--   merged bubble unitig 11 with 10 frags into unitig 1 now with 3286 frags
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 1150/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 7628/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 39 length 185605 with 421 frags - edge from 790/5' to utg 1 5693/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 7242/5' to utg 1 11317/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 4670/3' to utg 1 11317/5'
+popBubbles()-- Skip bubble 7 length 334973 with 803 frags - edge from 10830/3' to utg 1 3850/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 2874/5' to utg 1 3850/5'
+popBubbles()-- Skip bubble 22 length 69437 with 147 frags - edge from 5577/3' to utg 1 9630/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3286 frags - edge from 7242/3' to utg 1 10811/3'
+popBubbles()--   merged bubble unitig 13 with 1 frags into unitig 1 now with 3287 frags
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 1150/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 7628/5' to utg 1 11080/3'
+popBubbles()-- Skip bubble 39 length 185605 with 421 frags - edge from 790/5' to utg 1 5693/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 7242/5' to utg 1 11317/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 4670/3' to utg 1 11317/5'
+popBubbles()-- Skip bubble 7 length 334973 with 803 frags - edge from 10830/3' to utg 1 3850/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 2874/5' to utg 1 3850/5'
+popBubbles()-- Skip bubble 22 length 69437 with 147 frags - edge from 5577/3' to utg 1 9630/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 7242/3' to utg 1 10811/3'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 9555/5' to utg 1 2871/5'
+popBubbles()-- Skip bubble 1 length 1361742 with 3287 frags - edge from 10277/3' to utg 1 11300/3'
+popBubbles()-- Skip bubble 14 length 399801 with 924 frags - edge from 10062/3' to utg 1 399/3'
+popBubbles()-- WORKING on unitig 2/97 of length 48708 with 128 fragments.
+popBubbles()-- WORKING on unitig 4/97 of length 1414226 with 3140 fragments.
+popBubbles()--   merged bubble unitig 5 with 1 frags into unitig 4 now with 3141 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3141 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3141 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()--   merged bubble unitig 44 with 1 frags into unitig 4 now with 3142 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3142 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3142 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3142 frags - edge from 6952/3' to utg 4 1802/3'
+popBubbles()--   merged bubble unitig 57 with 1 frags into unitig 4 now with 3143 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3143 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3143 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3143 frags - edge from 6952/3' to utg 4 1802/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3143 frags - edge from 9901/3' to utg 4 9308/3'
+popBubbles()--   merged bubble unitig 34 with 1 frags into unitig 4 now with 3144 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3144 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3144 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3144 frags - edge from 6952/3' to utg 4 1802/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3144 frags - edge from 9901/3' to utg 4 9308/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3144 frags - edge from 2499/5' to utg 4 2318/5'
+popBubbles()--   merged bubble unitig 35 with 1 frags into unitig 4 now with 3145 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 6952/3' to utg 4 1802/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 9901/3' to utg 4 9308/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 2499/5' to utg 4 2318/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3145 frags - edge from 8526/5' to utg 4 2318/5'
+popBubbles()--   merged bubble unitig 36 with 1 frags into unitig 4 now with 3146 frags
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 11268/5' to utg 4 10284/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 11268/3' to utg 4 10015/3'
+popBubbles()-- Skip bubble 37 length 119359 with 277 frags - edge from 10348/3' to utg 4 9762/3'
+popBubbles()-- Skip bubble 17 length 64619 with 159 frags - edge from 4178/3' to utg 4 7211/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 6952/3' to utg 4 1802/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 9901/3' to utg 4 9308/3'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 2499/5' to utg 4 2318/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 8526/5' to utg 4 2318/5'
+popBubbles()-- Skip bubble 4 length 1414226 with 3146 frags - edge from 10403/3' to utg 4 2318/5'
+popBubbles()-- WORKING on unitig 6/97 of length 46751 with 127 fragments.
+popBubbles()-- Skip bubble 52 length 161801 with 372 frags - edge from 1589/5' to utg 6 8958/5'
+popBubbles()-- WORKING on unitig 7/97 of length 334973 with 803 fragments.
+popBubbles()-- Skip bubble 7 length 334973 with 803 frags - edge from 6981/3' to utg 7 10830/3'
+popBubbles()-- WORKING on unitig 8/97 of length 35983 with 93 fragments.
+popBubbles()-- Skip bubble 52 length 161801 with 372 frags - edge from 10586/5' to utg 8 7183/3'
+popBubbles()-- WORKING on unitig 10/97 of length 39677 with 88 fragments.
+popBubbles()--   merged bubble unitig 25 with 1 frags into unitig 10 now with 89 frags
+popBubbles()--   merged bubble unitig 27 with 1 frags into unitig 10 now with 90 frags
+popBubbles()--   merged bubble unitig 26 with 1 frags into unitig 10 now with 91 frags
+popBubbles()--   merged bubble unitig 29 with 1 frags into unitig 10 now with 92 frags
+popBubbles()--   merged bubble unitig 30 with 1 frags into unitig 10 now with 93 frags
+popBubbles()-- WORKING on unitig 14/97 of length 399801 with 924 fragments.
+popBubbles()--   merged bubble unitig 45 with 1 frags into unitig 14 now with 925 frags
+popBubbles()-- Skip bubble 14 length 399801 with 925 frags - edge from 5866/5' to utg 14 11482/5'
+popBubbles()--   merged bubble unitig 46 with 1 frags into unitig 14 now with 926 frags
+popBubbles()-- Skip bubble 14 length 399801 with 926 frags - edge from 5866/5' to utg 14 11482/5'
+popBubbles()-- Skip bubble 14 length 399801 with 926 frags - edge from 9850/3' to utg 14 11482/5'
+popBubbles()-- WORKING on unitig 17/97 of length 64619 with 159 fragments.
+popBubbles()--   merged bubble unitig 20 with 1 frags into unitig 17 now with 160 frags
+popBubbles()-- Skip bubble 17 length 64619 with 160 frags - edge from 11185/5' to utg 17 5312/3'
+popBubbles()-- WORKING on unitig 18/97 of length 12484 with 42 fragments.
+popBubbles()--   merged bubble unitig 21 with 1 frags into unitig 18 now with 43 frags
+popBubbles()-- WORKING on unitig 22/97 of length 69437 with 147 fragments.
+popBubbles()-- WORKING on unitig 31/97 of length 18837 with 56 fragments.
+popBubbles()-- WORKING on unitig 32/97 of length 14972 with 45 fragments.
+popBubbles()-- WORKING on unitig 37/97 of length 119359 with 277 fragments.
+popBubbles()--   merged bubble unitig 70 with 1 frags into unitig 37 now with 278 frags
+popBubbles()-- Skip bubble 37 length 119359 with 278 frags - edge from 9768/5' to utg 37 10276/3'
+popBubbles()-- WORKING on unitig 39/97 of length 185605 with 421 fragments.
+popBubbles()-- WORKING on unitig 41/97 of length 26284 with 58 fragments.
+popBubbles()-- WORKING on unitig 48/97 of length 366097 with 800 fragments.
+popBubbles()-- WORKING on unitig 52/97 of length 161801 with 372 fragments.
+popBubbles()--   merged bubble unitig 55 with 1 frags into unitig 52 now with 373 frags
+popBubbles()-- Skip bubble 52 length 161801 with 373 frags - edge from 4555/3' to utg 52 4495/5'
+popBubbles()-- WORKING on unitig 53/97 of length 49775 with 118 fragments.
+popBubbles()--   merged bubble unitig 54 with 1 frags into unitig 53 now with 119 frags
+popBubbles()-- WORKING on unitig 63/97 of length 191449 with 435 fragments.
+popBubbles()--   merged bubble unitig 75 with 2 frags into unitig 63 now with 437 frags
+popBubbles()-- Skip bubble 63 length 191449 with 437 frags - edge from 6734/5' to utg 63 7833/5'
+popBubbles()-- WORKING on unitig 72/97 of length 4218 with 15 fragments.
+popBubbles()-- WORKING on unitig 74/97 of length 23590 with 48 fragments.
+InsertSizes()-- lib 1 mean 0 stddev 0 samples 0
+==> MATE HAPPINESS
+
+unmated          11626
+
+                  dove-dove  dove-cont  cont-cont
+happy                     0          0          0
+
+goodExternalFwd           0          0          0
+goodExternalRev           0          0          0
+
+badExternalFwd            0          0          0
+badExternalRev            0          0          0
+badCompressed             0          0          0
+badStretched              0          0          0
+badNormal                 0          0          0
+badAnti                   0          0          0
+badOuttie                 0          0          0
+badFwd                    0          0          0
+badRev                    0          0          0
