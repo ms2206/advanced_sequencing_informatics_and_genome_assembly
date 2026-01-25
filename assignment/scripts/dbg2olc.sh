@@ -114,7 +114,7 @@ cat "${SOAP_ASSEMBELLY}" "HS7_pacbioData.fasta" > "DBG2OLC_contigs_plus_pacbio.f
 # Enable the use of my_split_nrun_sparc and pitchfork
 echo "Setting up environment for Sparc polishing..."
 singularity exec ${SINGULARITY} \
-    bash -c "source ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
+    bash -c "chmod a+x ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
     && source /pitchfork/setup-env.sh"
 
 
