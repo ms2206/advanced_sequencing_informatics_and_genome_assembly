@@ -96,7 +96,7 @@ singularity exec ${SINGULARITY} \
     MinOverlap 20 \
     RemoveChimera 1 \
     Contigs "${SOAP_ASSEMBELLY}" \
-    f "${PACBIO_READS_LOCAL}"
+    f "${PACBIO_READS}"
 
 # Completion message
 echo "Done"
