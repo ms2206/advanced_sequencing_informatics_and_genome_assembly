@@ -81,6 +81,7 @@ singularity exec ${SINGULARITY} \
     "${DBG2OLC}/SparseAssembler" \
     GS 15000000 \
     NodeCovTh 1 \
+    EdgeCovTh 1 \
     k ${kmer} \
     g 1 \
     f "${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}" 
