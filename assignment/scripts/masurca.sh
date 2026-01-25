@@ -91,8 +91,9 @@ export PATH=$PATH:./
 
 singularity exec "${SINGULARITY}" \
     ${MASURCA} masurca_config.txt
-    
 
+singularity exec "${SINGULARITY}" \
+    ./assemble.sh
 
 # Completion message
 echo "Done"
