@@ -120,7 +120,7 @@ singularity exec ${SINGULARITY} \
 
 echo "Running my_split_nrun_sparc.sh..."
 singularity exec "${SINGULARITY}" \
-    ./${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
+    ${WORKING_FOLDER}/scripts/my_split_nrun_sparc.sh \
     backbone_raw.fasta \
     DBG2OLC_Consensus_info.txt \
     DBG2OLC_contigs_plus_pacbio.fasta \
