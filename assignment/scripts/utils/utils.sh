@@ -43,3 +43,7 @@ function count_reads_above_length {
     count=$(zcat $fastq_file | awk 'NR % 4 == 2' | awk '{print length($0)}' | awk -v threshold="$length_threshold" '$1 > threshold' | wc -l)
     echo "File: $fastq_file - Number of reads with length > $length_threshold: $count"
 }
+
+function gnx_wrapper {
+    singularity exec /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/gamod.simg java -jar /usr/local/bin/gnx.jar $1
+}
