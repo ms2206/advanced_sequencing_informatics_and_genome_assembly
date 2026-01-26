@@ -78,7 +78,7 @@ cd "${output_folder}"
 # ========================
 echo "Running QUAST on assembly: ${assembly}"
 singularity exec "${QUAST_CONTAINER}" \
-    /quast-5.0.2/quast.py \
+    /quast-5.2.0/quast.py \
     ${assembly} \
 
 
