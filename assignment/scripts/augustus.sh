@@ -75,7 +75,7 @@ echo "Gene prediction completed. Output saved to masurca_genes.gff3"
 
 echo "Counting predicted genes..."
 # Count genes
-gene_count=$(grep -c $'\tgene\t' /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/annotation/masurca_genes.gff3)
+gene_count=$(grep -c $'\tgene\t' "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/annotation/masurca_genes.gff3")
 echo "Total predicted genes: ${gene_count}"
 
 # Completion message
