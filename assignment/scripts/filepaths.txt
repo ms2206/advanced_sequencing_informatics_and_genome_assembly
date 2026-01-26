@@ -22,3 +22,7 @@ DBG2OLC_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome
 PILON_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon"
 MASURCA_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca"
 QUAST_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast"
+
+WORKING_FOLDER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/"
+LOGS_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/logs"
+SCRIPTS_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/scripts"
