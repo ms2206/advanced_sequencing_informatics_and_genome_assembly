@@ -9,6 +9,7 @@ PACBIO_READS="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genom
 
 JELLYFISH="/MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish"
 SINGULARITY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/gamod.simg"
+QUAST_CONTAINER="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/quast.simg"
 ALE="/ALE/src/ALE"
 DBG2OLC="/DBG2OLC/compiled/"
 MASURCA="/MaSuRCA-3.2.7/bin/masurca"
@@ -20,3 +21,4 @@ CUTADAPT_WORKING_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_a
 DBG2OLC_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/dbg2olc"
 PILON_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon"
 MASURCA_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly/masurca"
+QUAST_OUTPUT_DIR="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast"
