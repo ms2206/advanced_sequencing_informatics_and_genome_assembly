@@ -1,0 +1,23 @@
+Assembly	HS7_R1.fastq.gz.cor_pregraph
+# contigs (>= 0 bp)	2660
+# contigs (>= 1000 bp)	406
+# contigs (>= 5000 bp)	274
+# contigs (>= 10000 bp)	167
+# contigs (>= 25000 bp)	53
+# contigs (>= 50000 bp)	4
+Total length (>= 0 bp)	5133930
+Total length (>= 1000 bp)	4834970
+Total length (>= 5000 bp)	4484730
+Total length (>= 10000 bp)	3720358
+Total length (>= 25000 bp)	1885853
+Total length (>= 50000 bp)	270653
+# contigs	463
+Largest contig	90697
+Total length	4875113
+GC (%)	36.15
+N50	20172
+N90	5684
+auN	23184.7
+L50	78
+L90	256
+# N's per 100 kbp	0.00

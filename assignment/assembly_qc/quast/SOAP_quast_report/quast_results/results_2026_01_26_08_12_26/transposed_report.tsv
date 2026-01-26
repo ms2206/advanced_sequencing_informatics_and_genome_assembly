@@ -1,0 +1,2 @@
+Assembly	# contigs (>= 0 bp)	# contigs (>= 1000 bp)	# contigs (>= 5000 bp)	# contigs (>= 10000 bp)	# contigs (>= 25000 bp)	# contigs (>= 50000 bp)	Total length (>= 0 bp)	Total length (>= 1000 bp)	Total length (>= 5000 bp)	Total length (>= 10000 bp)	Total length (>= 25000 bp)	Total length (>= 50000 bp)	# contigs	Largest contig	Total length	GC (%)	N50	N90	auN	L50	L90	# N's per 100 kbp
+HS7_R1.fastq.gz.cor_pregraph	2660	406	274	167	53	4	5133930	4834970	4484730	3720358	1885853	270653	463	90697	4875113	36.15	20172	5684	23184.7	78	256	0.00

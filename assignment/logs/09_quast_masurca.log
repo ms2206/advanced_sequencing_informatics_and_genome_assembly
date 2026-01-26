@@ -1,0 +1,70 @@
+Started script
+Mon Jan 26 08:11:18 GMT 2026
+
+apptainer version 1.1.3-1.el8
+Running QUAST on assembly: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta
+Output will be saved to: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report
+/quast-5.2.0/quast.py /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-4.18.0-305.el8.x86_64-x86_64-with-Ubuntu-20.04-focal (linux_64)
+  Python version: 2.7.18
+  CPUs number: 16
+
+Started: 2026-01-26 08:11:19
+
+Logging to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report
+Main parameters: 
+  MODE: default, threads: 4, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta ==> pilon_polished
+
+2026-01-26 08:11:20
+Running Basic statistics processor...
+  Contig files: 
+    pilon_polished
+  Calculating N50 and L50...
+    pilon_polished, N50 = 1408292, L50 = 2, auN = 911533.1, Total length = 4969088, GC % = 36.24, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/basic_stats/GC_content_plot.pdf
+  Drawing pilon_polished GC content plot...
+    saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/basic_stats/pilon_polished_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-01-26 08:11:21
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-01-26 08:11:21
+RESULTS:
+  Text versions of total report are saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/report.html
+  PDF version (tables and plots) is saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/report.pdf
+  Icarus (contig browser) is saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/icarus.html
+  Log is saved to /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/assembly_qc/quast/MASURCA_quast_report/quast_results/results_2026_01_26_08_11_19/quast.log
+
+Finished: 2026-01-26 08:11:21
+Elapsed time: 0:00:02.272409
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+Done
+Mon Jan 26 08:11:22 GMT 2026
