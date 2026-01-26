@@ -68,7 +68,7 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
 augustus \
     --species=human \
     --gff3=on \
-    "${MASURCA_POLISH_ASSEMBELLY}" > masurca_genes.gff3
+    "${MASURCA_POLISH_ASSEMBELLY}" > "/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/annotation/masurca_genes.gff3"
 
 # Count genes
 grep -c $'\tgene\t' masurca_genes.gff3
