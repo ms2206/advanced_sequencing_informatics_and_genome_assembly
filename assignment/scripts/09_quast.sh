@@ -61,22 +61,25 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
 
 # Any additional variables or paths can be added here
 assembly="${input_assembly_filepath}"
+assembly_tool=${input_assembly_tool}
+
 
 if [ ! -f "${assembly}" ]; then
-    echo "Error: Assembly file ${assembly} does not exist."
+    echo "Error: Assembly file not found at ${assembly}"
     exit 1
+
 fi
 
-filename=$(basename "${assembly}")
 
 # output folder
-output_folder="${QUAST_OUTPUT_DIR}/${filename%.*}_quast_report"
+output_folder="${QUAST_OUTPUT_DIR}/${assembly_tool}_quast_report"
 mkdir -p "${output_folder}"
 cd "${output_folder}"
     
 # Main code 
 # ========================
 echo "Running QUAST on assembly: ${assembly}"
+echo "Output will be saved to: ${output_folder}"
 singularity exec "${QUAST_CONTAINER}" \
     /quast-5.2.0/quast.py \
     ${assembly} \
