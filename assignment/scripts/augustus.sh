@@ -65,11 +65,10 @@ source "${WORKING_FOLDER}/scripts/filepaths.txt"
     
 # Main code 
 # ========================
-# <-- your code ...>
 augustus \
     --species=human \
     --gff3=on \
-    genome.scf.fasta > masurca_genes.gff3
+    "${MASURCA_POLISH_ASSEMBELLY}" > masurca_genes.gff3
 
 # Count genes
 grep -c $'\tgene\t' masurca_genes.gff3

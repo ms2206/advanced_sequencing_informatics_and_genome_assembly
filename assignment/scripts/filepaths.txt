@@ -7,7 +7,6 @@ SOAP_ASSEMBELLY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_ge
 MASURCA_POLISH_ASSEMBELLY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta"
 DBG2OLD_POLISHED_ASSEMBELLY="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_dbg2olc_hybrid_k64/pilon_polished.fasta"
 
-
 PACBIO_READS="/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/raw_data/HS7_pacbioData.fastq.gz"
 
 JELLYFISH="/MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish"
