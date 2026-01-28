@@ -1,0 +1,803 @@
+##gff-version 3
+# This output was generated with AUGUSTUS (version 3.5.0).
+# AUGUSTUS is a gene prediction tool written by M. Stanke (mario.stanke@uni-greifswald.de),
+# O. Keller, S. König, L. Gerischer, L. Romoth, Katharina Hoff, Henry Mehlan and Daniel Honsel.
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Sources of extrinsic information: M RM 
+# Initializing the parameters using config directory /apps/software/AUGUSTUS/3.5.0-foss-2023a/config/ ...
+# human version. Using default transition matrix.
+# Looks like /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 1408292, name = scf7180000000042_pilon) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scf7180000000042_pilon	AUGUSTUS	gene	13542	81426	1	-	.	ID=g1
+scf7180000000042_pilon	AUGUSTUS	transcript	13542	81426	.	-	.	ID=g1.t1;Parent=g1
+scf7180000000042_pilon	AUGUSTUS	stop_codon	13542	13544	.	-	0	Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	13542	13860	.	-	1	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	15318	15393	.	-	2	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	36768	37003	.	-	1	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	54240	54313	.	-	0	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	75220	75269	.	-	2	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	81300	81426	.	-	0	ID=g1.t1.cds;Parent=g1.t1
+scf7180000000042_pilon	AUGUSTUS	start_codon	81424	81426	.	-	0	Parent=g1.t1
+# protein sequence = [MGPQQPLGPPFLDFLSLLLLGTGKLRVLVLGCTQSFRGIEPSQYKVYTDSGHGSFTHLAVGEVLLENILKSVFQLGSI
+# LLVTFRMKTLNKLAVGDTYLNIMKAMYDKPTANIVLNGKELKAFFLRTGTRERCLLLPVLISIVLEVLARAIKKEKYRASKLEKRDNLRDASSLDWRK
+# NSPAAAELELKRHNAENGDNEKMAALEAKICHQIEYYLGDLRLPRDKFLKEKIKLDEGWVSLEIMIKFNRLNRLTTDFNVIVEALSKSKAEVMEISED
+# KTKIRRSPSKSLPEVTDEY]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/6
+# CDS introns: 0/5
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g1
+###
+# start gene g2
+scf7180000000042_pilon	AUGUSTUS	gene	81487	148264	1	+	.	ID=g2
+scf7180000000042_pilon	AUGUSTUS	transcript	81487	148264	.	+	.	ID=g2.t1;Parent=g2
+scf7180000000042_pilon	AUGUSTUS	start_codon	81487	81489	.	+	0	Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	81487	81553	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	91425	91609	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	105638	105727	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	107284	107428	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	111957	112069	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	114340	114548	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	114695	115659	.	+	1	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	117711	117847	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	123683	123838	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	125510	125624	.	+	0	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	127686	127935	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	129037	129089	.	+	1	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	133487	133627	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	139239	139460	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	140730	140825	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	143045	143140	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	148116	148264	.	+	2	ID=g2.t1.cds;Parent=g2.t1
+scf7180000000042_pilon	AUGUSTUS	stop_codon	148262	148264	.	+	0	Parent=g2.t1
+# protein sequence = [MPGGACVLVIALMFLAWGEGKRAQECSPGGHQFLRSPYRSVRFDSWHLQQSAVQDLICDHSLSPGWYRFLILDRPAEM
+# PTKCVEIFCSASVFFLENPHVQSVAIESQEFFAGFKLQPELSTISEDGKEYYLRIESTVPIICSEFSELDQECKISLKLKTIGQGYMIISRLEHLCFI
+# RVCHVILKSMYVSGTAEAFTIQCHIWFSSGAFIRADLGEWGMSLTIRAPSVDYRNTLGLCGTFDENPENDFHDKNGMQIDQNFNNYVAFINEWRILPG
+# KSMSDTLPVSMTSPGKASYCSCSLDTAAYPSSEDLDSVSRSEIALGCKDLNHVSLSSLIPELDVTSEYINSDTLVREINKHTSPEEYNLNLFLQEKKH
+# INLTKLGLNVQKHPGNEKEDSLQYLANKKYTQGRGSHSQEMRYNRQNRWKRQNFHEFPPLFAFPSLSQTDLEELTYFFPEDHAEDVQQEFFPSLPTPS
+# GLTEYSTLTLCQETLANSSIGRLCLAFLGKRLDSVIEMCVKDVLLKDDLSWAEAGVALLENECEKRIVEEGKYNTEEYGTSIEDILSVLKCPNLCSGN
+# GQCMEWGCACSPSFSSYDCSDSYDKAPEITELGNAGFCDVQKYNCMMVRVFGKGFKELPSIKCEVTKLQYNSSEWMPGEPIYTQTVFHNSRAVDCQLP
+# TDVQQFDTMDLVGGKPTGKWQLKENVCIIDGLCYVEGDKNPTSPCLICRPKISRFTWSFLENNQPPVIQALQDKLQTFYGENFEYQFVAFDPEGSDIH
+# FTLDSGPEGASVSSAGLFMWKTDLLTTQQITVRLNDDCDAKLESRLSYISGFHSYSCDCPPELKVETQFVNQFTTQTVVLTRSDKSVNKEEDDKNAQG
+# RKRHVKPTSGNAFTINFQPPSTEYSLISTRFTPTPATIKKLLSTTNNISRSSLKLITAQMDNSVKPISHQISDIEHVDRSLSTNLSLAICKYPCGKSR
+# ECVAPNICKCKPGYIGSNCQTVVCNRHCENGGQCLTPDICQCKPGWYGPTCSTGICDPTCMNGGKCVGPSTCSCPSGWSGKRCNTRKRNTLKTLKLSS
+# FMGM]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/17
+# CDS introns: 0/16
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g2
+###
+# start gene g3
+scf7180000000042_pilon	AUGUSTUS	gene	155278	555603	1	-	.	ID=g3
+scf7180000000042_pilon	AUGUSTUS	transcript	155278	555603	.	-	.	ID=g3.t1;Parent=g3
+scf7180000000042_pilon	AUGUSTUS	stop_codon	155278	155280	.	-	0	Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	155278	155293	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	170393	170419	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	174693	174835	.	-	0	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	212926	213020	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	222628	222692	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	254749	254798	.	-	0	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	255368	255508	.	-	0	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	260802	260961	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	266670	266733	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	270164	270342	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	298954	299008	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	401141	401200	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	406436	406600	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	446534	446619	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	452024	452100	.	-	0	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	503524	503669	.	-	2	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	511563	511618	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	516040	516153	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	528214	528312	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	543238	543372	.	-	1	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	555575	555603	.	-	0	ID=g3.t1.cds;Parent=g3.t1
+scf7180000000042_pilon	AUGUSTUS	start_codon	555601	555603	.	-	0	Parent=g3.t1
+# protein sequence = [MYPNMLNTQWPLDFDEDFHHDFSWFSGLLTQTSYAIGFPASPAGRSWDFLASIITKRRDGRKLLLHFLFMEGEREYLS
+# LVGAGTDSRRSYCKAVASNLGAKYVESFRVSKSFIYQRRPLPLDFKQCCNPAIYGKSAYEKMCNIMSPYYISFLFKSPVELTGVIFYQLQVSGRDSKM
+# LNFVICDPNICVLVSLQDVVIGRVDGNTERRIDSETCQFHSLSYDHFIDPIRYKLFKEKKYGFLFHIINLTVGVWRRGLEGKERAGSRPLAFPRAPLR
+# KGEGFLPRQPSVTFYEQQEPALLQSVNPGVLDYNFVTWKAAGVLVDGGDNINDSKNRLSECQQYDLNKEDAYDGVTSENMRNGLVNSEVHNEDGRNGD
+# VSQFPYVEFTGRDSVTCPTCQGTGRIPRGQENQLVALIPYSDQRLRPRRTKLYVMASVFVCLLLSGLAVFFLFPRSIDVKYIGVKSAYVSYDVQKRTI
+# YLNITNTLNITNNNYYSVEVENITAQVQFSKTVIGKARLNNITIIGPLDMKQIDYTVPTVIAEEMSYMXQAGSDYVRSTHGFPGYKIWYKEMDIESVF
+# NIDNEALVLHSLTDCEESKWFQIKTRVDPEFCFPPISSYIQYLTIFPPISGYNPTRTALFLKPYKLSLDNLMNIGCDFYDWLDMA]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/21
+# CDS introns: 0/20
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g3
+###
+# start gene g4
+scf7180000000042_pilon	AUGUSTUS	gene	558127	633628	1	+	.	ID=g4
+scf7180000000042_pilon	AUGUSTUS	transcript	558127	633628	.	+	.	ID=g4.t1;Parent=g4
+scf7180000000042_pilon	AUGUSTUS	start_codon	558127	558129	.	+	0	Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	558127	558318	.	+	0	ID=g4.t1.cds;Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	560019	560137	.	+	0	ID=g4.t1.cds;Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	576971	577041	.	+	1	ID=g4.t1.cds;Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	619100	619272	.	+	2	ID=g4.t1.cds;Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	633404	633628	.	+	0	ID=g4.t1.cds;Parent=g4.t1
+scf7180000000042_pilon	AUGUSTUS	stop_codon	633626	633628	.	+	0	Parent=g4.t1
+# protein sequence = [MGHDCSSCSLQRHSLVCKRLCPQRTLSPAKQVAASKPCPRSRMLTRGEFSILFSGVQNCNQVPTLGLQHPDWGRVRAG
+# GLRPPGTVTCGGGEAKRRQEEKRQLRLINLTFCKLRNGAIVFSVDIVRRDSQEGNYKSEVNSKPRKERTAFTKEQIRELEAEFAHHNYLTRLRRYEIA
+# VNLDLTERQVKVWFQNRRMKWKRVKGGQQGAAAREKELVNVKKGTLLPSELSGIGAATLQQTGDSIANEDSHDSDHSSEHAHL]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g4
+###
+# start gene g5
+scf7180000000042_pilon	AUGUSTUS	gene	696796	697812	1	-	.	ID=g5
+scf7180000000042_pilon	AUGUSTUS	transcript	696796	697812	.	-	.	ID=g5.t1;Parent=g5
+scf7180000000042_pilon	AUGUSTUS	stop_codon	696796	696798	.	-	0	Parent=g5.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	696796	697812	.	-	0	ID=g5.t1.cds;Parent=g5.t1
+scf7180000000042_pilon	AUGUSTUS	start_codon	697810	697812	.	-	0	Parent=g5.t1
+# protein sequence = [MGKKQNRKTGNSKTQSTSPPPKERSSSPATEQSWMENDFDELREEGFRRSNYSELREDIQTKGKEVENFEKNLEECIT
+# RITNTEKCLKELMELKTKARELREECRSLRSRCDQLEERVSAMEDEMNEMKREGKFREKRIKRNEQSLQEIWDYVKRPNLRLIGVPESDGENGTKLEN
+# TLQDIIQENFPNLARQANVQIQEIQRTPQRYSSRRATPRHIIVRFTKVEMKEKMLRAAREKGRVTLKGKPIRLTADLSAETLQARREWGPIFNILKEK
+# NFQPRISYPAKLSFISEGEIKYFTDKQMLRDFVTTRPALKELLKEALNMERNNRYQPLQNHAKM]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/1
+# CDS introns: 0/0
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g5
+###
+# start gene g6
+scf7180000000042_pilon	AUGUSTUS	gene	743989	744342	1	-	.	ID=g6
+scf7180000000042_pilon	AUGUSTUS	transcript	743989	744342	.	-	.	ID=g6.t1;Parent=g6
+scf7180000000042_pilon	AUGUSTUS	stop_codon	743989	743991	.	-	0	Parent=g6.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	743989	744342	.	-	0	ID=g6.t1.cds;Parent=g6.t1
+scf7180000000042_pilon	AUGUSTUS	start_codon	744340	744342	.	-	0	Parent=g6.t1
+# protein sequence = [MQLLAQVLSPSLRSAGSRSECGGPFSPGPPGTCTGLRAPRLAPVPACASPSTPPHKKREAGSSLSQPREGLPQCSSRL
+# KDSSSVVRVDAKAKEALRASEGCQHVVISHQYLVKIIKG]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/1
+# CDS introns: 0/0
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g6
+###
+# start gene g7
+scf7180000000042_pilon	AUGUSTUS	gene	922812	1131983	1	-	.	ID=g7
+scf7180000000042_pilon	AUGUSTUS	transcript	922812	1131983	.	-	.	ID=g7.t1;Parent=g7
+scf7180000000042_pilon	AUGUSTUS	stop_codon	922812	922814	.	-	0	Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	922812	922926	.	-	1	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	985796	985827	.	-	0	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1007319	1007391	.	-	1	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1019329	1019429	.	-	0	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1064151	1064181	.	-	1	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1068311	1068463	.	-	1	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1070823	1070904	.	-	2	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	CDS	1131794	1131983	.	-	0	ID=g7.t1.cds;Parent=g7.t1
+scf7180000000042_pilon	AUGUSTUS	start_codon	1131981	1131983	.	-	0	Parent=g7.t1
+# protein sequence = [MWDSLERPRNLEGSEHRKMWESLELPRDLLNGFDQNADSDMDNKVQAEVVSDGDEELTENWRKAFGVQEVFGYMDELC
+# GGEFCYFNELVTWDEANLIVVDKLFVMLLDSVCQYFVEDFHDVHQDIGLNLSLFVVSLRSFDIRYLVMRFLDQMSEGSFPTETFKKGDASFLVPGSLA
+# FEEISMLQLSKARGNQSHRTSELCPNIGRISKFQNLKPRQYFEFAKEADLTVVDRLFDMLLDLVHQYFIEDFRIDVSSGILT]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/8
+# CDS introns: 0/7
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g7
+###
+#
+# ----- prediction on sequence number 2 (length = 1414133, name = scf7180000000043_pilon) -----
+#
+# Predicted genes for sequence number 2 on both strands
+# start gene g8
+scf7180000000043_pilon	AUGUSTUS	gene	37746	102217	1	-	.	ID=g8
+scf7180000000043_pilon	AUGUSTUS	transcript	37746	102217	.	-	.	ID=g8.t1;Parent=g8
+scf7180000000043_pilon	AUGUSTUS	stop_codon	37746	37748	.	-	0	Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	37746	38161	.	-	2	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	40662	40742	.	-	2	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	45511	45557	.	-	1	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	64009	64050	.	-	1	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	77605	77781	.	-	1	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	102189	102217	.	-	0	ID=g8.t1.cds;Parent=g8.t1
+scf7180000000043_pilon	AUGUSTUS	start_codon	102215	102217	.	-	0	Parent=g8.t1
+# protein sequence = [MPSVGASIASSQVLVGGNVRANEVGTVVRRRWNWPATSALAGANSTHSDPLLSTPRWRENAGEQLRELGFDSWFNNLL
+# AVDNGFCVRHFHIFLFLCEVAHPSSNSTLNQARNGGRHFSNTGLDRNTRVQVGCRELRSTKYISDGQCTSISPLKELVCAGECLPLPVLPNWIGGGYG
+# TKYWSRRSSQEWRCVNDKTRTQRIQLQCQDGSTRTYKITVVTACKCKRYTRQHNESSHNFESMSPAKPVQHHRERKRASKSSKHSMS]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/6
+# CDS introns: 0/5
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g8
+###
+# start gene g9
+scf7180000000043_pilon	AUGUSTUS	gene	127053	161103	1	+	.	ID=g9
+scf7180000000043_pilon	AUGUSTUS	transcript	127053	161103	.	+	.	ID=g9.t1;Parent=g9
+scf7180000000043_pilon	AUGUSTUS	start_codon	127053	127055	.	+	0	Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	127053	127092	.	+	0	ID=g9.t1.cds;Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	141510	141599	.	+	2	ID=g9.t1.cds;Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	155269	155296	.	+	2	ID=g9.t1.cds;Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	156519	156626	.	+	1	ID=g9.t1.cds;Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	161052	161103	.	+	1	ID=g9.t1.cds;Parent=g9.t1
+scf7180000000043_pilon	AUGUSTUS	stop_codon	161101	161103	.	+	0	Parent=g9.t1
+# protein sequence = [MGTPINSQLVRSTGLYQNPLCQYNLYRLYIIYHLPGVELLDRNHFAFANNVDKTVLDDPEDAVFVRSMKRSVMTLTSM
+# NWDTVPTREESAPIVALHGDPQVVLGA]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g9
+###
+# start gene g10
+scf7180000000043_pilon	AUGUSTUS	gene	161217	220769	1	-	.	ID=g10
+scf7180000000043_pilon	AUGUSTUS	transcript	161217	220769	.	-	.	ID=g10.t1;Parent=g10
+scf7180000000043_pilon	AUGUSTUS	stop_codon	161217	161219	.	-	0	Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	161217	161774	.	-	0	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	179917	180045	.	-	0	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	184826	184961	.	-	1	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	185745	185959	.	-	0	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	190940	191100	.	-	2	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	200179	200277	.	-	2	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	207510	207559	.	-	1	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	208553	208728	.	-	0	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	211587	211651	.	-	2	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	220703	220769	.	-	0	ID=g10.t1.cds;Parent=g10.t1
+scf7180000000043_pilon	AUGUSTUS	start_codon	220767	220769	.	-	0	Parent=g10.t1
+# protein sequence = [MVHIKKGELTQEEKELLEVIGKGTVQEAGTLLSSKNVRVNCLDEVNEDIGIKIADCLQLKIQHLSKALFAGQSDTQKK
+# FCSVYHCTFNLYGVLSFQFMKLLKEDYENIQKLIVVMAAQLCNKDITWVMLEAGAETDVVNSVGRTAAQMAAFVGQHDCVTIINNFFPRERLDYYTKP
+# QGLDKEPKLPPKLAGPLHKIITTTNLHPVKIVMLVNENPLLTEEAALNKCYRVMDLICEKCMKQRDMNEVLAMKMHYISCIFQKCINFLKDGENKLDT
+# LIKSLLKGRASDGFPVYQEKIIRESIRKVPYCEATLLQQLVRSIAPVEIGSDPTAFSVLTQAITGQVGFVDVEFCTTCGEKGASKRCSVCKMPPPQQQ
+# HHERPGAAAIGSARGQSTGKGPPQSPVFEGVYNNSRMLHFLTAVVGSTCDVKVKNGTTYEGIFKTLSSHFELAEDIVHQKASEPAAGPRREDTVDTMV
+# FKPSDVMLVHFRNADFNYATKDKFTDSAIAMNSKGMGNTKRRCFSAGSGVTATATTTTSSPTCPMDGTPMKCSSSMKRTTV]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/10
+# CDS introns: 0/9
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g10
+###
+# start gene g11
+scf7180000000043_pilon	AUGUSTUS	gene	221362	289193	1	+	.	ID=g11
+scf7180000000043_pilon	AUGUSTUS	transcript	221362	289193	.	+	.	ID=g11.t1;Parent=g11
+scf7180000000043_pilon	AUGUSTUS	start_codon	221362	221364	.	+	0	Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	221362	221484	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	222443	222510	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	240630	240694	.	+	1	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	249605	249781	.	+	2	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	256494	256597	.	+	2	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	257973	258038	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	261098	261233	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	264990	265099	.	+	2	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	270027	270197	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	272108	272254	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	273241	273379	.	+	0	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	279737	279859	.	+	2	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	289159	289193	.	+	2	ID=g11.t1.cds;Parent=g11.t1
+scf7180000000043_pilon	AUGUSTUS	stop_codon	289191	289193	.	+	0	Parent=g11.t1
+# protein sequence = [MCLSFTPPLSAATAAAAAAAAAAARIAAAPSLARRRYLLGQSSIDVSLNMCVKETCMCQREIFENFMNKHQKPVLTGQ
+# RFKTRKREEKEKFEPTVFRDTLVQGLNEAGDDLEAVAKFLDSTGSRLDYRRYADTLFDILVAGSMLAPGGTRIDDGDKTKMTNHCVFSANEDHETIRN
+# YAQVFNKLIRRYKYLEKAFEDEMKKLLLFHKAFSETEQTKLAMLSGILLGNSTLPATILTSLFTDSLVKEGIAASFAVKLFKAWMAEKDANSVTSSLR
+# KANLDKRLLELFPVNRQSVDHFAKYFTDAGLKELSDFLRVQQSLGTRKELQKELQERLSQECPIKEVVLYVKEEMKRNDLPETAVIGLLWTCIMNAVE
+# WNKKEELVAEQALKHLKQYAPLLAVFSSQGQSELILLQKVQEYCYDNIHFMKAFQKIVVLFYKADVLSEEAILKWYKEAHVAKGKSVFLDQMKKFVEW
+# LQNAEEGSKKNFTVRIV]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/13
+# CDS introns: 0/12
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g11
+###
+# start gene g12
+scf7180000000043_pilon	AUGUSTUS	gene	329146	358673	1	+	.	ID=g12
+scf7180000000043_pilon	AUGUSTUS	transcript	329146	358673	.	+	.	ID=g12.t1;Parent=g12
+scf7180000000043_pilon	AUGUSTUS	start_codon	329146	329148	.	+	0	Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	329146	329208	.	+	0	ID=g12.t1.cds;Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	351389	351556	.	+	0	ID=g12.t1.cds;Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	352976	353089	.	+	0	ID=g12.t1.cds;Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	354181	354294	.	+	0	ID=g12.t1.cds;Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	358599	358673	.	+	0	ID=g12.t1.cds;Parent=g12.t1
+scf7180000000043_pilon	AUGUSTUS	stop_codon	358671	358673	.	+	0	Parent=g12.t1
+# protein sequence = [MVCGGFACSKNCLCALNLLYTLVSLLLIGIAAWGIGFGLISSLRVVGVVIAVGIFLFLIALVGLIGAVKHHQVLLFFG
+# QLLEVGWNNTASARNDIQRNLNCCGFRSVNPNDTCLASCVKSDHSCSPCAPIIGEYAGEVLRFVGGIGLFFSFTEILGVWLTYRYRNQKDPRANPSAF
+# L]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g12
+###
+# start gene g13
+scf7180000000043_pilon	AUGUSTUS	gene	368039	428578	1	-	.	ID=g13
+scf7180000000043_pilon	AUGUSTUS	transcript	368039	428578	.	-	.	ID=g13.t1;Parent=g13
+scf7180000000043_pilon	AUGUSTUS	stop_codon	368039	368041	.	-	0	Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	368039	368088	.	-	2	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	370067	370150	.	-	2	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	370278	370410	.	-	0	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	372762	372825	.	-	1	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	374215	374303	.	-	0	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	374875	374948	.	-	2	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	376282	376334	.	-	1	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	376451	376514	.	-	2	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	376789	376934	.	-	1	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	427354	427416	.	-	1	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	428508	428578	.	-	0	ID=g13.t1.cds;Parent=g13.t1
+scf7180000000043_pilon	AUGUSTUS	start_codon	428576	428578	.	-	0	Parent=g13.t1
+# protein sequence = [MGALLEQKRSGHPAGSGEVKVNGSGKLRKSKLQKFQAPTVSDEREVAMEKIPVSAFLLLVALSYTLARDTTVKPGAKK
+# DTKDSRPKLPQTLSRGWGDQLIWTQTYEEALYKSKTSNKPLMIIHHLDECPHSQALKKVFAENKEIQKLAEQFVLLNLVVGFLKDHFAPVVLPCLSSM
+# GSSSSSSYSLIMKQLTNTFLLMASMSPGLCLLVAIDRTEGFITFSTNSTAQLLMFPALHLLLTARGWVVEWMDQSSYPSLTVRADITGRYSNRLYAYE
+# PADTALLLDNMKKALKLLKTEL]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/11
+# CDS introns: 0/10
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g13
+###
+# start gene g14
+scf7180000000043_pilon	AUGUSTUS	gene	865749	981108	1	+	.	ID=g14
+scf7180000000043_pilon	AUGUSTUS	transcript	865749	981108	.	+	.	ID=g14.t1;Parent=g14
+scf7180000000043_pilon	AUGUSTUS	start_codon	865749	865751	.	+	0	Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	865749	865797	.	+	0	ID=g14.t1.cds;Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	866022	866118	.	+	2	ID=g14.t1.cds;Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	908709	908775	.	+	1	ID=g14.t1.cds;Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	917278	917399	.	+	0	ID=g14.t1.cds;Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	981015	981108	.	+	1	ID=g14.t1.cds;Parent=g14.t1
+scf7180000000043_pilon	AUGUSTUS	stop_codon	981106	981108	.	+	0	Parent=g14.t1
+# protein sequence = [MGLLPQLLVWLQMSKPGHIIASEVLSAFVIVRYDIDFTITFESYFYFIQYNYYEIYLVMGLLCCEIKIIAKIEDQKLI
+# ELSLHERLNEICTDEWIESTHKAPFGGCSVTNGRKEKKKKKKKKKKKKKKKKKKRKKKKKNIFI]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g14
+###
+# start gene g15
+scf7180000000043_pilon	AUGUSTUS	gene	987015	1401011	1	-	.	ID=g15
+scf7180000000043_pilon	AUGUSTUS	transcript	987015	1401011	.	-	.	ID=g15.t1;Parent=g15
+scf7180000000043_pilon	AUGUSTUS	stop_codon	987015	987017	.	-	0	Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	987015	987077	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1001426	1001515	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1016214	1016365	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1029461	1029546	.	-	1	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1063261	1063369	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1072593	1072662	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1087517	1087574	.	-	1	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1110330	1110389	.	-	1	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1147669	1147699	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1148134	1148182	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1169205	1169288	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1195145	1195211	.	-	1	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1195561	1195600	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1216185	1216245	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1249671	1249776	.	-	1	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1257794	1257828	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1269603	1269719	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1274828	1274907	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1274997	1275062	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1281486	1281605	.	-	2	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1297582	1297639	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1302666	1302761	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1322633	1322749	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	CDS	1400907	1401011	.	-	0	ID=g15.t1.cds;Parent=g15.t1
+scf7180000000043_pilon	AUGUSTUS	start_codon	1401009	1401011	.	-	0	Parent=g15.t1
+# protein sequence = [MLMKPLPLILPSCSLQSQKEFRLLIFILTDILQKKRNSETVKKAHEFFTLAQSKTCYYHSQCIIMKQFRKPIKVIFYS
+# PLALFIPPSVYAVHLQFNLLYQFWIHTEQFDYNVPLWYLKNINLGLTTLAALEEPFSPPLRCGGPSVGLAEAGADSLCLRGGVEGERGRNRYCIDKNY
+# AGVLIIWDKIFGTFEAENEKVVYGLTHPINTFEPIKVQVTGKEVPFSSSSSQLLKIYTVVQFALMLAFYEETFADTADVVTEFDTSFVRPKAAIMETL
+# RCLMFLMLYRFGHLKPLVPSLSSAFEVPTLLPSYDFTRLHFERRIEGLSNFLCTNLVLERPVNMLSCKSADLEMWRSSYIVQFSGECFQLFTIQYDID
+# CGSIIYGFYYFEVFTEQEVFGYMNKFFNDNLVVGLVIKRYGASSVIFKIQSLLSDAMKRNLKAFQIIGKGKIFVIYLETHVLIDSILMFSTSMVMDIL
+# LYYCEKDMSFGRNAVVQMSPPKVMLKFVIVTALRNETIKRIFIIILHFAGIQEASTFSNTISRKQVENGNNSSAAWYLLCGSSNPLCTHLHSSLPQKA
+# GLYACSYKCSNSPLSDKIWTILLPSYHPQALETANLISVAVCLPLLECDIKNSQMILSFVFQFAKCHEFIS]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/24
+# CDS introns: 0/23
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g15
+###
+#
+# ----- prediction on sequence number 3 (length = 226906, name = scf7180000000044_pilon) -----
+#
+# Predicted genes for sequence number 3 on both strands
+# (none)
+#
+# ----- prediction on sequence number 4 (length = 46749, name = scf7180000000045_pilon) -----
+#
+# Predicted genes for sequence number 4 on both strands
+# start gene g16
+scf7180000000045_pilon	AUGUSTUS	gene	1	35345	1	+	.	ID=g16
+scf7180000000045_pilon	AUGUSTUS	transcript	1	35345	.	+	.	ID=g16.t1;Parent=g16
+scf7180000000045_pilon	AUGUSTUS	CDS	6274	6323	.	+	2	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	9835	9909	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	13810	13962	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	22642	22759	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	25163	25251	.	+	2	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	25335	25359	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	32277	32500	.	+	2	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	34977	35075	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	CDS	35274	35345	.	+	0	ID=g16.t1.cds;Parent=g16.t1
+scf7180000000045_pilon	AUGUSTUS	stop_codon	35343	35345	.	+	0	Parent=g16.t1
+# protein sequence = [MFRLYDTDGNGFLDSSELENIISQMMHVAEYLEWDVTELNPILHEMMEEIDYDHDGTVSLEEWIQGGMTTIPLLVLLG
+# LENVSISTEEGGLVNVKDDGQHVWRLKHFNKPAYCNLCLNMLIGVGKQGLCCSFCKYTVHERCVARAPPSCIKTYVKSKRNTDVMHHYWVEDDSMVTK
+# LIDPPMSWGVPYDRLDKTQDHSGNQTGKSHTRFIWLCKDQNFMESTVSTYALKLPNPNIQSCPFTHTLLHNKCASHLKPECDCGPLKDHILPPTTICP
+# VVLNDMLEMTLTQVLSLSRAATYQEL]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/9
+# CDS introns: 0/9
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g16
+###
+#
+# ----- prediction on sequence number 5 (length = 335050, name = scf7180000000046_pilon) -----
+#
+# Predicted genes for sequence number 5 on both strands
+# start gene g17
+scf7180000000046_pilon	AUGUSTUS	gene	28576	241683	1	+	.	ID=g17
+scf7180000000046_pilon	AUGUSTUS	transcript	28576	241683	.	+	.	ID=g17.t1;Parent=g17
+scf7180000000046_pilon	AUGUSTUS	start_codon	28576	28578	.	+	0	Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	28576	28725	.	+	0	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	29444	29560	.	+	0	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	37525	37598	.	+	0	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	43430	43504	.	+	1	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	67798	67883	.	+	1	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	69984	70073	.	+	2	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	76562	76722	.	+	2	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	172738	172802	.	+	0	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	203063	203158	.	+	1	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	241545	241683	.	+	1	ID=g17.t1.cds;Parent=g17.t1
+scf7180000000046_pilon	AUGUSTUS	stop_codon	241681	241683	.	+	0	Parent=g17.t1
+# protein sequence = [MRGPRKRLSLTGGKAGEAMGKRDYEGEVVKEEESSEKEVSWKPREASFQRERQSTVKKEKSGSQQPNKVIDKNKMQRA
+# NSVTVDGQGLQVTPVPGTHPLLVFVNPKSGGKQGERIYRKFQYLLNPRQVYSLSGNGPMPELNFFRDVPDFRVLACGGDGTVGWVLDCIEKANVGKHP
+# PVAILPLGTGNDLARCLRWGGGYEGENLMKILKDIENSTEIMLDRWKFEVIPNDKDEKGDPVPYSIINNYFSIGVDASIAHRFHIMREKHPEKFNSSE
+# LRKLGFPDTVKVKKKLLIHKRSLEKVSGYNQNTSSILSSISCGSHEIIQGLWYCAKHDEKYTRTENDGFLLCYGIY]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/10
+# CDS introns: 0/9
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g17
+###
+# start gene g18
+scf7180000000046_pilon	AUGUSTUS	gene	271351	292035	1	-	.	ID=g18
+scf7180000000046_pilon	AUGUSTUS	transcript	271351	292035	.	-	.	ID=g18.t1;Parent=g18
+scf7180000000046_pilon	AUGUSTUS	stop_codon	271351	271353	.	-	0	Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	271351	271410	.	-	0	ID=g18.t1.cds;Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	274994	275125	.	-	0	ID=g18.t1.cds;Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	275206	275232	.	-	0	ID=g18.t1.cds;Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	275520	275563	.	-	2	ID=g18.t1.cds;Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	CDS	291975	292035	.	-	0	ID=g18.t1.cds;Parent=g18.t1
+scf7180000000046_pilon	AUGUSTUS	start_codon	292033	292035	.	-	0	Parent=g18.t1
+# protein sequence = [MEEHSMLMDKKNRENDHTAQDMSLAESKAFADVSFVSLRMSPSQHFLPSEMLLFYFDCLSPLKDWKFFEGSDFLARLN
+# PQYLKHASHLLLRNLVIQRIRKESGERSD]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g18
+###
+#
+# ----- prediction on sequence number 6 (length = 33752, name = scf7180000000047_pilon) -----
+#
+# Predicted genes for sequence number 6 on both strands
+# start gene g19
+scf7180000000047_pilon	AUGUSTUS	gene	32805	33551	1	+	.	ID=g19
+scf7180000000047_pilon	AUGUSTUS	transcript	32805	33551	.	+	.	ID=g19.t1;Parent=g19
+scf7180000000047_pilon	AUGUSTUS	start_codon	32805	32807	.	+	0	Parent=g19.t1
+scf7180000000047_pilon	AUGUSTUS	CDS	32805	33551	.	+	0	ID=g19.t1.cds;Parent=g19.t1
+scf7180000000047_pilon	AUGUSTUS	stop_codon	33549	33551	.	+	0	Parent=g19.t1
+# protein sequence = [MELKTKARELREECRRLRSRCDQLEERVSAMEDEMNEMKGEGKFREKRIKRNEQSLQELRDYVKRPNLRLTGVPESDG
+# ENGTKLENTLQDIIQENFPNLARQANVQIQEIQRTPQRYSSRRATPRHIIVRFTKDEMKEKMLRAAREKGRVPLKGKPIRLTADLSAETLQARREWGP
+# IFNILKEKNFQPRISYAAKLSFKSEGEIKYFTDKQMLRDFVTTRPALQELLKEALNMERNNRYQPLQNHAKM]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/1
+# CDS introns: 0/0
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g19
+###
+#
+# ----- prediction on sequence number 7 (length = 58001, name = scf7180000000048_pilon) -----
+#
+# Predicted genes for sequence number 7 on both strands
+# (none)
+#
+# ----- prediction on sequence number 8 (length = 399794, name = scf7180000000049_pilon) -----
+#
+# Predicted genes for sequence number 8 on both strands
+# start gene g20
+scf7180000000049_pilon	AUGUSTUS	gene	222441	315619	1	+	.	ID=g20
+scf7180000000049_pilon	AUGUSTUS	transcript	222441	315619	.	+	.	ID=g20.t1;Parent=g20
+scf7180000000049_pilon	AUGUSTUS	start_codon	222441	222443	.	+	0	Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	222441	222485	.	+	0	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	223321	223408	.	+	0	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	224809	224856	.	+	2	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	234014	234067	.	+	2	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	272249	272378	.	+	2	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	275599	275787	.	+	1	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	279746	279993	.	+	1	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	301791	301859	.	+	2	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	304889	305058	.	+	2	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	310647	310748	.	+	0	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	315398	315619	.	+	0	ID=g20.t1.cds;Parent=g20.t1
+scf7180000000049_pilon	AUGUSTUS	stop_codon	315617	315619	.	+	0	Parent=g20.t1
+# protein sequence = [MDGFYDQQVPYMVTNSQRGRNCNEKPTNVRKRKFINRDLAHDSEELFQDLSQLQETWLAEAQVPDNDEQFVPDYQAES
+# LAFHGLPLKIKKEPHSPCSEISSACSQEQPFKFSYGEKCLYNVSAYDQKPQVGMRPSNPPTPSSTPVSPLHHASPNSTHTPKPDRAFPAHLPPSQSIP
+# DSSYPMDHRFRRQLSEPCNSFPPLPTMPREGRPMYQRQMSEPNIPFPPQGFKQEYHDPVYEHNTMVGSAASQSFPPPLMIKQEPRDFAYDSGCMFEKG
+# PRQFYDDTCVVPEKFDGDIKQEPGMYREGPTYQRRGSLQLWQFLVALLDDPSNSHFIAWTGRGMEFKLIEPEEVARRWGIQKNRPAMNYDKLSRSLRY
+# YYEKGIMQKVAGERYVYKFVCDPEALFSMAFPDNQRPLLKTDMERHINEEDTVPLSHFDESMAYMPEGGCCNPHPYNEGYVY]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/11
+# CDS introns: 0/10
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g20
+###
+# start gene g21
+scf7180000000049_pilon	AUGUSTUS	gene	332316	339629	1	-	.	ID=g21
+scf7180000000049_pilon	AUGUSTUS	transcript	332316	339629	.	-	.	ID=g21.t1;Parent=g21
+scf7180000000049_pilon	AUGUSTUS	stop_codon	332316	332318	.	-	0	Parent=g21.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	332316	332414	.	-	0	ID=g21.t1.cds;Parent=g21.t1
+scf7180000000049_pilon	AUGUSTUS	CDS	339441	339629	.	-	0	ID=g21.t1.cds;Parent=g21.t1
+scf7180000000049_pilon	AUGUSTUS	start_codon	339627	339629	.	-	0	Parent=g21.t1
+# protein sequence = [MKFNPFVTADRSKNRKRHFKAPSHIRRKIMSSPLSEELRQKYNVRSMASERMMKLGLYQDTTKSQICLYRQCENRLMH
+# RLQSVSKTSPLAVTLNK]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/2
+# CDS introns: 0/1
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g21
+###
+#
+# ----- prediction on sequence number 9 (length = 12483, name = scf7180000000050_pilon) -----
+#
+# Predicted genes for sequence number 9 on both strands
+# (none)
+#
+# ----- prediction on sequence number 10 (length = 69436, name = scf7180000000051_pilon) -----
+#
+# Predicted genes for sequence number 10 on both strands
+# (none)
+#
+# ----- prediction on sequence number 11 (length = 18841, name = scf7180000000052_pilon) -----
+#
+# Predicted genes for sequence number 11 on both strands
+# (none)
+#
+# ----- prediction on sequence number 12 (length = 14969, name = scf7180000000053_pilon) -----
+#
+# Predicted genes for sequence number 12 on both strands
+# start gene g22
+scf7180000000053_pilon	AUGUSTUS	gene	1928	2257	1	-	.	ID=g22
+scf7180000000053_pilon	AUGUSTUS	transcript	1928	2257	.	-	.	ID=g22.t1;Parent=g22
+scf7180000000053_pilon	AUGUSTUS	stop_codon	1928	1930	.	-	0	Parent=g22.t1
+scf7180000000053_pilon	AUGUSTUS	CDS	1928	2257	.	-	0	ID=g22.t1.cds;Parent=g22.t1
+scf7180000000053_pilon	AUGUSTUS	start_codon	2255	2257	.	-	0	Parent=g22.t1
+# protein sequence = [MGKKQNRKTGNPKKQSASPPPKERSSSPATEQSWMENDFDELREEGFGRSNYSELREDIQTKGKEVENFEKNLEECIT
+# RITNTEKCLKELMELKTKARELREECRSLRS]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/1
+# CDS introns: 0/0
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g22
+###
+#
+# ----- prediction on sequence number 13 (length = 119352, name = scf7180000000054_pilon) -----
+#
+# Predicted genes for sequence number 13 on both strands
+# (none)
+#
+# ----- prediction on sequence number 14 (length = 25994, name = scf7180000000055_pilon) -----
+#
+# Predicted genes for sequence number 14 on both strands
+# (none)
+#
+# ----- prediction on sequence number 15 (length = 362062, name = scf7180000000056_pilon) -----
+#
+# Predicted genes for sequence number 15 on both strands
+# start gene g23
+scf7180000000056_pilon	AUGUSTUS	gene	42446	123681	1	+	.	ID=g23
+scf7180000000056_pilon	AUGUSTUS	transcript	42446	123681	.	+	.	ID=g23.t1;Parent=g23
+scf7180000000056_pilon	AUGUSTUS	start_codon	42446	42448	.	+	0	Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	42446	42644	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	43204	43284	.	+	2	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	49723	49877	.	+	2	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	52719	52880	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	76175	76324	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	94462	94554	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	96671	96803	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	97423	97511	.	+	2	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	98245	98460	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	100762	100883	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	107705	107795	.	+	1	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	112008	112178	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	115799	115976	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	121111	121205	.	+	2	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	123502	123681	.	+	0	ID=g23.t1.cds;Parent=g23.t1
+scf7180000000056_pilon	AUGUSTUS	stop_codon	123679	123681	.	+	0	Parent=g23.t1
+# protein sequence = [MARELYHEEFARAGKQAGLQVWRIEKLELVPVPQSAHGDFYVGDAYLVLHTAKTSRGFTYHLHFWLGFYPHHAACGSG
+# RQKLRFIRKLASSDRRKECSQDESTAAAIFTVQMDDYLGGKPVQNRELQGYESNDFVSYFKGGLKYKAGGVASGLNHVLTNDLTAKRLLHVKGRRVVR
+# ATEVPLSWDSFNKGDCFIIDLGTEIYQWCGSSCNKYERLKANQVATGIRYNERKGRSELIVVEEGSEPSELIKVLGEKPELPDGGDDDDIIADISNRK
+# MAKLYMVSDASGSMRVTVVAEENPFSMAMLLSEECFILDHGAAKQIFVWKGKDANPQERKAAMKTAEEFLQQMNYSKNTQIQVLPEGGETPIFKQFFK
+# DWRDKDQSDGFGKVYVTEKVAQIKQIPFDASKLHSSPQMAAQHNMVDDGSGKVEIWRVENNGRIQVDQNSYGEFYGGDCYIILYTYPRGQIIYTWQGA
+# NATRDELTTSAFLTVQLDRSLGGQAVQIRVSQGKEPVHLLSLFKDKPLIIYKNGTSKKGGQAPAPPTRLFQVRRNLASITRIVEVDVDANSLNSNDVF
+# VLKLPQNSGYIWVGKGASQEEEKGAEYVASVLKCKTLRIQEGEEPAFYTFQIEEIPGEFTQDDLAEDDVMLLDAWEQIFIWIGKDANEVEKKESLKSG
+# KLNRWTIIAVTGHHYDRVSGLLFATMSYKNTFQNQEVA]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/15
+# CDS introns: 0/14
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g23
+###
+# start gene g24
+scf7180000000056_pilon	AUGUSTUS	gene	159920	339158	1	+	.	ID=g24
+scf7180000000056_pilon	AUGUSTUS	transcript	159920	339158	.	+	.	ID=g24.t1;Parent=g24
+scf7180000000056_pilon	AUGUSTUS	start_codon	159920	159922	.	+	0	Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	159920	160099	.	+	0	ID=g24.t1.cds;Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	221310	221369	.	+	0	ID=g24.t1.cds;Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	229850	229977	.	+	0	ID=g24.t1.cds;Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	338796	338811	.	+	1	ID=g24.t1.cds;Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	CDS	339033	339158	.	+	0	ID=g24.t1.cds;Parent=g24.t1
+scf7180000000056_pilon	AUGUSTUS	stop_codon	339156	339158	.	+	0	Parent=g24.t1
+# protein sequence = [MGNGLSDQTSILSNLPSFQSFHIVILGLDCAGKTTVLYRLQFNEFVNTVPTKGFNTEKIKLAFSADLANKTCYSFSYI
+# AQGDMLPERKDHASPVYHAVSHSSTSFSDADRWKPEQYLVYTTLSYCSKSIRLVFWAFTDTDLTTGITLAQTHLSLAPLQKLLMENMNEDC]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/5
+# CDS introns: 0/4
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g24
+###
+#
+# ----- prediction on sequence number 16 (length = 161801, name = scf7180000000057_pilon) -----
+#
+# Predicted genes for sequence number 16 on both strands
+# start gene g25
+scf7180000000057_pilon	AUGUSTUS	gene	495	128599	1	+	.	ID=g25
+scf7180000000057_pilon	AUGUSTUS	transcript	495	128599	.	+	.	ID=g25.t1;Parent=g25
+scf7180000000057_pilon	AUGUSTUS	start_codon	495	497	.	+	0	Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	495	695	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	4145	4294	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	31440	31477	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	64451	64562	.	+	1	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	71758	71862	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	78918	78963	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	102155	102252	.	+	2	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	121900	121992	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	CDS	128534	128599	.	+	0	ID=g25.t1.cds;Parent=g25.t1
+scf7180000000057_pilon	AUGUSTUS	stop_codon	128597	128599	.	+	0	Parent=g25.t1
+# protein sequence = [MSELPFTIASKRIKYLGIQLTRDVKDLFKENYKPLLKEIKEDTNKWKNIPCSWVGRINIVKMAILPKAAGAIRPLVST
+# VVSPSADGCLDYSLERARHRASEMPQAFLFDVIYEAYQQDYSGIQSPIDFQRGVRTQGKLLSSKLERQTGDYRKSQFTRAEISLGNSDRCSDYDLEFG
+# TECLQLALKYCCTKAKLVEGSPDLWKVTYKRDLYAAESIIKERISQEICVVMDTEEDNKHVGHLLEEVLKSELNVTTSDFQETQKLLSMLEESSLCIL
+# YPVVVVSILNLFALAPLVLFIVMLEYQF]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/9
+# CDS introns: 0/8
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g25
+###
+#
+# ----- prediction on sequence number 17 (length = 49779, name = scf7180000000058_pilon) -----
+#
+# Predicted genes for sequence number 17 on both strands
+# start gene g26
+scf7180000000058_pilon	AUGUSTUS	gene	3846	49779	1	+	.	ID=g26
+scf7180000000058_pilon	AUGUSTUS	transcript	3846	49779	.	+	.	ID=g26.t1;Parent=g26
+scf7180000000058_pilon	AUGUSTUS	start_codon	3846	3848	.	+	0	Parent=g26.t1
+scf7180000000058_pilon	AUGUSTUS	CDS	3846	3925	.	+	0	ID=g26.t1.cds;Parent=g26.t1
+scf7180000000058_pilon	AUGUSTUS	CDS	18652	18928	.	+	1	ID=g26.t1.cds;Parent=g26.t1
+scf7180000000058_pilon	AUGUSTUS	CDS	48751	48900	.	+	0	ID=g26.t1.cds;Parent=g26.t1
+# protein sequence = [MGVPTPKQFCPILERPLISYTLQALERVCWIKDIVVAVTGENMEVMKSIIQKYQHKRISLVEAGVTRHRSIFNGLKAL
+# AEDQINSKLSKPEVVIIHDAVRPFVEEGVLLKVVTSAKEHGAAGAIRPLVSTVVSPSADGCLDYSLERARHRASEMPQAFLFDVIYEAYQQ]
+# Evidence for and against this transcript:
+# % of transcript supported by hints (any source): 0
+# CDS exons: 0/3
+# CDS introns: 0/3
+# 5'UTR exons and introns: 0/0
+# 3'UTR exons and introns: 0/0
+# hint groups fully obeyed: 0
+# incompatible hint groups: 0
+# end gene g26
+###
+#
+# ----- prediction on sequence number 18 (length = 188098, name = scf7180000000059_pilon) -----
+#
+# Predicted genes for sequence number 18 on both strands
+# (none)
+#
+# ----- prediction on sequence number 19 (length = 23596, name = scf7180000000060_pilon) -----
+#
+# Predicted genes for sequence number 19 on both strands
+# (none)
+# command line:
+# augustus --species=human --gff3=on /mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/pilon/HS7_R1.fastq.gz.cor_k64_soap_SR_masuca_hybrid_k64/pilon_polished.fasta
