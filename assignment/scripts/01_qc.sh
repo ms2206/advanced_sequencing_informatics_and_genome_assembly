@@ -73,7 +73,7 @@ date
 echo ""
 
 # List of fastq files in data folder
-fastq_files="${COR_ILLUMINA_SR_READ_1} ${COR_ILLUMINA_SR_READ_2}"
+fastq_files="${ILLUMINA_SR_READ_1} ${ILLUMINA_SR_READ_2}"
 
 echo "Fastq files to be processed:"
 echo $fastq_files
@@ -85,7 +85,7 @@ fastqc -o ${FASTQC_OUTPUT_DIR} $fastq_files
 
 # # ========================
 # Run MultiQC in the current folder
-sample=$(basename "${COR_ILLUMINA_SR_READ_1}" .fastq.gz)
+sample=$(basename "${ILLUMINA_SR_READ_1}" .fastq.gz)
 
 mkdir -p ${FASTQC_OUTPUT_DIR}/${sample}_multiqc_report
 multiqc ${FASTQC_OUTPUT_DIR}/*_fastqc.zip -o ${FASTQC_OUTPUT_DIR}/${sample}_multiqc_report
