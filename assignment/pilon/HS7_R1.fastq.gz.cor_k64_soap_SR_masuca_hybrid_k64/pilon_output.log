@@ -1,0 +1,266 @@
+Pilon version 1.22 Wed Mar 15 16:38:30 2017 -0400
+Genome: genome.scf.fasta
+Fixing snps, indels, gaps, local
+Input genome size: 4969080
+Scanning BAMs
+aligned_reads_sorted.bam: 4571423 reads, 0 filtered, 4563343 mapped, 4558421 proper, 3788 stray, FR 100% 342+/-38, max 455
+Processing scf7180000000042:1-1408291
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 1301818, Coverage: 66, minDepth: 7
+Confirmed 1406258 of 1408291 bases (99.86%)
+Corrected 109 snps; 0 ambiguous bases; corrected 5 small insertions totaling 8 bases, 5 small deletions totaling 6 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000042:31998-32011 0 -0 +0 NoSolution
+# fix break: scf7180000000042:32678-33001 0 -0 +0 NoSolution
+# fix break: scf7180000000042:136066-136072 0 -0 +0 NoSolution
+# fix break: scf7180000000042:301315-301658 0 -0 +0 NoSolution
+# fix break: scf7180000000042:449386 0 -0 +0 NoSolution
+# fix break: scf7180000000042:458604-458611 0 -0 +0 NoSolution TandemRepeat 30
+# fix break: scf7180000000042:649734 0 -0 +0 NoSolution
+# fix break: scf7180000000042:693149-693179 0 -0 +0 NoSolution
+# fix break: scf7180000000042:693574-693866 0 -0 +0 NoSolution
+# fix break: scf7180000000042:694128-694398 0 -0 +0 NoSolution
+# fix break: scf7180000000042:695121 0 -0 +0 NoSolution
+# fix break: scf7180000000042:695340-695688 0 -0 +0 NoSolution
+# fix break: scf7180000000042:695918-696230 0 -0 +0 NoSolution
+# fix break: scf7180000000042:696600-697323 0 -0 +0 NoSolution
+# fix break: scf7180000000042:969933-971758 0 -0 +0 NoSolution
+fix break: scf7180000000042:1117056-1117216 1117222 -26 +25 BreakFix
+# fix break: scf7180000000042:1367426-1367475 0 -0 +0 NoSolution TandemRepeat 24
+scf7180000000042:1-1408291 log:
+Finished processing scf7180000000042:1-1408291
+Processing scf7180000000043:1-1414129
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 1301021, Coverage: 66, minDepth: 7
+Confirmed 1412588 of 1414129 bases (99.89%)
+Corrected 134 snps; 0 ambiguous bases; corrected 3 small insertions totaling 8 bases, 4 small deletions totaling 4 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000043:202976-203039 0 -0 +0 NoSolution TandemRepeat 99
+# fix break: scf7180000000043:365228-365234 0 -0 +0 NoSolution TandemRepeat 176
+# fix break: scf7180000000043:592558-592868 0 -0 +0 NoSolution
+# fix break: scf7180000000043:593394-593403 0 -0 +0 NoSolution
+# fix break: scf7180000000043:593638-593688 0 -0 +0 NoSolution
+# fix break: scf7180000000043:593975-593987 0 -0 +0 NoSolution
+# fix break: scf7180000000043:794485-794561 0 -0 +0 NoSolution TandemRepeat 4
+# fix break: scf7180000000043:1068914-1068931 0 -0 +0 NoSolution TandemRepeat 54
+# fix break: scf7180000000043:1074231-1074238 0 -0 +0 NoSolution TandemRepeat 30
+# fix break: scf7180000000043:1206677-1206696 0 -0 +0 NoSolution TandemRepeat 28
+# fix break: scf7180000000043:1280786-1280794 0 -0 +0 NoSolution TandemRepeat 24
+scf7180000000043:1-1414129 log:
+Finished processing scf7180000000043:1-1414129
+Processing scf7180000000044:1-226904
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 208030, Coverage: 66, minDepth: 7
+Confirmed 226034 of 226904 bases (99.62%)
+Corrected 63 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000044:87835-87973 0 -0 +0 NoSolution TandemRepeat 38
+# fix break: scf7180000000044:182342-182414 0 -0 +0 NoSolution
+# fix break: scf7180000000044:182659-182785 0 -0 +0 NoSolution
+# fix break: scf7180000000044:183750-184045 0 -0 +0 NoSolution
+# fix break: scf7180000000044:185037-185056 0 -0 +0 NoSolution
+# fix break: scf7180000000044:222995-223008 0 -0 +0 NoSolution
+# fix break: scf7180000000044:224298-224557 0 -0 +0 NoSolution
+scf7180000000044:1-226904 log:
+Finished processing scf7180000000044:1-226904
+Processing scf7180000000045:1-46752
+unpaired aligned_reads_sorted.bam: coverage 64
+Total Reads: 41703, Coverage: 64, minDepth: 6
+Confirmed 46441 of 46752 bases (99.33%)
+Corrected 11 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 2 small deletions totaling 4 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000045:371-881 0 -0 +0 NoSolution
+# fix break: scf7180000000045:1524-1578 0 -0 +0 NoSolution
+# fix break: scf7180000000045:2505-2522 0 -0 +0 NoSolution
+# fix break: scf7180000000045:2922-2966 0 -0 +0 NoSolution
+fix break: scf7180000000045:11731-11732 11699 -57 +57 BreakFix
+scf7180000000045:1-46752 log:
+Finished processing scf7180000000045:1-46752
+Processing scf7180000000046:1-335050
+unpaired aligned_reads_sorted.bam: coverage 65
+Total Reads: 305515, Coverage: 65, minDepth: 7
+Confirmed 334205 of 335050 bases (99.75%)
+Corrected 48 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000046:703-719 0 -0 +0 NoSolution
+# fix break: scf7180000000046:939-954 0 -0 +0 NoSolution
+# fix break: scf7180000000046:270938-271115 0 -0 +0 NoSolution TandemRepeat 76
+# fix break: scf7180000000046:332546-332551 0 -0 +0 NoSolution
+# fix break: scf7180000000046:333188-333249 0 -0 +0 NoSolution
+# fix break: scf7180000000046:333640-333950 0 -0 +0 NoSolution
+# fix break: scf7180000000046:334416-334417 0 -0 +0 NoSolution
+scf7180000000046:1-335050 log:
+Finished processing scf7180000000046:1-335050
+Processing scf7180000000047:1-33750
+unpaired aligned_reads_sorted.bam: coverage 63
+Total Reads: 29451, Coverage: 63, minDepth: 6
+Confirmed 33034 of 33750 bases (97.88%)
+Corrected 13 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000047:919-1335 0 -0 +0 NoSolution
+# fix break: scf7180000000047:1973-2289 0 -0 +0 NoSolution
+# fix break: scf7180000000047:2527-2529 0 -0 +0 NoSolution
+# fix break: scf7180000000047:2786-3043 0 -0 +0 NoSolution
+# fix break: scf7180000000047:4162 0 -0 +0 NoSolution
+# fix break: scf7180000000047:32442-32454 0 -0 +0 NoSolution
+scf7180000000047:1-33750 log:
+Finished processing scf7180000000047:1-33750
+Processing scf7180000000048:1-58000
+unpaired aligned_reads_sorted.bam: coverage 68
+Total Reads: 54742, Coverage: 68, minDepth: 7
+Confirmed 57710 of 58000 bases (99.50%)
+Corrected 8 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000048:56338-56370 0 -0 +0 NoSolution
+scf7180000000048:1-58000 log:
+Finished processing scf7180000000048:1-58000
+Processing scf7180000000049:1-399793
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 367389, Coverage: 66, minDepth: 7
+Confirmed 399299 of 399793 bases (99.88%)
+Corrected 33 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000049:292907-292971 0 -0 +0 NoSolution
+scf7180000000049:1-399793 log:
+Finished processing scf7180000000049:1-399793
+Processing scf7180000000050:1-12481
+unpaired aligned_reads_sorted.bam: coverage 60
+Total Reads: 10249, Coverage: 60, minDepth: 6
+Confirmed 12289 of 12481 bases (98.46%)
+Corrected 13 snps; 1 ambiguous bases; corrected 2 small insertions totaling 2 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000050:469-523 0 -0 +0 NoSolution
+fix break: scf7180000000050:10022-10084 9940 -152 +153 BreakFix
+# fix break: scf7180000000050:10309-10344 0 -0 +0 NoSolution
+# fix break: scf7180000000050:10557-10574 0 -0 +0 NoSolution
+scf7180000000050:1-12481 log:
+Finished processing scf7180000000050:1-12481
+Processing scf7180000000051:1-69436
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 63751, Coverage: 66, minDepth: 7
+Confirmed 69303 of 69436 bases (99.81%)
+Corrected 9 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+fix break: scf7180000000051:445-478 386 -128 +128 BreakFix
+scf7180000000051:1-69436 log:
+Finished processing scf7180000000051:1-69436
+Processing scf7180000000052:1-18841
+unpaired aligned_reads_sorted.bam: coverage 65
+Total Reads: 17243, Coverage: 65, minDepth: 7
+Confirmed 18734 of 18841 bases (99.43%)
+Corrected 8 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+scf7180000000052:1-18841 log:
+Finished processing scf7180000000052:1-18841
+Processing scf7180000000053:1-14973
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 13849, Coverage: 66, minDepth: 7
+Confirmed 14760 of 14973 bases (98.58%)
+Corrected 11 snps; 0 ambiguous bases; corrected 1 small insertions totaling 1 bases, 1 small deletions totaling 5 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000053:827-836 0 -0 +0 NoSolution
+# fix break: scf7180000000053:1248-1443 0 -0 +0 NoSolution
+scf7180000000053:1-14973 log:
+Finished processing scf7180000000053:1-14973
+Processing scf7180000000054:1-119347
+unpaired aligned_reads_sorted.bam: coverage 65
+Total Reads: 108867, Coverage: 65, minDepth: 7
+Confirmed 118959 of 119347 bases (99.67%)
+Corrected 25 snps; 0 ambiguous bases; corrected 2 small insertions totaling 5 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000054:22159-22468 0 -0 +0 NoSolution
+scf7180000000054:1-119347 log:
+Finished processing scf7180000000054:1-119347
+Processing scf7180000000055:1-25994
+unpaired aligned_reads_sorted.bam: coverage 65
+Total Reads: 23800, Coverage: 65, minDepth: 7
+Confirmed 25832 of 25994 bases (99.38%)
+Corrected 13 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000055:257-372 0 -0 +0 NoSolution
+# fix break: scf7180000000055:790-853 0 -0 +0 NoSolution
+# fix break: scf7180000000055:1501-1531 0 -0 +0 NoSolution
+scf7180000000055:1-25994 log:
+Finished processing scf7180000000055:1-25994
+Processing scf7180000000056:1-362062
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 334123, Coverage: 66, minDepth: 7
+Confirmed 361614 of 362062 bases (99.88%)
+Corrected 28 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+scf7180000000056:1-362062 log:
+Finished processing scf7180000000056:1-362062
+Processing scf7180000000057:1-161801
+unpaired aligned_reads_sorted.bam: coverage 65
+Total Reads: 145264, Coverage: 65, minDepth: 7
+Confirmed 161317 of 161801 bases (99.70%)
+Corrected 30 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000057:583-660 0 -0 +0 NoSolution
+# fix break: scf7180000000057:1611-1651 0 -0 +0 NoSolution
+# fix break: scf7180000000057:158684-158986 0 -0 +0 NoSolution
+# fix break: scf7180000000057:159618-160250 0 -0 +0 NoSolution
+# fix break: scf7180000000057:160756-160768 0 -0 +0 NoSolution
+scf7180000000057:1-161801 log:
+Finished processing scf7180000000057:1-161801
+Processing scf7180000000058:1-49780
+unpaired aligned_reads_sorted.bam: coverage 63
+Total Reads: 43488, Coverage: 63, minDepth: 6
+Confirmed 49359 of 49780 bases (99.15%)
+Corrected 10 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 1 small deletions totaling 1 bases
+# Attempting to fix local continuity breaks
+fix break: scf7180000000058:42887-42904 42808 -28 +28 BreakFix
+# fix break: scf7180000000058:45917-46431 0 -0 +0 NoSolution
+scf7180000000058:1-49780 log:
+Finished processing scf7180000000058:1-49780
+Processing scf7180000000059:1-188100
+unpaired aligned_reads_sorted.bam: coverage 66
+Total Reads: 172718, Coverage: 66, minDepth: 7
+Confirmed 187827 of 188100 bases (99.85%)
+Corrected 25 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 1 small deletions totaling 2 bases
+scf7180000000059:1-188100 log:
+Finished processing scf7180000000059:1-188100
+Processing scf7180000000060:1-23596
+unpaired aligned_reads_sorted.bam: coverage 64
+Total Reads: 21400, Coverage: 64, minDepth: 6
+Confirmed 23443 of 23596 bases (99.35%)
+Corrected 5 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: scf7180000000060:253-278 0 -0 +0 NoSolution
+# fix break: scf7180000000060:494-516 0 -0 +0 NoSolution
+scf7180000000060:1-23596 log:
+Finished processing scf7180000000060:1-23596
+Writing updated scf7180000000042_pilon to pilon_polished.fasta
+Writing updated scf7180000000043_pilon to pilon_polished.fasta
+Writing updated scf7180000000044_pilon to pilon_polished.fasta
+Writing updated scf7180000000045_pilon to pilon_polished.fasta
+Writing updated scf7180000000046_pilon to pilon_polished.fasta
+Writing updated scf7180000000047_pilon to pilon_polished.fasta
+Writing updated scf7180000000048_pilon to pilon_polished.fasta
+Writing updated scf7180000000049_pilon to pilon_polished.fasta
+Writing updated scf7180000000050_pilon to pilon_polished.fasta
+Writing updated scf7180000000051_pilon to pilon_polished.fasta
+Writing updated scf7180000000052_pilon to pilon_polished.fasta
+Writing updated scf7180000000053_pilon to pilon_polished.fasta
+Writing updated scf7180000000054_pilon to pilon_polished.fasta
+Writing updated scf7180000000055_pilon to pilon_polished.fasta
+Writing updated scf7180000000056_pilon to pilon_polished.fasta
+Writing updated scf7180000000057_pilon to pilon_polished.fasta
+Writing updated scf7180000000058_pilon to pilon_polished.fasta
+Writing updated scf7180000000059_pilon to pilon_polished.fasta
+Writing updated scf7180000000060_pilon to pilon_polished.fasta
+Mean unpaired coverage: 66
+Mean total coverage: 66
+Creating Pilon track in file pilon_polishedPilon.bed
+Creating Changes track in file pilon_polishedChanges.wig
+Creating Unconfirmed track in file pilon_polishedUnconfirmed.wig
+Creating Copy Number track in file pilon_polishedCopyNumber.wig
+Creating Coverage track in file pilon_polishedCoverage.wig
+Creating Bad Coverage track in file pilon_polishedBadCoverage.wig
+Creating Pct Bad track in file pilon_polishedPctBad.wig
+Creating Delta Coverage track in file pilon_polishedDeltaCoverage.wig
+Creating Dip Coverage track in file pilon_polishedDipCoverage.wig
+Creating Physical Coverage track in file pilon_polishedPhysicalCoverage.wig
+Creating Clipped Alignments track in file pilon_polishedClippedAlignments.wig
+Creating Weighted Qual track in file pilon_polishedWeightedQual.wig
+Creating Weighted MQ track in file pilon_polishedWeightedMq.wig
+Creating GC track in file pilon_polishedGC.wig
