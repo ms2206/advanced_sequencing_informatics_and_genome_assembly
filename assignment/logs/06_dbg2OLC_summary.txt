@@ -1,0 +1,48 @@
+Results for HS7_R1.fastq.gz.cor_k27/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
+Results for HS7_R1.fastq.gz.cor_k50/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
+Results for HS7_R1.fastq.gz.cor_k58/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
+Results for HS7_R1.fastq.gz.cor_k60/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
+Results for HS7_R1.fastq.gz.cor_k64/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
+Results for HS7_R1.fastq.gz.cor_k70/DBG2OLC_contigs_plus_pacbio.fasta
+Total number of sequences:          2660
+Total length of sequences:          104734050 bp
+Shortest sequence length :          64 bp
+Longest sequence length  :          99690817 bp
+Total number of Ns in sequences:    0
+N50:	99690817	(1 sequences)	(99690817 bp combined)
+
