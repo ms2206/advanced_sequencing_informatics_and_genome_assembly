@@ -1,3 +1,0 @@
-Module	Section	Sample Name	Source
-FastQC	all_sections	HS7_R1	/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/qc/HS7_R1.fastq.gz.cor.pair_1_fastqc.zip
-FastQC	all_sections	HS7_R2	/mnt/beegfs/home/s430452/advanced_sequencing_informatics_and_genome_assembly/assignment/qc/HS7_R2.fastq.gz.cor.pair_2_fastqc.zip
