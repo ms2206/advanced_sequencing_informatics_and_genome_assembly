@@ -1,0 +1,7 @@
+Tool,Type,Start,Stop,Strand,Frame,Comments,Query Cover,Per. Ident,NCBI_SeqID,Chromonsome,Species
+AUGUSTUS,CDS,114695,115659,+,1,ID=g2.t1.cds;Parent=g2.t1,100,99.79,NM_001346972.2,7,Homo Sapiens
+AUGUSTUS,CDS,696796,697812,-,0,ID=g5.t1.cds;Parent=g5.t1,100,99.61,OK649233.1,6,Homo Sapiens
+AUGUSTUS,CDS,743989,744342,-,0,ID=g6.t1.cds;Parent=g6.t1,100,99.72,AC006035.2,7,Homo Sapiens
+AUGUSTUS,CDS,32805,33551,+,0,ID=g19.t1.cds;Parent=g19.t1,100,99.87,AC005248.1,7,Homo Sapiens
+AUGUSTUS,CDS,1928,2257,-,0,ID=g22.t1.cds;Parent=g22.t1,100,99.09,AC147653.5,7,Pan Troglodytes
+AUGUSTUS,CDS,48751,48900,+,0,ID=g26.t1.cds;Parent=g26.t1,100,99.64,NM_001101417.4,7,Homo Sapiens
